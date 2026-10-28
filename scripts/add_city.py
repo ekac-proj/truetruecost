@@ -3,7 +3,7 @@
 
 Usage:
   python3 scripts/add_city.py <slug> "<Metro name, ST>" [--config data/cities/<slug>.json] [--force]
-  python3 scripts/add_city.py --rebuild          # regenerate sitemap.xml, home city tiles, shared footers
+  python3 scripts/add_city.py --rebuild          # regenerate sitemap.xml (incl. privacy & terms), home city tiles, shared footers
   python3 scripts/add_city.py --all              # re-publish every city that has data/cities/<slug>.json
 
 Without --config the page is created as a DRAFT (noindex, placeholder rows, not in
@@ -103,7 +103,7 @@ def footer(prefix=""):
   </div>
   <div>
     <h4>Explore</h4>
-    <ul><li><a href="{p}index.html#cities">Cities</a></li><li><a href="{p}how-it-works.html">How it works &amp; methodology</a></li><li><a href="{p}about.html">About</a></li><li><a href="{p}sitemap.xml">Sitemap</a></li></ul>
+    <ul><li><a href="{p}index.html#cities">Cities</a></li><li><a href="{p}how-it-works.html">How it works &amp; methodology</a></li><li><a href="{p}about.html">About</a></li><li><a href="{p}privacy.html">Privacy Policy</a></li><li><a href="{p}terms.html">Terms of Use</a></li><li><a href="{p}sitemap.xml">Sitemap</a></li></ul>
   </div>
   <div>
     <h4>Disclosure</h4>
@@ -122,7 +122,8 @@ def rebuild(idx):
     live = [c for c in idx["cities"] if c.get("status") == "published"]
     base = SITE["site_url"].rstrip("/")
     upd = idx.get("updated", TODAY)
-    urls = [(f"{base}/", upd), (f"{base}/how-it-works.html", upd), (f"{base}/about.html", upd)]
+    urls = [(f"{base}/", upd), (f"{base}/how-it-works.html", upd), (f"{base}/about.html", upd),
+            (f"{base}/privacy.html", upd), (f"{base}/terms.html", upd)]
     urls += [(f"{base}/{c['path']}", c["updated"]) for c in live]
     xml = ['<?xml version="1.0" encoding="UTF-8"?>',
            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
@@ -142,7 +143,7 @@ def rebuild(idx):
                f'<span class="adv">vs ${c["rate_10x10"]} advertised rate</span>') if c.get("true_avg_10x10") else ""
         tiles.append(f'  <li><a class="tile" href="{c["path"]}"><span class="name">{html.escape(c["name"])}</span>{fig}'
                      f'<span class="go">View sizes &amp; sources →</span></a></li>')
-    for name in ["index.html", "about.html", "how-it-works.html"]:
+    for name in ["index.html", "about.html", "how-it-works.html", "privacy.html", "terms.html"]:
         f = ROOT / name
         if not f.exists():
             continue
@@ -151,6 +152,14 @@ def rebuild(idx):
             text = replace_block(text, "CITY_LIST", "\n".join(tiles))
         text = replace_block(text, "FOOTER", footer(""))
         f.write_text(text)
+    city_footer = footer("../")
+    for city_html in sorted((ROOT / "cities").glob("*.html")):
+        if city_html.name.startswith("_"):
+            continue
+        text = city_html.read_text()
+        new, n = re.subn(r'<footer class="site">.*?</footer>', city_footer, text, count=1, flags=re.S)
+        if n:
+            city_html.write_text(new)
     print(f"sitemap.xml: {len(urls)} urls; index.html: {len(live)} cities listed")
 
 
