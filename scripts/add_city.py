@@ -100,7 +100,6 @@ def footer(prefix=""):
   <div>
     <a class="brand" href="{p}index.html">{SITE['site_name']}</a>
     <p>{html.escape(SITE.get('tagline', 'Storage · the price after the promo'))}</p>
-    <p>A service of EkaC Global Consulting.</p>
   </div>
   <div>
     <h4>Explore</h4>
