@@ -1,0 +1,83 @@
+{
+  "intro": "Seattle listings advertise 10x10 units from about $32, while typical non-climate 10x10 street rates run about $185–$188/month. Once the move-in special ends and the first existing-customer increase lands, your six-month average is well above the number on the banner.",
+  "data_asof": "Aug–Oct 2026 (StorageCafe, StorageUnitCosts, Storage Stats)",
+  "units": [
+    {
+      "size": "5x5",
+      "market": [
+        73,
+        74
+      ],
+      "low": 11,
+      "notes": "Locker / closet size. Fixed fees dominate the true cost at this size. Climate-controlled ~$70–$73."
+    },
+    {
+      "size": "5x10",
+      "market": [
+        108,
+        111
+      ],
+      "low": null,
+      "notes": "Walk-in closet; studio overflow. No reliable lowest-promo figure published for this size (gap). Climate-controlled ~$118–$125."
+    },
+    {
+      "size": "10x10",
+      "market": [
+        185,
+        188,
+        170
+      ],
+      "low": 32,
+      "notes": "Most rented size. City average $185 (StorageCafe, Sep 2026); Seattle–Tacoma metro averages $170 (Storage Stats), down 13.4% YoY — strong leverage when negotiating. Climate-controlled ~$177–$235."
+    },
+    {
+      "size": "10x15",
+      "market": [
+        238
+      ],
+      "low": null,
+      "notes": "Two-bedroom contents. Estimate: single source (StorageCafe, Sep 2026). Climate-controlled ~$241–$252."
+    },
+    {
+      "size": "10x20",
+      "market": [
+        319,
+        322
+      ],
+      "low": 104,
+      "notes": "Three-bedroom home or a car. Climate-controlled ~$301–$308."
+    }
+  ],
+  "local_tips": [
+    "Seattle asking rents are falling fast (down about 13% YoY across the metro per Storage Stats), so quote the current new-customer rate when an increase notice arrives.",
+    "Climate-controlled units in Seattle can cost about the same as, or less than, standard units (StorageCafe) — compare both.",
+    "Cheapest areas per StorageCafe include Riverview (~$72) and Olympic Hills (~$115); Mount Baker and the Central Waterfront are the most expensive (~$276–$281).",
+    "Rates tend to be lowest around February and highest in August (StorageCafe)."
+  ],
+  "sources": [
+    {
+      "label": "StorageCafe — Seattle, WA self storage prices & stats (Sep 2026)",
+      "url": "https://www.storagecafe.com/self-storage-industry-statistics/us/wa/seattle/"
+    },
+    {
+      "label": "StorageCafe — Storage units in Seattle, WA (min listed prices, Oct 2026)",
+      "url": "https://www.storagecafe.com/self-storage/us/wa/seattle/"
+    },
+    {
+      "label": "StorageUnitCosts — Storage unit prices in Seattle (Aug 2026 rates, updated Oct 2026) and fees",
+      "url": "https://storageunitcosts.com/storage-unit-prices/seattle-wa/"
+    },
+    {
+      "label": "Storage Stats — Seattle metro self-storage market data (Oct 2026)",
+      "url": "https://storagestats.com/markets/seattle-wa/"
+    },
+    {
+      "label": "Public Storage — Storage deals (promo terms; admin fee and other fees apply)",
+      "url": "https://www.publicstorage.com/storage-solutions/storage-deals"
+    },
+    {
+      "label": "LegalClarity — Existing customer rate increases (reported 30–40%, cases up to 56%)",
+      "url": "https://legalclarity.org/public-storage-price-gouging-lawsuits-settlements-fines/"
+    }
+  ]
+}

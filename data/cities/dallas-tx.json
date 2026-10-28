@@ -1,0 +1,25 @@
+{
+  "intro": "Dallas listings advertise 10x10 units from roughly $47 (and \"$1 first month\" deals), while typical non-climate 10x10 market rates run about $103–$110/month. Once the move-in special ends and the first existing-customer increase lands, your six-month average is well above the number on the banner.",
+  "data_asof": "Aug–Oct 2026 (StorageCafe, StorageUnitCosts, Storage Stats) and Mar 2026 (Extra Space)",
+  "units": [
+    {"size": "5x5", "market": [43, 36, 44], "low": 11, "notes": "Locker / closet size. Fixed fees dominate the true cost at this size. Climate-controlled ~$46–$54."},
+    {"size": "5x10", "market": [66, 60, 67], "low": 24, "notes": "Walk-in closet; dorm or studio overflow. Climate-controlled ~$71–$88."},
+    {"size": "10x10", "market": [108, 104, 110], "low": 47, "notes": "Most rented size. DFW metro non-climate average $103 (Storage Stats, Oct 2026), down 8.7% YoY — leverage when negotiating. Climate-controlled ~$122–$160."},
+    {"size": "10x15", "market": [148, 148], "low": 64, "notes": "Two-bedroom contents. Climate-controlled ~$172–$237."},
+    {"size": "10x20", "market": [189, 189, 190], "low": 52, "notes": "Three-bedroom house or a car. Climate-controlled ~$231–$338; outdoor/drive-up cheaper."}
+  ],
+  "local_tips": [
+    "DFW has one of the largest storage supplies in the US (1,500+ facilities tracked by Storage Stats) and asking rents are falling, so competing quotes are easy to get.",
+    "Dallas rates tend to be lowest around December and highest in late summer (StorageCafe); if you can time a move-in, winter promos are usually better.",
+    "Extra Space lists a $50 admin fee in Dallas — higher than our $29 default; adjust the calculator if your facility charges more."
+  ],
+  "sources": [
+    {"label": "StorageCafe — Dallas, TX self storage prices & stats (Sep 2026)", "url": "https://www.storagecafe.com/self-storage-industry-statistics/us/tx/dallas/"},
+    {"label": "StorageCafe — Storage units in Dallas, TX (min listed prices, Oct 2026)", "url": "https://www.storagecafe.com/self-storage/us/tx/dallas/"},
+    {"label": "Extra Space Storage — Storage unit prices in Dallas, TX (pricing as of Mar 2026)", "url": "https://www.extraspace.com/blog/self-storage/storage-unit-cost-dallas-tx/"},
+    {"label": "StorageUnitCosts — Storage unit prices in Dallas (Aug 2026) and fees", "url": "https://storageunitcosts.com/storage-unit-prices/dallas-tx/"},
+    {"label": "Storage Stats — Dallas–Fort Worth self-storage market data (Oct 2026)", "url": "https://storagestats.com/markets/dallas-fort-worth-tx/"},
+    {"label": "Public Storage — Storage deals (promo terms; admin fee and other fees apply)", "url": "https://www.publicstorage.com/storage-solutions/storage-deals"},
+    {"label": "LegalClarity — Existing customer rate increases (reported 30–40%, cases up to 56%)", "url": "https://legalclarity.org/public-storage-price-gouging-lawsuits-settlements-fines/"}
+  ]
+}

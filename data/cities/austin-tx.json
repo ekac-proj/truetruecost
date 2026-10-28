@@ -1,0 +1,26 @@
+{
+  "intro": "Austin storage listings routinely advertise a 10x10 from about $20 or \"first month $1\", but the market rate for a non-climate 10x10 sits around $95–$112/month, and existing-customer increases of 15–40% are commonly reported a few months after move-in. Here is what the first six months typically cost once fees and the first increase are included.",
+  "data_asof": "Sep 2026 (SpareFoot, StorageCafe) and Apr 2026 (Extra Space)",
+  "units": [
+    {"size": "5x5", "market": [40.76, 46, 37], "low": 7, "notes": "Locker / closet size. Deepest promos are often on small units; fixed fees ($29 admin + protection) are a large share of the true cost here. Climate control adds roughly $5–$10."},
+    {"size": "5x10", "market": [70.49, 67, 61], "low": 15, "notes": "Walk-in closet; a studio's boxes and small furniture. Climate-controlled average ~$78–$87."},
+    {"size": "10x10", "market": [94.94, 112, 103], "low": 20, "notes": "Most rented size (one-bedroom apartment). Climate-controlled average ~$104–$132. Sources disagree by ~$17, so get quotes."},
+    {"size": "10x15", "market": [148.84, 149, 138], "low": 40, "notes": "Two-bedroom contents. Climate-controlled average ~$151–$180."},
+    {"size": "10x20", "market": [174.10, 185, 181], "low": 64, "notes": "Three-bedroom house or a car. Climate-controlled average ~$207–$233; drive-up units are often cheaper."}
+  ],
+  "local_tips": [
+    "Austin summers routinely pass 100°F; for wood furniture, electronics, documents or vinyl, budget for climate control (roughly +$10–$30/month on a 10x10).",
+    "Facilities on the US-290, US-183 and I-35 corridors show the lowest listed promos; central/East Austin (e.g. Airport Blvd) listings run noticeably higher for the same size.",
+    "Market rates in Austin fell slightly year over year (StorageCafe: -1.8% for 10x10), which gives you room to negotiate when an increase notice arrives."
+  ],
+  "sources": [
+    {"label": "SpareFoot — Self-storage prices in Austin, TX (averages updated 2026-09-01)", "url": "https://www.sparefoot.com/Austin-TX-self-storage.html"},
+    {"label": "SpareFoot — Climate-controlled storage in Austin, TX", "url": "https://www.sparefoot.com/Austin-TX-self-storage/climate-controlled.html"},
+    {"label": "StorageCafe — Austin, TX self storage prices & stats (Sep 2026)", "url": "https://www.storagecafe.com/self-storage-industry-statistics/us/tx/austin/"},
+    {"label": "Extra Space Storage — Storage unit prices in Austin, TX (pricing as of Apr 2026)", "url": "https://www.extraspace.com/blog/self-storage/storage-unit-cost-austin-tx/"},
+    {"label": "Public Storage — Storage deals ($1 first month, 50% off first month; admin fee and other fees apply)", "url": "https://www.publicstorage.com/storage-solutions/storage-deals"},
+    {"label": "Public Storage — Understanding storage unit rate increases (month-to-month, 30 days' notice)", "url": "https://www.publicstorage.com/blog/storage-tips/understanding-storage-unit-rate-increases.html"},
+    {"label": "LegalClarity — Existing customer rate increases (reported 30–40%, cases up to 56%)", "url": "https://legalclarity.org/public-storage-price-gouging-lawsuits-settlements-fines/"},
+    {"label": "StorageUnitCosts — Fees to add to monthly rent (admin fee, $10–$30/mo protection)", "url": "https://storageunitcosts.com/storage-unit-prices/dallas-tx/"}
+  ]
+}

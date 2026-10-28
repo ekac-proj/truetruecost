@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /cities/_template.html
+Disallow: /scripts/
+Disallow: /previews/
+Disallow: /outreach/
+Disallow: /revenue-model/
+
+Sitemap: https://truetruecost.com/sitemap.xml

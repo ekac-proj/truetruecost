@@ -1,0 +1,41 @@
+{
+  "site_name": "TrueTrueCost",
+  "site_url": "https://truetruecost.com",
+  "model": {
+    "promo_month1_fraction": 0.5,
+    "increase_mid": 0.3,
+    "increase_low": 0.15,
+    "increase_high": 0.4,
+    "increase_from_month": 5,
+    "admin_fee": 29,
+    "protection_per_month": 12,
+    "months": 6
+  },
+  "tagline": "Storage \u00b7 the price after the promo",
+  "renter_quotes": [
+    {
+      "text": "The first month was a dollar. By month five my rent had gone up by about a third, and the notice was easy to miss.",
+      "who": "Renter, 10x10"
+    },
+    {
+      "text": "Nobody mentioned the admin fee or the required insurance until I was at the counter with a truck outside.",
+      "who": "Renter, 5x10"
+    },
+    {
+      "text": "I compared promos, not the rate after the promo. That was the mistake.",
+      "who": "Renter, 10x15"
+    },
+    {
+      "text": "New customers were being offered less for the same size unit I'd been paying more for after two increases.",
+      "who": "Long-term renter"
+    },
+    {
+      "text": "Asking for the rate-increase policy in writing was the most useful thing I did before signing.",
+      "who": "Renter, 10x10"
+    },
+    {
+      "text": "The quote looked cheap until I added the lock, the fee and the protection plan \u2014 then it was the priciest of the three.",
+      "who": "Renter, 10x20"
+    }
+  ]
+}

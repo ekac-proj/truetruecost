@@ -1,0 +1,103 @@
+{
+  "cities": [
+    {
+      "slug": "austin-tx",
+      "name": "Austin, TX",
+      "path": "cities/austin-tx.html",
+      "status": "published",
+      "updated": "2026-10-28",
+      "published": "2026-10-27",
+      "true_avg_10x10": 122,
+      "rate_10x10": 103,
+      "data_asof": "Sep 2026 (SpareFoot, StorageCafe) and Apr 2026 (Extra Space)"
+    },
+    {
+      "slug": "chicago-il",
+      "name": "Chicago, IL",
+      "path": "cities/chicago-il.html",
+      "status": "published",
+      "updated": "2026-10-28",
+      "published": "2026-10-28",
+      "true_avg_10x10": 157,
+      "rate_10x10": 138,
+      "data_asof": "Aug\u2013Oct 2026 (StorageCafe, StorageUnitCosts, Storage Stats)"
+    },
+    {
+      "slug": "dallas-tx",
+      "name": "Dallas, TX",
+      "path": "cities/dallas-tx.html",
+      "status": "published",
+      "updated": "2026-10-28",
+      "published": "2026-10-27",
+      "true_avg_10x10": 126,
+      "rate_10x10": 107,
+      "data_asof": "Aug\u2013Oct 2026 (StorageCafe, StorageUnitCosts, Storage Stats) and Mar 2026 (Extra Space)"
+    },
+    {
+      "slug": "houston-tx",
+      "name": "Houston, TX",
+      "path": "cities/houston-tx.html",
+      "status": "published",
+      "updated": "2026-10-28",
+      "published": "2026-10-27",
+      "true_avg_10x10": 114,
+      "rate_10x10": 96,
+      "data_asof": "Aug\u2013Oct 2026 (StorageCafe, StorageUnitCosts, Storage Stats)"
+    },
+    {
+      "slug": "los-angeles-ca",
+      "name": "Los Angeles, CA",
+      "path": "cities/los-angeles-ca.html",
+      "status": "published",
+      "updated": "2026-10-28",
+      "published": "2026-10-28",
+      "true_avg_10x10": 287,
+      "rate_10x10": 266,
+      "data_asof": "Aug\u2013Oct 2026 (StorageCafe, StorageUnitCosts, Storage Stats)"
+    },
+    {
+      "slug": "new-york-ny",
+      "name": "New York, NY",
+      "path": "cities/new-york-ny.html",
+      "status": "published",
+      "updated": "2026-10-28",
+      "published": "2026-10-28",
+      "true_avg_10x10": 275,
+      "rate_10x10": 254,
+      "data_asof": "Aug\u2013Oct 2026 (StorageCafe, StorageUnitCosts, Storage Stats)"
+    },
+    {
+      "slug": "san-francisco-ca",
+      "name": "San Francisco, CA",
+      "path": "cities/san-francisco-ca.html",
+      "status": "published",
+      "updated": "2026-10-28",
+      "published": "2026-10-28",
+      "true_avg_10x10": 304,
+      "rate_10x10": 282,
+      "data_asof": "Aug\u2013Oct 2026 (StorageCafe, SpareFoot, Storage Stats); some sizes single-source estimates"
+    },
+    {
+      "slug": "seattle-wa",
+      "name": "Seattle, WA",
+      "path": "cities/seattle-wa.html",
+      "status": "published",
+      "updated": "2026-10-28",
+      "published": "2026-10-28",
+      "true_avg_10x10": 201,
+      "rate_10x10": 181,
+      "data_asof": "Aug\u2013Oct 2026 (StorageCafe, StorageUnitCosts, Storage Stats)"
+    }
+  ],
+  "updated": "2026-10-28",
+  "order": [
+    "dallas-tx",
+    "houston-tx",
+    "austin-tx",
+    "new-york-ny",
+    "los-angeles-ca",
+    "seattle-wa",
+    "san-francisco-ca",
+    "chicago-il"
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "intro": "Los Angeles listings advertise 10x10 units from about $49, while typical non-climate 10x10 street rates run about $270–$277/month, among the highest in the country. Once the move-in special ends and the first existing-customer increase lands, your six-month average is far above the number on the banner.",
+  "data_asof": "Aug–Oct 2026 (StorageCafe, StorageUnitCosts, Storage Stats)",
+  "units": [
+    {
+      "size": "5x5",
+      "market": [
+        113,
+        115
+      ],
+      "low": 19,
+      "notes": "Locker / closet size. Climate-controlled ~$107–$120."
+    },
+    {
+      "size": "5x10",
+      "market": [
+        161,
+        164
+      ],
+      "low": null,
+      "notes": "Walk-in closet; studio overflow. No reliable lowest-promo figure published for this size (gap). Climate-controlled ~$179–$190."
+    },
+    {
+      "size": "10x10",
+      "market": [
+        271,
+        277,
+        249
+      ],
+      "low": 49,
+      "notes": "Most rented size. City average $271 (StorageCafe, Sep 2026), down 5.6% YoY; LA–Long Beach–Anaheim metro averages $249 (Storage Stats), so Orange County and the Valley edges are cheaper. Climate-controlled ~$291–$346."
+    },
+    {
+      "size": "10x15",
+      "market": [
+        371
+      ],
+      "low": null,
+      "notes": "Two-bedroom contents. Estimate: single source (StorageCafe, Sep 2026). Climate-controlled ~$399."
+    },
+    {
+      "size": "10x20",
+      "market": [
+        471,
+        470
+      ],
+      "low": 129,
+      "notes": "Three-bedroom home or a car. Climate-controlled ~$501–$571."
+    }
+  ],
+  "local_tips": [
+    "Neighborhood matters: StorageCafe lists Chesterfield Square (~$124), Eagle Rock (~$179) and Historic South-Central (~$183) as the cheapest areas for a standard unit, while Fairfax (~$494) and Sunkist Park (~$397) are the most expensive.",
+    "LA rates tend to be lowest around December and highest in August (StorageCafe).",
+    "Asking rents are falling (about 10% lower YoY across the metro per Storage Stats) — a good moment to ask for a lower rate at renewal.",
+    "Extra Space charges a $50 admin fee (per StorageUnitCosts), higher than our $29 default; adjust the calculator if your facility charges more."
+  ],
+  "sources": [
+    {
+      "label": "StorageCafe — Los Angeles, CA self storage prices & stats (Sep 2026)",
+      "url": "https://www.storagecafe.com/self-storage-industry-statistics/us/ca/los-angeles/"
+    },
+    {
+      "label": "StorageCafe — Storage units in Los Angeles, CA (min listed prices, Oct 2026)",
+      "url": "https://www.storagecafe.com/self-storage/us/ca/los-angeles/"
+    },
+    {
+      "label": "StorageUnitCosts — Storage unit prices in Los Angeles (Aug 2026 rates, updated Oct 2026) and fees",
+      "url": "https://storageunitcosts.com/storage-unit-prices/los-angeles-ca/"
+    },
+    {
+      "label": "Storage Stats — Los Angeles metro self-storage market data (Oct 2026)",
+      "url": "https://storagestats.com/markets/los-angeles-ca/"
+    },
+    {
+      "label": "Public Storage — Storage deals (promo terms; admin fee and other fees apply)",
+      "url": "https://www.publicstorage.com/storage-solutions/storage-deals"
+    },
+    {
+      "label": "LegalClarity — Existing customer rate increases (reported 30–40%, cases up to 56%)",
+      "url": "https://legalclarity.org/public-storage-price-gouging-lawsuits-settlements-fines/"
+    }
+  ]
+}

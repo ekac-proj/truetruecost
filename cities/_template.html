@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Storage Unit True Cost in {{CITY_NAME}} — After the Promo | TrueTrueCost</title>
+<meta name="description" content="What a storage unit in {{CITY_NAME}} really costs over six months once the move-in promo ends: advertised rates, rates after the first increase, and the true monthly average by unit size.">
+{{ROBOTS_META}}
+<link rel="canonical" href="{{SITE_URL}}/cities/{{SLUG}}.html">
+<meta property="og:title" content="Storage true cost in {{CITY_NAME}} | TrueTrueCost">
+<meta property="og:url" content="{{SITE_URL}}/cities/{{SLUG}}.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <div><a class="brand" href="../index.html">TrueTrueCost</a>
+  <p class="tagline">Storage · the price after the promo</p></div>
+  <nav class="main" aria-label="Main"><a href="../index.html">Home</a><a href="../index.html#cities" aria-current="page">Cities</a><a href="../how-it-works.html">How it works</a><a href="../about.html">About</a></nav>
+</div></header>
+
+<main class="wrap">
+<p class="crumbs"><a href="../index.html">Home</a> &nbsp;/&nbsp; <a href="../index.html#cities">Cities</a> &nbsp;/&nbsp; {{CITY_NAME}}</p>
+<span class="eyebrow">Storage true cost · {{CITY_NAME}}</span>
+<h1 class="wide">What a storage unit in {{CITY_SHORT}} really costs</h1>
+<p class="lede">{{INTRO}}</p>
+
+<div class="keyfigs" aria-label="10x10 summary">
+  <div><span class="k">10x10 advertised rate</span><span class="v">{{RATE_10}}<small class="small">/mo</small></span></div>
+  <div><span class="k">After first increase</span><span class="v">{{AFTER_10}}<small class="small">/mo</small></span></div>
+  <div class="primary"><span class="k">6-month true average</span><span class="v">{{TRUE_10}}<small class="small">/mo</small></span></div>
+</div>
+
+<p class="note"><strong>Estimates, not live quotes.</strong> Built from public price pages (sources below; data as of {{DATA_ASOF}}). Your facility, unit and move-in date will differ — always ask for the full move-in total and the rate-change policy in writing.</p>
+
+{{QUOTES}}
+
+<h2 id="prices">True cost by unit size</h2>
+<div class="table-scroll">
+<table>
+<thead><tr>
+  <th scope="col">Size</th>
+  <th scope="col" class="true">6-month true average</th>
+  <th scope="col">Advertised / month</th>
+  <th scope="col">After first increase</th>
+  <th scope="col">Notes</th>
+</tr></thead>
+<tbody>
+{{TABLE_ROWS}}
+</tbody>
+</table>
+</div>
+<p class="small prose">Month 1 at a 50%-off promo, months 2–4 at the typical market rate, months 5–6 after a 30% existing-customer increase (range shows +15% to +40%), plus a ~$29 admin fee and ~$12/month protection plan. <a href="../how-it-works.html">How it works</a>.</p>
+
+<h2 id="calculator">Live true-cost calculator</h2>
+<p class="prose">Prefilled with the typical {{CITY_SHORT}} 10x10 rate ({{RATE_10}}/mo). Change any number — or type in a real quote — and the true cost updates as you go.</p>
+<form class="calc" id="calc" data-increase-from="{{CALC_INC_FROM}}">
+  <label>Advertised monthly rate ($)<input id="c-rate" type="number" min="0" step="1" value="{{CALC_RATE}}" inputmode="decimal"></label>
+  <label>Months renting<input id="c-months" type="number" min="1" max="36" step="1" value="{{CALC_MONTHS}}" inputmode="numeric"></label>
+  <label>Admin fee ($, one-time)<input id="c-fee" type="number" min="0" step="1" value="{{CALC_FEE}}" inputmode="decimal"></label>
+  <label>Protection plan ($/mo)<input id="c-prot" type="number" min="0" step="1" value="{{CALC_PROT}}" inputmode="decimal"></label>
+  <label>Increase from month {{CALC_INC_FROM}} (%)<input id="c-inc" type="number" min="0" max="200" step="1" value="{{CALC_INC}}" inputmode="decimal"></label>
+  <label>First-month promo discount (%)<input id="c-promo" type="number" min="0" max="100" step="5" value="{{CALC_PROMO_PCT}}" inputmode="decimal"></label>
+</form>
+<div id="calc-out" aria-live="polite"><p class="small">Turn on JavaScript to use the live calculator. At the defaults, a {{CITY_SHORT}} 10x10 averages about {{TRUE_10}}/mo over six months.</p></div>
+<div class="softcta">
+  <a class="btn solid" href="#" rel="nofollow sponsored" data-partner="compare" data-city="{{SLUG}}">Compare live quotes</a>
+  <button type="button" class="calc-reset" id="calc-reset">Reset to {{CITY_SHORT}} 10x10</button>
+</div>
+<p class="small">Sponsored: comparison links may become partner links; we may earn a commission if you book. It never changes these estimates.</p>
+
+<section class="cta" id="compare">
+  <h2>Compare live quotes in {{CITY_SHORT}}</h2>
+  <p class="prose">Promotions change daily. Check two or three current listings before you reserve, and compare the <em>month-4 rate</em>, not the first month.</p>
+  <div class="btns">
+    <a class="btn solid" href="#" rel="nofollow sponsored" data-partner="sparefoot" data-city="{{SLUG}}">Compare on SpareFoot</a>
+    <a class="btn" href="#" rel="nofollow sponsored" data-partner="neighbor" data-city="{{SLUG}}">Peer storage on Neighbor</a>
+    <a class="btn" href="#" rel="nofollow sponsored" data-partner="storageunits" data-city="{{SLUG}}">Search StorageUnits.com</a>
+  </div>
+  <p class="small">Partner links. We may earn a commission if you book; it never changes the estimates on this page.</p>
+</section>
+
+<h2 id="avoid">How to avoid the promo trap</h2>
+<ol class="checklist">
+  <li><strong>Ask how long the rate is locked.</strong> "When is the earliest my rent can go up, and by how much was the last increase here?" Get it in writing.</li>
+  <li><strong>Ask for the full move-in total.</strong> Admin fee, required protection, lock, deposit, tax. A "$1 first month" can still cost $40–$80 to move in.</li>
+  <li><strong>Compare the month-4 price, not month 1.</strong> Run each quote through the <a href="#calculator">calculator</a>.</li>
+  <li><strong>Get two or three competing quotes</strong> for the same size and climate control, including at least one independent facility.</li>
+  <li><strong>Use your own insurance if allowed.</strong> Many renters and homeowners policies cover off-site storage; some facilities waive their plan with proof.</li>
+  <li><strong>Negotiate when the increase notice arrives.</strong> You usually get 30 days. Quote the current new-customer rate for your size and ask them to match it.</li>
+  <li><strong>Be ready to move or downsize.</strong> If the gap to the new-customer rate is large, a promo elsewhere can pay for a truck within two or three months.</li>
+  <li><strong>Prepay only if the rate is locked.</strong> Prepay discounts mean little if rent can still rise mid-term.</li>
+  <li><strong>Set a reminder for month three.</strong> That is when increase notices commonly start to arrive.</li>
+</ol>
+{{LOCAL_TIPS}}
+
+<h2 id="sources">Sources</h2>
+<ol class="sources">
+{{SOURCES}}
+</ol>
+<p class="small">Sources accessed and page updated {{UPDATED}}. If a number looks wrong, see the <a href="../about.html">About page</a>.</p>
+</main>
+
+{{FOOTER}}
+<script src="../assets/calc.js"></script>
+</body>
+</html>

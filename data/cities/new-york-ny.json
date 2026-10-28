@@ -1,0 +1,83 @@
+{
+  "intro": "New York City listings advertise 10x10 units from about $143 (and small lockers from single digits), while typical non-climate 10x10 street rates in the five boroughs run about $270/month — more than double the national average. Once the move-in special ends and the first existing-customer increase lands, your six-month average sits well above the banner price.",
+  "data_asof": "Aug–Oct 2026 (StorageCafe, StorageUnitCosts, Storage Stats)",
+  "units": [
+    {
+      "size": "5x5",
+      "market": [
+        87,
+        88
+      ],
+      "low": 7,
+      "notes": "Locker / closet size. Fixed fees dominate the true cost at this size. Climate-controlled ~$83–$94."
+    },
+    {
+      "size": "5x10",
+      "market": [
+        163,
+        163
+      ],
+      "low": null,
+      "notes": "Walk-in closet; studio overflow. No reliable lowest-promo figure published for this size (gap). Climate-controlled ~$156–$184."
+    },
+    {
+      "size": "10x10",
+      "market": [
+        270,
+        271,
+        220
+      ],
+      "low": 143,
+      "notes": "Most rented size. City average ~$270 (StorageCafe, StorageUnitCosts); the wider NY–NJ metro averages $220 (Storage Stats, Oct 2026), so New Jersey and Long Island facilities can be cheaper. Climate-controlled ~$272–$339."
+    },
+    {
+      "size": "10x15",
+      "market": [
+        377
+      ],
+      "low": null,
+      "notes": "Two-bedroom contents. Estimate: single source (StorageCafe, Sep 2026). Climate-controlled ~$406."
+    },
+    {
+      "size": "10x20",
+      "market": [
+        490,
+        495
+      ],
+      "low": 199,
+      "notes": "Three-bedroom home. Climate-controlled ~$523–$713; few drive-up units in Manhattan."
+    }
+  ],
+  "local_tips": [
+    "Prices swing hard by borough: StorageCafe lists Hunts Point (~$119), Concourse Village (~$140) and Rockaway Beach (~$148) among the cheapest areas for a standard unit, while Yorkville, Hunters Point and the Upper West Side run $400–$550.",
+    "Rates are lowest around February and highest in August (StorageCafe); avoid booking during the summer moving peak if you can.",
+    "Many Manhattan facilities show \"contact for pricing\" — ask for the online rate and the full move-in total in writing before you commit.",
+    "Extra Space charges a $50 admin fee (per StorageUnitCosts), higher than our $29 default; adjust the calculator if your facility charges more."
+  ],
+  "sources": [
+    {
+      "label": "StorageCafe — New York City, NY self storage prices & stats (Sep 2026)",
+      "url": "https://www.storagecafe.com/self-storage-industry-statistics/us/ny/new-york-city/"
+    },
+    {
+      "label": "StorageCafe — Storage units in New York City, NY (min listed prices, Oct 2026)",
+      "url": "https://www.storagecafe.com/self-storage/us/ny/new-york-city/"
+    },
+    {
+      "label": "StorageUnitCosts — Storage unit prices in New York City (Aug 2026 rates, updated Oct 2026) and fees",
+      "url": "https://storageunitcosts.com/storage-unit-prices/new-york-ny/"
+    },
+    {
+      "label": "Storage Stats — New York metro self-storage market data (Oct 2026)",
+      "url": "https://storagestats.com/markets/new-york-ny/"
+    },
+    {
+      "label": "Public Storage — Storage deals (promo terms; admin fee and other fees apply)",
+      "url": "https://www.publicstorage.com/storage-solutions/storage-deals"
+    },
+    {
+      "label": "LegalClarity — Existing customer rate increases (reported 30–40%, cases up to 56%)",
+      "url": "https://legalclarity.org/public-storage-price-gouging-lawsuits-settlements-fines/"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "intro": "Chicago listings advertise 10x10 units from about $53, while typical non-climate 10x10 street rates run about $134–$141/month. Once the move-in special ends and the first existing-customer increase lands, your six-month average is well above the number on the banner.",
+  "data_asof": "Aug–Oct 2026 (StorageCafe, StorageUnitCosts, Storage Stats)",
+  "units": [
+    {
+      "size": "5x5",
+      "market": [
+        51,
+        52
+      ],
+      "low": 14,
+      "notes": "Locker / closet size. Fixed fees dominate the true cost at this size. Climate-controlled ~$53–$78."
+    },
+    {
+      "size": "5x10",
+      "market": [
+        84,
+        86
+      ],
+      "low": null,
+      "notes": "Walk-in closet; studio overflow. No reliable lowest-promo figure published for this size (gap). Climate-controlled ~$86."
+    },
+    {
+      "size": "10x10",
+      "market": [
+        138,
+        141,
+        134
+      ],
+      "low": 53,
+      "notes": "Most rented size. City average $138 (StorageCafe, Sep 2026); Chicago metro averages $134 (Storage Stats), roughly flat YoY. Climate-controlled ~$149–$176."
+    },
+    {
+      "size": "10x15",
+      "market": [
+        181
+      ],
+      "low": null,
+      "notes": "Two-bedroom contents. Estimate: single source (StorageCafe, Sep 2026). Climate-controlled ~$198."
+    },
+    {
+      "size": "10x20",
+      "market": [
+        242,
+        242
+      ],
+      "low": 85,
+      "notes": "Three-bedroom home or a car. Climate-controlled ~$279."
+    }
+  ],
+  "local_tips": [
+    "Location drives price: StorageCafe lists West Englewood (~$75), Mount Greenwood (~$82) and Pulaski Park (~$84) among the cheapest areas, while Lakeview, Goose Island and Downtown run $290+.",
+    "Chicago rates tend to be lowest around November and highest in July (StorageCafe).",
+    "Chicago rents are stable rather than falling, so promos matter more than negotiating — compare the month-4 rate across two or three facilities.",
+    "Extra Space charges a $50 admin fee (per StorageUnitCosts), higher than our $29 default; adjust the calculator if your facility charges more."
+  ],
+  "sources": [
+    {
+      "label": "StorageCafe — Chicago, IL self storage prices & stats (Sep 2026)",
+      "url": "https://www.storagecafe.com/self-storage-industry-statistics/us/il/chicago/"
+    },
+    {
+      "label": "StorageCafe — Storage units in Chicago, IL (min listed prices, Oct 2026)",
+      "url": "https://www.storagecafe.com/self-storage/us/il/chicago/"
+    },
+    {
+      "label": "StorageUnitCosts — Storage unit prices in Chicago (Aug 2026 rates, updated Oct 2026) and fees",
+      "url": "https://storageunitcosts.com/storage-unit-prices/chicago-il/"
+    },
+    {
+      "label": "Storage Stats — Chicago metro self-storage market data (Oct 2026)",
+      "url": "https://storagestats.com/markets/chicago-il/"
+    },
+    {
+      "label": "Public Storage — Storage deals (promo terms; admin fee and other fees apply)",
+      "url": "https://www.publicstorage.com/storage-solutions/storage-deals"
+    },
+    {
+      "label": "LegalClarity — Existing customer rate increases (reported 30–40%, cases up to 56%)",
+      "url": "https://legalclarity.org/public-storage-price-gouging-lawsuits-settlements-fines/"
+    }
+  ]
+}

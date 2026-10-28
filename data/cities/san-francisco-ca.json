@@ -1,0 +1,81 @@
+{
+  "intro": "San Francisco is the most expensive city we track. Listings advertise 10x10 units from about $142, while typical non-climate 10x10 street rates run about $266–$299/month. Once the move-in special ends and the first existing-customer increase lands, your six-month average is well above the number on the banner.",
+  "data_asof": "Aug–Oct 2026 (StorageCafe, SpareFoot, Storage Stats); some sizes single-source estimates",
+  "units": [
+    {
+      "size": "5x5",
+      "market": [
+        125,
+        143
+      ],
+      "low": 78,
+      "notes": "Locker / closet size. SpareFoot figure is from a small sample of booked units (Aug 2026). Climate-controlled ~$121–$186."
+    },
+    {
+      "size": "5x10",
+      "market": [
+        179,
+        182
+      ],
+      "low": 130,
+      "notes": "Walk-in closet; studio overflow. Climate-controlled ~$194."
+    },
+    {
+      "size": "10x10",
+      "market": [
+        299,
+        266
+      ],
+      "low": 142,
+      "notes": "Most rented size. City average $299 (StorageCafe, Sep 2026, up 2.1% YoY); SF–Oakland metro averages $266 (Storage Stats), so East Bay facilities are often cheaper. A small SpareFoot sample averaged $464 and was excluded as an outlier. Climate-controlled ~$318."
+    },
+    {
+      "size": "10x15",
+      "market": [
+        405
+      ],
+      "low": 299,
+      "notes": "Two-bedroom contents. Estimate: single source for the average (StorageCafe, Sep 2026). Climate-controlled ~$421."
+    },
+    {
+      "size": "10x20",
+      "market": [
+        521
+      ],
+      "low": 507,
+      "notes": "Three-bedroom home or a car. Estimate: single source for the average (StorageCafe, Sep 2026); listed units are scarce. Climate-controlled ~$576."
+    }
+  ],
+  "local_tips": [
+    "Supply is tight: StorageCafe counts only 27 facilities in the city, so promos are smaller and less common than in Texas.",
+    "Cheaper areas per StorageCafe include Ingleside Heights (~$197), the Inner Mission (~$207) and Dogpatch (~$227); Hunters Point is the most expensive (~$397). Oakland averages about $194 for a 10x10.",
+    "Rates tend to be lowest around January and highest in June (StorageCafe).",
+    "Ask about rate locks in writing — with few competitors nearby, existing-customer increases are harder to negotiate."
+  ],
+  "sources": [
+    {
+      "label": "StorageCafe — San Francisco, CA self storage prices & stats (Sep 2026)",
+      "url": "https://www.storagecafe.com/self-storage-industry-statistics/us/ca/san-francisco/"
+    },
+    {
+      "label": "StorageCafe — Storage units in San Francisco, CA (min listed prices, Oct 2026)",
+      "url": "https://www.storagecafe.com/self-storage/us/ca/san-francisco/"
+    },
+    {
+      "label": "SpareFoot — 10x10 storage in San Francisco, CA (average and lowest prices, Aug 2026)",
+      "url": "https://www.sparefoot.com/San-Francisco-CA-self-storage/10x10-storage-units.html"
+    },
+    {
+      "label": "Storage Stats — San Francisco metro self-storage market data (Oct 2026)",
+      "url": "https://storagestats.com/markets/san-francisco-ca/"
+    },
+    {
+      "label": "Public Storage — Storage deals (promo terms; admin fee and other fees apply)",
+      "url": "https://www.publicstorage.com/storage-solutions/storage-deals"
+    },
+    {
+      "label": "LegalClarity — Existing customer rate increases (reported 30–40%, cases up to 56%)",
+      "url": "https://legalclarity.org/public-storage-price-gouging-lawsuits-settlements-fines/"
+    }
+  ]
+}
