@@ -67,6 +67,17 @@
       "data_asof": "Aug\u2013Oct 2026 (StorageCafe, StorageUnitCosts, Storage Stats)"
     },
     {
+      "slug": "phoenix-az",
+      "name": "Phoenix, AZ",
+      "path": "cities/phoenix-az.html",
+      "status": "published",
+      "updated": "2026-10-28",
+      "published": "2026-10-28",
+      "true_avg_10x10": 131,
+      "rate_10x10": 112,
+      "data_asof": "Aug\u2013Oct 2026 (StorageCafe, StorageUnitCosts, Storage Stats)"
+    },
+    {
       "slug": "san-francisco-ca",
       "name": "San Francisco, CA",
       "path": "cities/san-francisco-ca.html",
