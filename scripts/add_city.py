@@ -36,6 +36,23 @@ STATE_NAMES = {
 }
 
 
+NEIGHBOR_BASE = "https://www.neighbor.com/self-storage-near-me"
+
+
+def neighbor_url(slug):
+    """Public Neighbor city page. No affiliate or Impact query parameters.
+
+    Verified pattern: /self-storage-near-me/{state}/{city}
+    (austin, st-louis, salt-lake-city, kansas-city, new-york, east-honolulu).
+    """
+    city, _, code = slug.rpartition("-")
+    state = STATE_NAMES.get(code.upper())
+    if not city or not state:
+        return NEIGHBOR_BASE
+    state_slug = re.sub(r"[^a-z0-9]+", "-", state.lower()).strip("-")
+    return f"{NEIGHBOR_BASE}/{state_slug}/{city}"
+
+
 def money(x):
     return f"${round(x):,}"
 
@@ -120,7 +137,7 @@ def footer(prefix=""):
   </div>
   <div>
     <h4>Disclosure</h4>
-    <p>Some “compare” links are partner links marked <code>rel="sponsored"</code>. We may earn a commission at no cost to you. Partners never influence our estimates.</p>
+    <p>“Find storage” links open Neighbor’s public city pages (<code>rel="sponsored"</code>, no tracking parameters). We do not earn a commission on those clicks yet. Partners never influence our estimates.</p>
     <p>Estimates only — not quotes, offers or financial advice.</p>
   </div>
 </div></footer>"""
@@ -254,6 +271,7 @@ def publish(idx, slug, name, config, force):
                 "DATA_ASOF": "TBD", "LOCAL_TIPS": "", "SOURCES": "    <li>TBD</li>",
                 "ROBOTS_META": '<meta name="robots" content="noindex">', **calc_subs(None)}
     subs.update(QUOTES=quote_strip(slug), CITY_NAME=html.escape(name), CITY_SHORT=html.escape(short), SLUG=slug,
+                NEIGHBOR_URL=html.escape(neighbor_url(slug), quote=True),
                 UPDATED=TODAY, SITE_URL=SITE["site_url"].rstrip("/"), FOOTER=footer("../"))
     page = TEMPLATE.read_text()
     for k, v in subs.items():
