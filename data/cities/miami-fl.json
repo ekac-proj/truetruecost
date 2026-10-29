@@ -1,0 +1,79 @@
+{
+  "intro": "Miami's non-climate 10x10 street rate is $169/month, down 1.2% from a year earlier (StorageCafe, September 2026). StorageUnitCosts lists $173 (August 2026). Storage Stats puts the Miami metro non-climate 10x10 asking rent at $185, down 3.8% from a year earlier (October 28, 2026). The climate-controlled 10x10 figure on the same StorageCafe page is about $182. The advertised rate on this page averages the published figures above. Once the move-in special ends and the first existing-customer increase lands, the six-month average sits above that street rate.",
+  "data_asof": "Sep 2026 (StorageCafe street rates); Aug 2026 (StorageUnitCosts); Oct 2026 (Storage Stats metro)",
+  "units": [
+    {
+      "size": "5x5",
+      "market": [
+        59,
+        60
+      ],
+      "low": null,
+      "notes": "Locker / closet size. Fixed fees dominate the true cost at this size. StorageCafe street rate $59 (Sep 2026). StorageUnitCosts $60 (Aug 2026). Climate-controlled figure on the same page ~$63."
+    },
+    {
+      "size": "5x10",
+      "market": [
+        98,
+        100
+      ],
+      "low": null,
+      "notes": "Walk-in closet; studio overflow. StorageCafe street rate $98 (Sep 2026). StorageUnitCosts $100 (Aug 2026). Climate-controlled figure on the same page ~$105. No reliable lowest-promo figure published for this size (gap)."
+    },
+    {
+      "size": "10x10",
+      "market": [
+        169,
+        173,
+        185
+      ],
+      "low": null,
+      "notes": "Most rented size. City street rate $169, down 1.2% from a year earlier (StorageCafe industry statistics, Sep 2026). StorageUnitCosts $173, up 0.6% from a year earlier (Aug 2026). Storage Stats Miami metro non-climate asking rent $185, down 3.8% from a year earlier (updated Oct 28, 2026). That figure covers the metro, not Miami alone. Climate-controlled figure on the same page ~$182."
+    },
+    {
+      "size": "10x15",
+      "market": [
+        232
+      ],
+      "low": null,
+      "notes": "Two-bedroom contents. StorageCafe street rate $232 (Sep 2026). Climate-controlled figure on the same page ~$259."
+    },
+    {
+      "size": "10x20",
+      "market": [
+        311,
+        314
+      ],
+      "low": null,
+      "notes": "Three-bedroom home or a car. StorageCafe street rate $311 (Sep 2026). StorageUnitCosts $314 (Aug 2026). Climate-controlled figure on the same page ~$359."
+    }
+  ],
+  "local_tips": [
+    "StorageCafe lists Flagami (~$81), Downtown Miami (~$144), Liberty City (~$149) among the cheaper areas for a standard unit. Miami Design District (~$379) is among the highest.",
+    "Miami has about 126 facilities and 3.9 sq ft of storage per person (StorageCafe).",
+    "About 100,896 sq ft of new storage is projected for 2026 (StorageCafe). Ask what month five costs before taking a move-in discount.",
+    "Extra Space's published admin fee is $50 on StorageUnitCosts' fee notes, higher than our $29 default; adjust the calculator if your facility charges more."
+  ],
+  "sources": [
+    {
+      "label": "StorageCafe — Miami, FL self storage prices and stats (Sep 2026)",
+      "url": "https://www.storagecafe.com/self-storage-industry-statistics/us/fl/miami/"
+    },
+    {
+      "label": "StorageUnitCosts — Storage unit prices in Miami (Aug 2026 rates, updated Oct 2026)",
+      "url": "https://storageunitcosts.com/storage-unit-prices/miami-fl/"
+    },
+    {
+      "label": "Storage Stats — Miami metro self-storage market data (updated Oct 28, 2026)",
+      "url": "https://storagestats.com/markets/miami-fl/"
+    },
+    {
+      "label": "Public Storage — Storage deals (promo terms; admin fee and other fees apply)",
+      "url": "https://www.publicstorage.com/storage-solutions/storage-deals"
+    },
+    {
+      "label": "LegalClarity — Existing customer rate increases (reported 30–40%, cases up to 56%)",
+      "url": "https://legalclarity.org/public-storage-price-gouging-lawsuits-settlements-fines/"
+    }
+  ]
+}

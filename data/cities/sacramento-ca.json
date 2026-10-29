@@ -1,0 +1,75 @@
+{
+  "intro": "Sacramento's non-climate 10x10 street rate is $137/month, down 2.8% from a year earlier (StorageCafe, September 2026). Storage Stats puts the Sacramento metro non-climate 10x10 asking rent at $146, down 11.2% from a year earlier (October 28, 2026). The climate-controlled 10x10 figure on the same StorageCafe page is about $146. The advertised rate on this page averages the published figures above. Once the move-in special ends and the first existing-customer increase lands, the six-month average sits above that street rate.",
+  "data_asof": "Sep 2026 (StorageCafe street rates); no StorageUnitCosts city page; Oct 2026 (Storage Stats metro)",
+  "units": [
+    {
+      "size": "5x5",
+      "market": [
+        56
+      ],
+      "low": null,
+      "notes": "Locker / closet size. Fixed fees dominate the true cost at this size. StorageCafe street rate $56 (Sep 2026). Climate-controlled figure on the same page ~$61."
+    },
+    {
+      "size": "5x10",
+      "market": [
+        80
+      ],
+      "low": null,
+      "notes": "Walk-in closet; studio overflow. StorageCafe street rate $80 (Sep 2026). Climate-controlled figure on the same page ~$89. No reliable lowest-promo figure published for this size (gap)."
+    },
+    {
+      "size": "10x10",
+      "market": [
+        137,
+        146
+      ],
+      "low": null,
+      "notes": "Most rented size. City street rate $137, down 2.8% from a year earlier (StorageCafe industry statistics, Sep 2026). Storage Stats Sacramento metro non-climate asking rent $146, down 11.2% from a year earlier (updated Oct 28, 2026). That figure covers the metro, not Sacramento alone. StorageUnitCosts does not publish this city. Climate-controlled figure on the same page ~$146."
+    },
+    {
+      "size": "10x15",
+      "market": [
+        175
+      ],
+      "low": null,
+      "notes": "Two-bedroom contents. StorageCafe street rate $175 (Sep 2026). Climate-controlled figure on the same page ~$184."
+    },
+    {
+      "size": "10x20",
+      "market": [
+        214
+      ],
+      "low": null,
+      "notes": "Three-bedroom home or a car. StorageCafe street rate $214 (Sep 2026). Climate-controlled figure on the same page ~$238."
+    }
+  ],
+  "local_tips": [
+    "StorageCafe lists Bandaccari Terrace (~$76), Overbrook (~$103), Travelodge Mobile Home Park (~$105) among the cheaper areas for a standard unit. Larchmont Foothills (~$274) is among the highest.",
+    "Sacramento has about 92 facilities and 5.0 sq ft of storage per person (StorageCafe).",
+    "About 194,991 sq ft of new storage is projected for 2026, a increase of 112.7% from the year before (StorageCafe). Ask what month five costs before taking a move-in discount.",
+    "Extra Space's published admin fee is $50 on StorageUnitCosts' fee notes, higher than our $29 default; adjust the calculator if your facility charges more."
+  ],
+  "sources": [
+    {
+      "label": "StorageCafe — Sacramento, CA self storage prices and stats (Sep 2026)",
+      "url": "https://www.storagecafe.com/self-storage-industry-statistics/us/ca/sacramento/"
+    },
+    {
+      "label": "StorageUnitCosts — Prices by city (20-city set; this city is not included) and the Extra Space admin-fee example",
+      "url": "https://storageunitcosts.com/storage-unit-prices/"
+    },
+    {
+      "label": "Storage Stats — Sacramento metro self-storage market data (updated Oct 28, 2026)",
+      "url": "https://storagestats.com/markets/sacramento-ca/"
+    },
+    {
+      "label": "Public Storage — Storage deals (promo terms; admin fee and other fees apply)",
+      "url": "https://www.publicstorage.com/storage-solutions/storage-deals"
+    },
+    {
+      "label": "LegalClarity — Existing customer rate increases (reported 30–40%, cases up to 56%)",
+      "url": "https://legalclarity.org/public-storage-price-gouging-lawsuits-settlements-fines/"
+    }
+  ]
+}

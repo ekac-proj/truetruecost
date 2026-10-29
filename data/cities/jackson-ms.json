@@ -1,0 +1,69 @@
+{
+  "intro": "Jackson's non-climate 10x10 street rate is $80/month, down 3.6% from a year earlier (StorageCafe, September 2026). The climate-controlled 10x10 figure on the same StorageCafe page is about $112. StorageUnitCosts does not publish this city, and Storage Stats has no market page for it, so that StorageCafe figure is the advertised rate. Once the move-in special ends and the first existing-customer increase lands, the six-month average sits above that street rate.",
+  "data_asof": "Sep 2026 (StorageCafe street rates); no StorageUnitCosts city page; no Storage Stats market page",
+  "units": [
+    {
+      "size": "5x5",
+      "market": [
+        36
+      ],
+      "low": null,
+      "notes": "Locker / closet size. Fixed fees dominate the true cost at this size. StorageCafe street rate $36 (Sep 2026). Climate-controlled figure on the same page ~$47."
+    },
+    {
+      "size": "5x10",
+      "market": [
+        53
+      ],
+      "low": null,
+      "notes": "Walk-in closet; studio overflow. StorageCafe street rate $53 (Sep 2026). Climate-controlled figure on the same page ~$74. No reliable lowest-promo figure published for this size (gap)."
+    },
+    {
+      "size": "10x10",
+      "market": [
+        80
+      ],
+      "low": null,
+      "notes": "Most rented size. City street rate $80, down 3.6% from a year earlier (StorageCafe industry statistics, Sep 2026). StorageUnitCosts does not publish this city. Storage Stats does not publish a market page for this city. Climate-controlled figure on the same page ~$112."
+    },
+    {
+      "size": "10x15",
+      "market": [
+        97
+      ],
+      "low": null,
+      "notes": "Two-bedroom contents. StorageCafe street rate $97 (Sep 2026). Climate-controlled figure on the same page ~$142."
+    },
+    {
+      "size": "10x20",
+      "market": [
+        122
+      ],
+      "low": null,
+      "notes": "Three-bedroom home or a car. StorageCafe street rate $122 (Sep 2026). Climate-controlled figure on the same page ~$183."
+    }
+  ],
+  "local_tips": [
+    "StorageCafe lists Englewood (~$70), Woodville Heights (~$82), West Jackson (~$84) among the cheaper areas for a standard unit. Belhaven Heights (~$152) is among the highest.",
+    "Jackson has about 26 facilities and 7.1 sq ft of storage per person (StorageCafe).",
+    "Extra Space's published admin fee is $50 on StorageUnitCosts' fee notes, higher than our $29 default; adjust the calculator if your facility charges more."
+  ],
+  "sources": [
+    {
+      "label": "StorageCafe — Jackson, MS self storage prices and stats (Sep 2026)",
+      "url": "https://www.storagecafe.com/self-storage-industry-statistics/us/ms/jackson/"
+    },
+    {
+      "label": "StorageUnitCosts — Prices by city (20-city set; this city is not included) and the Extra Space admin-fee example",
+      "url": "https://storageunitcosts.com/storage-unit-prices/"
+    },
+    {
+      "label": "Public Storage — Storage deals (promo terms; admin fee and other fees apply)",
+      "url": "https://www.publicstorage.com/storage-solutions/storage-deals"
+    },
+    {
+      "label": "LegalClarity — Existing customer rate increases (reported 30–40%, cases up to 56%)",
+      "url": "https://legalclarity.org/public-storage-price-gouging-lawsuits-settlements-fines/"
+    }
+  ]
+}

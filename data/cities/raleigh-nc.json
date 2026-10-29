@@ -1,0 +1,74 @@
+{
+  "intro": "Raleigh's non-climate 10x10 street rate is $103/month (StorageCafe, September 2026). Storage Stats puts the Raleigh metro non-climate 10x10 asking rent at $116, down 3.3% from a year earlier (October 28, 2026). The climate-controlled 10x10 figure on the same StorageCafe page is about $114. The advertised rate on this page averages the published figures above. Once the move-in special ends and the first existing-customer increase lands, the six-month average sits above that street rate.",
+  "data_asof": "Sep 2026 (StorageCafe street rates); no StorageUnitCosts city page; Oct 2026 (Storage Stats metro)",
+  "units": [
+    {
+      "size": "5x5",
+      "market": [
+        46
+      ],
+      "low": null,
+      "notes": "Locker / closet size. Fixed fees dominate the true cost at this size. StorageCafe street rate $46 (Sep 2026). Climate-controlled figure on the same page ~$47."
+    },
+    {
+      "size": "5x10",
+      "market": [
+        64
+      ],
+      "low": null,
+      "notes": "Walk-in closet; studio overflow. StorageCafe street rate $64 (Sep 2026). Climate-controlled figure on the same page ~$71. No reliable lowest-promo figure published for this size (gap)."
+    },
+    {
+      "size": "10x10",
+      "market": [
+        103,
+        116
+      ],
+      "low": null,
+      "notes": "Most rented size. City street rate $103 (StorageCafe industry statistics, Sep 2026). Storage Stats Raleigh metro non-climate asking rent $116, down 3.3% from a year earlier (updated Oct 28, 2026). That figure covers the metro, not Raleigh alone. StorageUnitCosts does not publish this city. Climate-controlled figure on the same page ~$114."
+    },
+    {
+      "size": "10x15",
+      "market": [
+        137
+      ],
+      "low": null,
+      "notes": "Two-bedroom contents. StorageCafe street rate $137 (Sep 2026). Climate-controlled figure on the same page ~$149."
+    },
+    {
+      "size": "10x20",
+      "market": [
+        164
+      ],
+      "low": null,
+      "notes": "Three-bedroom home or a car. StorageCafe street rate $164 (Sep 2026). Climate-controlled figure on the same page ~$207."
+    }
+  ],
+  "local_tips": [
+    "StorageCafe lists Bashford Ridge (~$75), Trinity Park (~$101), Village of Fox Run (~$103) among the cheaper areas for a standard unit. Woodcrest (~$359) is among the highest.",
+    "Raleigh has about 81 facilities and 7.4 sq ft of storage per person (StorageCafe).",
+    "Extra Space's published admin fee is $50 on StorageUnitCosts' fee notes, higher than our $29 default; adjust the calculator if your facility charges more."
+  ],
+  "sources": [
+    {
+      "label": "StorageCafe — Raleigh, NC self storage prices and stats (Sep 2026)",
+      "url": "https://www.storagecafe.com/self-storage-industry-statistics/us/nc/raleigh/"
+    },
+    {
+      "label": "StorageUnitCosts — Prices by city (20-city set; this city is not included) and the Extra Space admin-fee example",
+      "url": "https://storageunitcosts.com/storage-unit-prices/"
+    },
+    {
+      "label": "Storage Stats — Raleigh metro self-storage market data (updated Oct 28, 2026)",
+      "url": "https://storagestats.com/markets/raleigh-nc/"
+    },
+    {
+      "label": "Public Storage — Storage deals (promo terms; admin fee and other fees apply)",
+      "url": "https://www.publicstorage.com/storage-solutions/storage-deals"
+    },
+    {
+      "label": "LegalClarity — Existing customer rate increases (reported 30–40%, cases up to 56%)",
+      "url": "https://legalclarity.org/public-storage-price-gouging-lawsuits-settlements-fines/"
+    }
+  ]
+}

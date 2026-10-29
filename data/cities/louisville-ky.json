@@ -1,0 +1,75 @@
+{
+  "intro": "Louisville's non-climate 10x10 street rate is $90/month, down 3.2% from a year earlier (StorageCafe, September 2026). Storage Stats puts the Louisville metro non-climate 10x10 asking rent at $95 (October 28, 2026). The climate-controlled 10x10 figure on the same StorageCafe page is about $109. The advertised rate on this page averages the published figures above. Once the move-in special ends and the first existing-customer increase lands, the six-month average sits above that street rate.",
+  "data_asof": "Sep 2026 (StorageCafe street rates); no StorageUnitCosts city page; Oct 2026 (Storage Stats metro)",
+  "units": [
+    {
+      "size": "5x5",
+      "market": [
+        39
+      ],
+      "low": null,
+      "notes": "Locker / closet size. Fixed fees dominate the true cost at this size. StorageCafe street rate $39 (Sep 2026). Climate-controlled figure on the same page ~$41."
+    },
+    {
+      "size": "5x10",
+      "market": [
+        56
+      ],
+      "low": null,
+      "notes": "Walk-in closet; studio overflow. StorageCafe street rate $56 (Sep 2026). Climate-controlled figure on the same page ~$68. No reliable lowest-promo figure published for this size (gap)."
+    },
+    {
+      "size": "10x10",
+      "market": [
+        90,
+        95
+      ],
+      "low": null,
+      "notes": "Most rented size. City street rate $90, down 3.2% from a year earlier (StorageCafe industry statistics, Sep 2026). Storage Stats Louisville metro non-climate asking rent $95 (updated Oct 28, 2026). That figure covers the metro, not Louisville alone. StorageUnitCosts does not publish this city. Climate-controlled figure on the same page ~$109."
+    },
+    {
+      "size": "10x15",
+      "market": [
+        119
+      ],
+      "low": null,
+      "notes": "Two-bedroom contents. StorageCafe street rate $119 (Sep 2026). Climate-controlled figure on the same page ~$143."
+    },
+    {
+      "size": "10x20",
+      "market": [
+        151
+      ],
+      "low": null,
+      "notes": "Three-bedroom home or a car. StorageCafe street rate $151 (Sep 2026). Climate-controlled figure on the same page ~$187."
+    }
+  ],
+  "local_tips": [
+    "StorageCafe lists Greenwood Estates (~$74), Highlands (~$79), Apple Valley (~$79) among the cheaper areas for a standard unit. Pleasant Valley (~$237) is among the highest.",
+    "Louisville has about 92 facilities and 7.5 sq ft of storage per person (StorageCafe).",
+    "About 152,006 sq ft of new storage is projected for 2026, a increase of 194.8% from the year before (StorageCafe). Ask what month five costs before taking a move-in discount.",
+    "Extra Space's published admin fee is $50 on StorageUnitCosts' fee notes, higher than our $29 default; adjust the calculator if your facility charges more."
+  ],
+  "sources": [
+    {
+      "label": "StorageCafe — Louisville, KY self storage prices and stats (Sep 2026)",
+      "url": "https://www.storagecafe.com/self-storage-industry-statistics/us/ky/louisville/"
+    },
+    {
+      "label": "StorageUnitCosts — Prices by city (20-city set; this city is not included) and the Extra Space admin-fee example",
+      "url": "https://storageunitcosts.com/storage-unit-prices/"
+    },
+    {
+      "label": "Storage Stats — Louisville metro self-storage market data (updated Oct 28, 2026)",
+      "url": "https://storagestats.com/markets/louisville-ky/"
+    },
+    {
+      "label": "Public Storage — Storage deals (promo terms; admin fee and other fees apply)",
+      "url": "https://www.publicstorage.com/storage-solutions/storage-deals"
+    },
+    {
+      "label": "LegalClarity — Existing customer rate increases (reported 30–40%, cases up to 56%)",
+      "url": "https://legalclarity.org/public-storage-price-gouging-lawsuits-settlements-fines/"
+    }
+  ]
+}

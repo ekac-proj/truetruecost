@@ -1,0 +1,68 @@
+{
+  "intro": "StorageCafe has no city statistics page for Rutland. UnitSight's September 2026 street-rate index, from 4 facilities and 26 listings, puts the standard 10x10 at $183. Climate-controlled rates were not published. StorageUnitCosts and Storage Stats do not publish this city, so the advertised rate is that UnitSight figure. Once the move-in special ends and the first existing-customer increase lands, the six-month average sits above that street rate.",
+  "data_asof": "Sep 2026 (UnitSight standard street rates). No StorageCafe industry-statistics page; climate-controlled rates not published; no StorageUnitCosts city page; no Storage Stats market page.",
+  "units": [
+    {
+      "size": "5x5",
+      "market": [
+        75
+      ],
+      "low": null,
+      "notes": "UnitSight standard street rate $75 (Sep 2026). Climate-controlled not published."
+    },
+    {
+      "size": "5x10",
+      "market": [
+        127
+      ],
+      "low": null,
+      "notes": "UnitSight standard street rate $127 (Sep 2026). No reliable lowest-promo figure published for this size (gap)."
+    },
+    {
+      "size": "10x10",
+      "market": [
+        183
+      ],
+      "low": null,
+      "notes": "UnitSight standard street rate $183 (Sep 2026), 4 facilities and 26 listings. Climate-controlled not published."
+    },
+    {
+      "size": "10x15",
+      "market": [
+        170
+      ],
+      "low": null,
+      "notes": "UnitSight standard street rate $170 (Sep 2026)."
+    },
+    {
+      "size": "10x20",
+      "market": [
+        208
+      ],
+      "low": null,
+      "notes": "UnitSight standard street rate $208 (Sep 2026)."
+    }
+  ],
+  "local_tips": [
+    "UnitSight tracks 4 facilities and 26 listings in Rutland (September 2026). A small sample, so treat the average as a thin-market figure.",
+    "Extra Space's published admin fee is $50 on StorageUnitCosts' fee notes, higher than our $29 default; adjust the calculator if your facility charges more."
+  ],
+  "sources": [
+    {
+      "label": "UnitSight — Rutland, VT self storage prices (September 2026 street rates)",
+      "url": "https://unitsight.com/storage-prices/vt/rutland"
+    },
+    {
+      "label": "StorageUnitCosts — Prices by city (20-city set; this city is not included) and the Extra Space admin-fee example",
+      "url": "https://storageunitcosts.com/storage-unit-prices/"
+    },
+    {
+      "label": "Public Storage — Storage deals (promo terms; admin fee and other fees apply)",
+      "url": "https://www.publicstorage.com/storage-solutions/storage-deals"
+    },
+    {
+      "label": "LegalClarity — Existing customer rate increases (reported 30–40%, cases up to 56%)",
+      "url": "https://legalclarity.org/public-storage-price-gouging-lawsuits-settlements-fines/"
+    }
+  ]
+}

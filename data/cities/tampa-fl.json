@@ -1,0 +1,79 @@
+{
+  "intro": "Tampa's non-climate 10x10 street rate is $117/month, down 3.3% from a year earlier (StorageCafe, September 2026). StorageUnitCosts lists $118 (August 2026). Storage Stats puts the Tampa metro non-climate 10x10 asking rent at $120, down 17.6% from a year earlier (October 28, 2026). The climate-controlled 10x10 figure on the same StorageCafe page is about $135. The advertised rate on this page averages the published figures above. Once the move-in special ends and the first existing-customer increase lands, the six-month average sits above that street rate.",
+  "data_asof": "Sep 2026 (StorageCafe street rates); Aug 2026 (StorageUnitCosts); Oct 2026 (Storage Stats metro)",
+  "units": [
+    {
+      "size": "5x5",
+      "market": [
+        45,
+        46
+      ],
+      "low": null,
+      "notes": "Locker / closet size. Fixed fees dominate the true cost at this size. StorageCafe street rate $45 (Sep 2026). StorageUnitCosts $46 (Aug 2026). Climate-controlled figure on the same page ~$49."
+    },
+    {
+      "size": "5x10",
+      "market": [
+        67,
+        68
+      ],
+      "low": null,
+      "notes": "Walk-in closet; studio overflow. StorageCafe street rate $67 (Sep 2026). StorageUnitCosts $68 (Aug 2026). Climate-controlled figure on the same page ~$81. No reliable lowest-promo figure published for this size (gap)."
+    },
+    {
+      "size": "10x10",
+      "market": [
+        117,
+        118,
+        120
+      ],
+      "low": null,
+      "notes": "Most rented size. City street rate $117, down 3.3% from a year earlier (StorageCafe industry statistics, Sep 2026). StorageUnitCosts $118, down 4.1% from a year earlier (Aug 2026). Storage Stats Tampa metro non-climate asking rent $120, down 17.6% from a year earlier (updated Oct 28, 2026). That figure covers the metro, not Tampa alone. Climate-controlled figure on the same page ~$135."
+    },
+    {
+      "size": "10x15",
+      "market": [
+        159
+      ],
+      "low": null,
+      "notes": "Two-bedroom contents. StorageCafe street rate $159 (Sep 2026). Climate-controlled figure on the same page ~$182."
+    },
+    {
+      "size": "10x20",
+      "market": [
+        196,
+        195
+      ],
+      "low": null,
+      "notes": "Three-bedroom home or a car. StorageCafe street rate $196 (Sep 2026). StorageUnitCosts $195 (Aug 2026). Climate-controlled figure on the same page ~$244."
+    }
+  ],
+  "local_tips": [
+    "StorageCafe lists Macfarlane Park (~$114), Macdill Airforce Base (~$114), University Square (~$123) among the cheaper areas for a standard unit. Carver City - Lincoln Gardens (~$264) is among the highest.",
+    "Tampa has about 114 facilities and 7.1 sq ft of storage per person (StorageCafe).",
+    "About 151,851 sq ft of new storage is projected for 2026 (StorageCafe). Ask what month five costs before taking a move-in discount.",
+    "Extra Space's published admin fee is $50 on StorageUnitCosts' fee notes, higher than our $29 default; adjust the calculator if your facility charges more."
+  ],
+  "sources": [
+    {
+      "label": "StorageCafe — Tampa, FL self storage prices and stats (Sep 2026)",
+      "url": "https://www.storagecafe.com/self-storage-industry-statistics/us/fl/tampa/"
+    },
+    {
+      "label": "StorageUnitCosts — Storage unit prices in Tampa (Aug 2026 rates, updated Oct 2026)",
+      "url": "https://storageunitcosts.com/storage-unit-prices/tampa-fl/"
+    },
+    {
+      "label": "Storage Stats — Tampa metro self-storage market data (updated Oct 28, 2026)",
+      "url": "https://storagestats.com/markets/tampa-fl/"
+    },
+    {
+      "label": "Public Storage — Storage deals (promo terms; admin fee and other fees apply)",
+      "url": "https://www.publicstorage.com/storage-solutions/storage-deals"
+    },
+    {
+      "label": "LegalClarity — Existing customer rate increases (reported 30–40%, cases up to 56%)",
+      "url": "https://legalclarity.org/public-storage-price-gouging-lawsuits-settlements-fines/"
+    }
+  ]
+}

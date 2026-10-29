@@ -1,0 +1,73 @@
+{
+  "intro": "StorageCafe has no city statistics or listings average for New Haven. UnitSight's September 2026 street-rate index, from 5 facilities and 97 listings, puts the standard 10x10 at $155. SpareFoot's unspecified 10x10 average was $146.26 on September 1, 2026, included here as $146. The advertised rate averages those two figures. Once the move-in special ends and the first existing-customer increase lands, the six-month average sits above that street rate.",
+  "data_asof": "Sep 2026 (UnitSight street rates; SpareFoot 10x10 average). No StorageCafe rate table; no StorageUnitCosts city page; no Storage Stats market page.",
+  "units": [
+    {
+      "size": "5x5",
+      "market": [
+        60
+      ],
+      "low": null,
+      "notes": "UnitSight standard street rate $60 (Sep 2026). Climate-controlled ~$85."
+    },
+    {
+      "size": "5x10",
+      "market": [
+        91
+      ],
+      "low": null,
+      "notes": "UnitSight standard street rate $91 (Sep 2026). Climate-controlled ~$132. No reliable lowest-promo figure published for this size (gap)."
+    },
+    {
+      "size": "10x10",
+      "market": [
+        155,
+        146
+      ],
+      "low": null,
+      "notes": "UnitSight standard street rate $155 (Sep 2026), 5 facilities. SpareFoot unspecified average $146.26 on Sep 1, 2026, rounded to $146. Climate-controlled on the UnitSight page ~$232."
+    },
+    {
+      "size": "10x15",
+      "market": [
+        227
+      ],
+      "low": null,
+      "notes": "UnitSight standard street rate $227 (Sep 2026). Climate-controlled ~$282."
+    },
+    {
+      "size": "10x20",
+      "market": [
+        220
+      ],
+      "low": null,
+      "notes": "UnitSight standard street rate $220 (Sep 2026). Climate-controlled ~$421."
+    }
+  ],
+  "local_tips": [
+    "UnitSight tracks 5 facilities and 97 listings in New Haven (September 2026).",
+    "Extra Space's published admin fee is $50 on StorageUnitCosts' fee notes, higher than our $29 default; adjust the calculator if your facility charges more."
+  ],
+  "sources": [
+    {
+      "label": "UnitSight — New Haven, CT self storage prices (September 2026 street rates)",
+      "url": "https://unitsight.com/storage-prices/ct/new-haven"
+    },
+    {
+      "label": "SpareFoot — New Haven, CT average prices (updated Sep 1, 2026; not split by climate)",
+      "url": "https://www.sparefoot.com/New-Haven-CT-self-storage.html"
+    },
+    {
+      "label": "StorageUnitCosts — Prices by city (20-city set; this city is not included) and the Extra Space admin-fee example",
+      "url": "https://storageunitcosts.com/storage-unit-prices/"
+    },
+    {
+      "label": "Public Storage — Storage deals (promo terms; admin fee and other fees apply)",
+      "url": "https://www.publicstorage.com/storage-solutions/storage-deals"
+    },
+    {
+      "label": "LegalClarity — Existing customer rate increases (reported 30–40%, cases up to 56%)",
+      "url": "https://legalclarity.org/public-storage-price-gouging-lawsuits-settlements-fines/"
+    }
+  ]
+}

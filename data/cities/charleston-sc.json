@@ -1,0 +1,75 @@
+{
+  "intro": "Charleston's non-climate 10x10 street rate is $125/month, down 3.9% from a year earlier (StorageCafe, September 2026). Storage Stats puts the Charleston metro non-climate 10x10 asking rent at $117, down 10.3% from a year earlier (October 28, 2026). The climate-controlled 10x10 figure on the same StorageCafe page is about $143. The advertised rate on this page averages the published figures above. Once the move-in special ends and the first existing-customer increase lands, the six-month average sits above that street rate.",
+  "data_asof": "Sep 2026 (StorageCafe street rates); no StorageUnitCosts city page; Oct 2026 (Storage Stats metro)",
+  "units": [
+    {
+      "size": "5x5",
+      "market": [
+        42
+      ],
+      "low": null,
+      "notes": "Locker / closet size. Fixed fees dominate the true cost at this size. StorageCafe street rate $42 (Sep 2026). Climate-controlled figure on the same page ~$50."
+    },
+    {
+      "size": "5x10",
+      "market": [
+        73
+      ],
+      "low": null,
+      "notes": "Walk-in closet; studio overflow. StorageCafe street rate $73 (Sep 2026). Climate-controlled figure on the same page ~$83. No reliable lowest-promo figure published for this size (gap)."
+    },
+    {
+      "size": "10x10",
+      "market": [
+        125,
+        117
+      ],
+      "low": null,
+      "notes": "Most rented size. City street rate $125, down 3.9% from a year earlier (StorageCafe industry statistics, Sep 2026). Storage Stats Charleston metro non-climate asking rent $117, down 10.3% from a year earlier (updated Oct 28, 2026). That figure covers the metro, not Charleston alone. StorageUnitCosts does not publish this city. Climate-controlled figure on the same page ~$143."
+    },
+    {
+      "size": "10x15",
+      "market": [
+        161
+      ],
+      "low": null,
+      "notes": "Two-bedroom contents. StorageCafe street rate $161 (Sep 2026). Climate-controlled figure on the same page ~$214."
+    },
+    {
+      "size": "10x20",
+      "market": [
+        203
+      ],
+      "low": null,
+      "notes": "Three-bedroom home or a car. StorageCafe street rate $203 (Sep 2026). Climate-controlled figure on the same page ~$269."
+    }
+  ],
+  "local_tips": [
+    "StorageCafe lists Cherokee Hall - Sylvan Shores (~$132), Grimball - Signal Point (~$138), Woodland Shores - Pecan Grove (~$143) among the cheaper areas for a standard unit. Air Harbor - Geddes Hall (~$189) is among the highest.",
+    "Charleston has about 35 facilities and 6.5 sq ft of storage per person (StorageCafe).",
+    "About 230,839 sq ft of new storage is projected for 2026 (StorageCafe). Ask what month five costs before taking a move-in discount.",
+    "Extra Space's published admin fee is $50 on StorageUnitCosts' fee notes, higher than our $29 default; adjust the calculator if your facility charges more."
+  ],
+  "sources": [
+    {
+      "label": "StorageCafe — Charleston, SC self storage prices and stats (Sep 2026)",
+      "url": "https://www.storagecafe.com/self-storage-industry-statistics/us/sc/charleston/"
+    },
+    {
+      "label": "StorageUnitCosts — Prices by city (20-city set; this city is not included) and the Extra Space admin-fee example",
+      "url": "https://storageunitcosts.com/storage-unit-prices/"
+    },
+    {
+      "label": "Storage Stats — Charleston metro self-storage market data (updated Oct 28, 2026)",
+      "url": "https://storagestats.com/markets/charleston-sc/"
+    },
+    {
+      "label": "Public Storage — Storage deals (promo terms; admin fee and other fees apply)",
+      "url": "https://www.publicstorage.com/storage-solutions/storage-deals"
+    },
+    {
+      "label": "LegalClarity — Existing customer rate increases (reported 30–40%, cases up to 56%)",
+      "url": "https://legalclarity.org/public-storage-price-gouging-lawsuits-settlements-fines/"
+    }
+  ]
+}

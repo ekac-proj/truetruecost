@@ -1,0 +1,73 @@
+{
+  "intro": "St. Paul's non-climate 10x10 street rate is $123/month, down 2.4% from a year earlier (StorageCafe, September 2026). Storage Stats puts the Minneapolis–St. Paul metro non-climate 10x10 asking rent at $106, up 1.9% from a year earlier (October 28, 2026). The climate-controlled 10x10 figure on the same StorageCafe page is about $121. The advertised rate on this page averages the published figures above. Once the move-in special ends and the first existing-customer increase lands, the six-month average sits above that street rate.",
+  "data_asof": "Sep 2026 (StorageCafe street rates); no StorageUnitCosts city page; Oct 2026 (Storage Stats metro)",
+  "units": [
+    {
+      "size": "5x5",
+      "market": [
+        52
+      ],
+      "low": null,
+      "notes": "Locker / closet size. Fixed fees dominate the true cost at this size. StorageCafe street rate $52 (Sep 2026). Climate-controlled figure on the same page ~$52."
+    },
+    {
+      "size": "5x10",
+      "market": [
+        76
+      ],
+      "low": null,
+      "notes": "Walk-in closet; studio overflow. StorageCafe street rate $76 (Sep 2026). Climate-controlled figure on the same page ~$75. No reliable lowest-promo figure published for this size (gap)."
+    },
+    {
+      "size": "10x10",
+      "market": [
+        123,
+        106
+      ],
+      "low": null,
+      "notes": "Most rented size. City street rate $123, down 2.4% from a year earlier (StorageCafe industry statistics, Sep 2026). Storage Stats Minneapolis–St. Paul metro non-climate asking rent $106, up 1.9% from a year earlier (updated Oct 28, 2026). That figure covers the metro, not St. Paul alone. StorageUnitCosts does not publish this city. Climate-controlled figure on the same page ~$121."
+    },
+    {
+      "size": "10x15",
+      "market": [
+        154
+      ],
+      "low": null,
+      "notes": "Two-bedroom contents. StorageCafe street rate $154 (Sep 2026). Climate-controlled figure on the same page ~$156."
+    },
+    {
+      "size": "10x20",
+      "market": [
+        211
+      ],
+      "low": null,
+      "notes": "Three-bedroom home or a car. StorageCafe street rate $211 (Sep 2026). Climate-controlled figure on the same page ~$210."
+    }
+  ],
+  "local_tips": [
+    "St. Paul has about 16 facilities and 3.3 sq ft of storage per person (StorageCafe).",
+    "Extra Space's published admin fee is $50 on StorageUnitCosts' fee notes, higher than our $29 default; adjust the calculator if your facility charges more."
+  ],
+  "sources": [
+    {
+      "label": "StorageCafe — St. Paul, MN self storage prices and stats (Sep 2026)",
+      "url": "https://www.storagecafe.com/self-storage-industry-statistics/us/mn/st-paul/"
+    },
+    {
+      "label": "StorageUnitCosts — Prices by city (20-city set; this city is not included) and the Extra Space admin-fee example",
+      "url": "https://storageunitcosts.com/storage-unit-prices/"
+    },
+    {
+      "label": "Storage Stats — Minneapolis–St. Paul metro self-storage market data (updated Oct 28, 2026)",
+      "url": "https://storagestats.com/markets/minneapolis-st-paul-mn/"
+    },
+    {
+      "label": "Public Storage — Storage deals (promo terms; admin fee and other fees apply)",
+      "url": "https://www.publicstorage.com/storage-solutions/storage-deals"
+    },
+    {
+      "label": "LegalClarity — Existing customer rate increases (reported 30–40%, cases up to 56%)",
+      "url": "https://legalclarity.org/public-storage-price-gouging-lawsuits-settlements-fines/"
+    }
+  ]
+}

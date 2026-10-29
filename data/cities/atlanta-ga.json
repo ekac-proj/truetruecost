@@ -1,0 +1,79 @@
+{
+  "intro": "Atlanta's non-climate 10x10 street rate is $130/month, down 4.4% from a year earlier (StorageCafe, September 2026). StorageUnitCosts lists $133 (August 2026). Storage Stats puts the Atlanta metro non-climate 10x10 asking rent at $97, down 6.7% from a year earlier (October 28, 2026). The climate-controlled 10x10 figure on the same StorageCafe page is about $133. The advertised rate on this page averages the published figures above. Once the move-in special ends and the first existing-customer increase lands, the six-month average sits above that street rate.",
+  "data_asof": "Sep 2026 (StorageCafe street rates); Aug 2026 (StorageUnitCosts); Oct 2026 (Storage Stats metro)",
+  "units": [
+    {
+      "size": "5x5",
+      "market": [
+        56,
+        58
+      ],
+      "low": null,
+      "notes": "Locker / closet size. Fixed fees dominate the true cost at this size. StorageCafe street rate $56 (Sep 2026). StorageUnitCosts $58 (Aug 2026). Climate-controlled figure on the same page ~$52."
+    },
+    {
+      "size": "5x10",
+      "market": [
+        84,
+        85
+      ],
+      "low": null,
+      "notes": "Walk-in closet; studio overflow. StorageCafe street rate $84 (Sep 2026). StorageUnitCosts $85 (Aug 2026). Climate-controlled figure on the same page ~$82. No reliable lowest-promo figure published for this size (gap)."
+    },
+    {
+      "size": "10x10",
+      "market": [
+        130,
+        133,
+        97
+      ],
+      "low": null,
+      "notes": "Most rented size. City street rate $130, down 4.4% from a year earlier (StorageCafe industry statistics, Sep 2026). StorageUnitCosts $133, down 3.6% from a year earlier (Aug 2026). Storage Stats Atlanta metro non-climate asking rent $97, down 6.7% from a year earlier (updated Oct 28, 2026). That figure covers the metro, not Atlanta alone. Climate-controlled figure on the same page ~$133."
+    },
+    {
+      "size": "10x15",
+      "market": [
+        171
+      ],
+      "low": null,
+      "notes": "Two-bedroom contents. StorageCafe street rate $171 (Sep 2026). Climate-controlled figure on the same page ~$180."
+    },
+    {
+      "size": "10x20",
+      "market": [
+        227,
+        228
+      ],
+      "low": null,
+      "notes": "Three-bedroom home or a car. StorageCafe street rate $227 (Sep 2026). StorageUnitCosts $228 (Aug 2026). Climate-controlled figure on the same page ~$239."
+    }
+  ],
+  "local_tips": [
+    "StorageCafe lists Highland (~$101), Bolton (~$105), Brown Field (~$121) among the cheaper areas for a standard unit. Sweet Auburn (~$304) is among the highest.",
+    "Atlanta has about 75 facilities and 4.9 sq ft of storage per person (StorageCafe).",
+    "About 211,273 sq ft of new storage is projected for 2026 (StorageCafe). Ask what month five costs before taking a move-in discount.",
+    "Extra Space's published admin fee is $50 on StorageUnitCosts' fee notes, higher than our $29 default; adjust the calculator if your facility charges more."
+  ],
+  "sources": [
+    {
+      "label": "StorageCafe — Atlanta, GA self storage prices and stats (Sep 2026)",
+      "url": "https://www.storagecafe.com/self-storage-industry-statistics/us/ga/atlanta/"
+    },
+    {
+      "label": "StorageUnitCosts — Storage unit prices in Atlanta (Aug 2026 rates, updated Oct 2026)",
+      "url": "https://storageunitcosts.com/storage-unit-prices/atlanta-ga/"
+    },
+    {
+      "label": "Storage Stats — Atlanta metro self-storage market data (updated Oct 28, 2026)",
+      "url": "https://storagestats.com/markets/atlanta-ga/"
+    },
+    {
+      "label": "Public Storage — Storage deals (promo terms; admin fee and other fees apply)",
+      "url": "https://www.publicstorage.com/storage-solutions/storage-deals"
+    },
+    {
+      "label": "LegalClarity — Existing customer rate increases (reported 30–40%, cases up to 56%)",
+      "url": "https://legalclarity.org/public-storage-price-gouging-lawsuits-settlements-fines/"
+    }
+  ]
+}

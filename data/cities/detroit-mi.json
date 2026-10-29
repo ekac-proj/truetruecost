@@ -1,0 +1,74 @@
+{
+  "intro": "Detroit's non-climate 10x10 street rate is $159/month, up 0.6% from a year earlier (StorageCafe, September 2026). Storage Stats puts the Detroit metro non-climate 10x10 asking rent at $120, down 13.8% from a year earlier (October 28, 2026). The climate-controlled 10x10 figure on the same StorageCafe page is about $164. The advertised rate on this page averages the published figures above. Once the move-in special ends and the first existing-customer increase lands, the six-month average sits above that street rate.",
+  "data_asof": "Sep 2026 (StorageCafe street rates); no StorageUnitCosts city page; Oct 2026 (Storage Stats metro)",
+  "units": [
+    {
+      "size": "5x5",
+      "market": [
+        75
+      ],
+      "low": null,
+      "notes": "Locker / closet size. Fixed fees dominate the true cost at this size. StorageCafe street rate $75 (Sep 2026). Climate-controlled figure on the same page ~$80."
+    },
+    {
+      "size": "5x10",
+      "market": [
+        102
+      ],
+      "low": null,
+      "notes": "Walk-in closet; studio overflow. StorageCafe street rate $102 (Sep 2026). Climate-controlled figure on the same page ~$110. No reliable lowest-promo figure published for this size (gap)."
+    },
+    {
+      "size": "10x10",
+      "market": [
+        159,
+        120
+      ],
+      "low": null,
+      "notes": "Most rented size. City street rate $159, up 0.6% from a year earlier (StorageCafe industry statistics, Sep 2026). Storage Stats Detroit metro non-climate asking rent $120, down 13.8% from a year earlier (updated Oct 28, 2026). That figure covers the metro, not Detroit alone. StorageUnitCosts does not publish this city. Climate-controlled figure on the same page ~$164."
+    },
+    {
+      "size": "10x15",
+      "market": [
+        214
+      ],
+      "low": null,
+      "notes": "Two-bedroom contents. StorageCafe street rate $214 (Sep 2026). Climate-controlled figure on the same page ~$194."
+    },
+    {
+      "size": "10x20",
+      "market": [
+        277
+      ],
+      "low": null,
+      "notes": "Three-bedroom home or a car. StorageCafe street rate $277 (Sep 2026). Climate-controlled figure on the same page ~$251."
+    }
+  ],
+  "local_tips": [
+    "Detroit has about 14 facilities and 1.0 sq ft of storage per person (StorageCafe).",
+    "About 74,754 sq ft of new storage is projected for 2026, a increase of 0.6% from the year before (StorageCafe). Ask what month five costs before taking a move-in discount.",
+    "Extra Space's published admin fee is $50 on StorageUnitCosts' fee notes, higher than our $29 default; adjust the calculator if your facility charges more."
+  ],
+  "sources": [
+    {
+      "label": "StorageCafe — Detroit, MI self storage prices and stats (Sep 2026)",
+      "url": "https://www.storagecafe.com/self-storage-industry-statistics/us/mi/detroit/"
+    },
+    {
+      "label": "StorageUnitCosts — Prices by city (20-city set; this city is not included) and the Extra Space admin-fee example",
+      "url": "https://storageunitcosts.com/storage-unit-prices/"
+    },
+    {
+      "label": "Storage Stats — Detroit metro self-storage market data (updated Oct 28, 2026)",
+      "url": "https://storagestats.com/markets/detroit-mi/"
+    },
+    {
+      "label": "Public Storage — Storage deals (promo terms; admin fee and other fees apply)",
+      "url": "https://www.publicstorage.com/storage-solutions/storage-deals"
+    },
+    {
+      "label": "LegalClarity — Existing customer rate increases (reported 30–40%, cases up to 56%)",
+      "url": "https://legalclarity.org/public-storage-price-gouging-lawsuits-settlements-fines/"
+    }
+  ]
+}

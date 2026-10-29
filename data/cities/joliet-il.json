@@ -1,0 +1,67 @@
+{
+  "intro": "StorageCafe has no industry-statistics page for Joliet. Its listings page puts the non-climate 10x10 average at $138/month (September 2026). The climate-controlled 10x10 figure on the same StorageCafe page is about $133. StorageUnitCosts does not publish this city, and Storage Stats has no market page for it, so that StorageCafe figure is the advertised rate. Once the move-in special ends and the first existing-customer increase lands, the six-month average sits above that street rate.",
+  "data_asof": "Sep 2026 (StorageCafe listings non-climate averages; no industry-statistics page); no StorageUnitCosts city page; no Storage Stats market page",
+  "units": [
+    {
+      "size": "5x5",
+      "market": [
+        54
+      ],
+      "low": null,
+      "notes": "Locker / closet size. Fixed fees dominate the true cost at this size. StorageCafe listings non-climate average $54 (Sep 2026). Only one published figure for this size. Climate-controlled figure on the same page ~$57."
+    },
+    {
+      "size": "5x10",
+      "market": [
+        92
+      ],
+      "low": null,
+      "notes": "Walk-in closet; studio overflow. StorageCafe listings non-climate average $92 (Sep 2026). Only one published figure for this size. Climate-controlled figure on the same page ~$81. No reliable lowest-promo figure published for this size (gap)."
+    },
+    {
+      "size": "10x10",
+      "market": [
+        138
+      ],
+      "low": 100,
+      "notes": "Most rented size. Listings-page non-climate average $138 (StorageCafe, Sep 2026). No industry-statistics street-rate page for this city. StorageUnitCosts does not publish this city. Storage Stats does not publish a market page for this city. Climate-controlled figure on the same page ~$133. Non-climate listings from about $100 (Oct 2026)."
+    },
+    {
+      "size": "10x15",
+      "market": [
+        188
+      ],
+      "low": null,
+      "notes": "Two-bedroom contents. StorageCafe listings non-climate average $188 (Sep 2026). Only one published figure for this size. Climate-controlled figure on the same page ~$186."
+    },
+    {
+      "size": "10x20",
+      "market": [
+        212
+      ],
+      "low": 190,
+      "notes": "Three-bedroom home or a car. StorageCafe listings non-climate average $212 (Sep 2026). Only one published figure for this size. Climate-controlled figure on the same page ~$272. Non-climate listings from about $190 (Oct 2026)."
+    }
+  ],
+  "local_tips": [
+    "Extra Space's published admin fee is $50 on StorageUnitCosts' fee notes, higher than our $29 default; adjust the calculator if your facility charges more."
+  ],
+  "sources": [
+    {
+      "label": "StorageCafe — Storage units in Joliet, IL (average prices, Sep 2026)",
+      "url": "https://www.storagecafe.com/self-storage/us/il/joliet/"
+    },
+    {
+      "label": "StorageUnitCosts — Prices by city (20-city set; this city is not included) and the Extra Space admin-fee example",
+      "url": "https://storageunitcosts.com/storage-unit-prices/"
+    },
+    {
+      "label": "Public Storage — Storage deals (promo terms; admin fee and other fees apply)",
+      "url": "https://www.publicstorage.com/storage-solutions/storage-deals"
+    },
+    {
+      "label": "LegalClarity — Existing customer rate increases (reported 30–40%, cases up to 56%)",
+      "url": "https://legalclarity.org/public-storage-price-gouging-lawsuits-settlements-fines/"
+    }
+  ]
+}
