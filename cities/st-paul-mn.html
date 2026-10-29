@@ -18,7 +18,7 @@
 <header class="site"><div class="wrap">
   <div><a class="brand" href="../index.html">TrueTrueCost</a>
   <p class="tagline">Storage · the price after the promo</p></div>
-  <nav class="main" aria-label="Main"><a href="../index.html">Home</a><a href="../index.html#cities" aria-current="page">Cities</a><a href="../how-it-works.html">How it works</a><a href="../size-guide.html">Size guide</a><a href="../about.html">About</a></nav>
+  <nav class="main" aria-label="Main"><a href="../index.html">Home</a><a href="../index.html#cities" aria-current="page">Cities</a><a href="../how-it-works.html">How it works</a><a href="../size-guide.html">Size guide</a><a href="../near.html">Your ZIP</a><a href="../about.html">About</a></nav>
 </div></header>
 
 <main class="wrap">
@@ -34,6 +34,20 @@
 </div>
 
 <p class="note"><strong>Estimates, not live quotes.</strong> Built from public price pages (sources below; data as of Sep 2026 (StorageCafe street rates); no StorageUnitCosts city page; Oct 2026 (Storage Stats metro)). Your facility, unit and move-in date will differ — always ask for the full move-in total and the rate-change policy in writing.</p>
+
+<section class="zip-tool" id="near">
+<h2>Your ZIP</h2>
+<p>The rates on this page are the St. Paul city average. A ZIP code is only used to choose a city page. Census land area decides the match: about half or more of the ZIP Code Tabulation Area has to sit inside the city. We do not publish a dollar figure for a ZIP code.</p>
+<form class="zip-form" action="../near.html" method="get">
+  <label>ZIP code
+    <input name="zip" inputmode="numeric" autocomplete="postal-code" pattern="[0-9]{5}" minlength="5" maxlength="5" required>
+  </label>
+  <input type="hidden" name="from" value="st-paul-mn">
+  <button class="btn solid" type="submit">Check this ZIP</button>
+</form>
+<p class="small">The check opens a result page. The ZIP is put in the page address and looked up in your browser from a Census crosswalk. <a href="../near.html">How ZIP matching works</a>.</p>
+<p>Neighborhood street rates are not on file for St. Paul. The table on this page is the city average.</p>
+</section>
 
 <p class="quotes-label" id="renters-say">Renters say</p>
 <div class="quotes" aria-labelledby="renters-say">
@@ -54,11 +68,11 @@
   <th scope="col">Notes</th>
 </tr></thead>
 <tbody>
-<tr><th scope="row">5x5</th><td class="true"><span class="big">~$70/mo</span><span class="small">range $67–$71<br>rent only $53</span></td><td><span class="big">$52</span><span class="small">single source — estimate<br>lowest promo: no public figure</span></td><td><span class="big">~$68</span><span class="small">range $60–$73</span></td><td class="notes">Locker / closet size. Fixed fees dominate the true cost at this size. StorageCafe street rate $52 (Sep 2026). Climate-controlled figure on the same page ~$52.</td></tr>
-<tr><th scope="row">5x10</th><td class="true"><span class="big">~$94/mo</span><span class="small">range $90–$97<br>rent only $77</span></td><td><span class="big">$76</span><span class="small">single source — estimate<br>lowest promo: no public figure</span></td><td><span class="big">~$99</span><span class="small">range $87–$106</span></td><td class="notes">Walk-in closet; studio overflow. StorageCafe street rate $76 (Sep 2026). Climate-controlled figure on the same page ~$75. No reliable lowest-promo figure published for this size (gap).</td></tr>
-<tr><th scope="row">10x10</th><td class="true"><span class="big">~$133/mo</span><span class="small">range $128–$137<br>rent only $116</span></td><td><span class="big">$114</span><span class="small">avg of 2 sources<br>lowest promo: no public figure</span></td><td><span class="big">~$149</span><span class="small">range $132–$160</span></td><td class="notes">Most rented size. City street rate $123, down 2.4% from a year earlier (StorageCafe industry statistics, Sep 2026). Storage Stats Minneapolis–St. Paul metro non-climate asking rent $106, up 1.9% from a year earlier (updated Oct 28, 2026). That figure covers the metro, not St. Paul alone. StorageUnitCosts does not publish this city. Climate-controlled figure on the same page ~$121.</td></tr>
-<tr><th scope="row">10x15</th><td class="true"><span class="big">~$173/mo</span><span class="small">range $166–$179<br>rent only $157</span></td><td><span class="big">$154</span><span class="small">single source — estimate<br>lowest promo: no public figure</span></td><td><span class="big">~$200</span><span class="small">range $177–$216</span></td><td class="notes">Two-bedroom contents. StorageCafe street rate $154 (Sep 2026). Climate-controlled figure on the same page ~$156.</td></tr>
-<tr><th scope="row">10x20</th><td class="true"><span class="big">~$231/mo</span><span class="small">range $221–$238<br>rent only $215</span></td><td><span class="big">$211</span><span class="small">single source — estimate<br>lowest promo: no public figure</span></td><td><span class="big">~$274</span><span class="small">range $243–$295</span></td><td class="notes">Three-bedroom home or a car. StorageCafe street rate $211 (Sep 2026). Climate-controlled figure on the same page ~$210.</td></tr>
+<tr><th scope="row" id="size-5x5">5x5</th><td class="true"><span class="big">~$70/mo</span><span class="small">range $67–$71<br>rent only $53</span></td><td><span class="big">$52</span><span class="small">single source — estimate<br>lowest promo: no public figure</span></td><td><span class="big">~$68</span><span class="small">range $60–$73</span></td><td class="notes">Locker / closet size. Fixed fees dominate the true cost at this size. StorageCafe street rate $52 (Sep 2026). Climate-controlled figure on the same page ~$52.</td></tr>
+<tr><th scope="row" id="size-5x10">5x10</th><td class="true"><span class="big">~$94/mo</span><span class="small">range $90–$97<br>rent only $77</span></td><td><span class="big">$76</span><span class="small">single source — estimate<br>lowest promo: no public figure</span></td><td><span class="big">~$99</span><span class="small">range $87–$106</span></td><td class="notes">Walk-in closet; studio overflow. StorageCafe street rate $76 (Sep 2026). Climate-controlled figure on the same page ~$75. No reliable lowest-promo figure published for this size (gap).</td></tr>
+<tr><th scope="row" id="size-10x10">10x10</th><td class="true"><span class="big">~$133/mo</span><span class="small">range $128–$137<br>rent only $116</span></td><td><span class="big">$114</span><span class="small">avg of 2 sources<br>lowest promo: no public figure</span></td><td><span class="big">~$149</span><span class="small">range $132–$160</span></td><td class="notes">Most rented size. City street rate $123, down 2.4% from a year earlier (StorageCafe industry statistics, Sep 2026). Storage Stats Minneapolis–St. Paul metro non-climate asking rent $106, up 1.9% from a year earlier (updated Oct 28, 2026). That figure covers the metro, not St. Paul alone. StorageUnitCosts does not publish this city. Climate-controlled figure on the same page ~$121.</td></tr>
+<tr><th scope="row" id="size-10x15">10x15</th><td class="true"><span class="big">~$173/mo</span><span class="small">range $166–$179<br>rent only $157</span></td><td><span class="big">$154</span><span class="small">single source — estimate<br>lowest promo: no public figure</span></td><td><span class="big">~$200</span><span class="small">range $177–$216</span></td><td class="notes">Two-bedroom contents. StorageCafe street rate $154 (Sep 2026). Climate-controlled figure on the same page ~$156.</td></tr>
+<tr><th scope="row" id="size-10x20">10x20</th><td class="true"><span class="big">~$231/mo</span><span class="small">range $221–$238<br>rent only $215</span></td><td><span class="big">$211</span><span class="small">single source — estimate<br>lowest promo: no public figure</span></td><td><span class="big">~$274</span><span class="small">range $243–$295</span></td><td class="notes">Three-bedroom home or a car. StorageCafe street rate $211 (Sep 2026). Climate-controlled figure on the same page ~$210.</td></tr>
 </tbody>
 </table>
 </div>
@@ -128,7 +142,7 @@
   </div>
   <div>
     <h4>Explore</h4>
-    <ul><li><a href="../index.html#cities">Cities</a></li><li><a href="../how-it-works.html">How it works &amp; methodology</a></li><li><a href="../size-guide.html">Size guide</a></li><li><a href="../about.html">About</a></li><li><a href="../privacy.html">Privacy Policy</a></li><li><a href="../terms.html">Terms of Use</a></li><li><a href="../sitemap.xml">Sitemap</a></li></ul>
+    <ul><li><a href="../index.html#cities">Cities</a></li><li><a href="../how-it-works.html">How it works &amp; methodology</a></li><li><a href="../size-guide.html">Size guide</a></li><li><a href="../near.html">Your ZIP</a></li><li><a href="../about.html">About</a></li><li><a href="../privacy.html">Privacy Policy</a></li><li><a href="../terms.html">Terms of Use</a></li><li><a href="../sitemap.xml">Sitemap</a></li></ul>
   </div>
   <div>
     <h4>Disclosure</h4>

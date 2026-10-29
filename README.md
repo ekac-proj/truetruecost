@@ -8,6 +8,8 @@ self-storage by city (promo rate vs. post-increase rate + fees). Plain HTML/CSS/
 index.html            home: problem, method, US state map, city tiles grouped by state (auto-generated between CITY_LIST markers), disclaimer
 about.html            about / affiliate disclosure
 how-it-works.html     methodology (linked from nav + footer)
+size-guide.html       unit size guide and quiz
+near.html             ZIP → published city page (Census ZCTA). No ZIP-level prices.
 size-guide.html       5x5–10x20 size guide and a browser-only "what do you need?" quiz
 cities/_template.html city page template ({{PLACEHOLDERS}})
 cities/<slug>.html    generated city pages (austin-tx, dallas-tx)
@@ -44,6 +46,18 @@ City pages link “Not sure what size?” to `size-guide.html?city=<slug>&name=<
 Slugs: lowercase, hyphenated, `city-st`. To change the cost model, edit `data/site.json` and re-run
 `python3 scripts/add_city.py --all` — calculator defaults (fee, protection, increase %, increase month, promo %, months) are filled from
 `data/site.json` automatically; the rate field is prefilled with each city's 10x10 market rate.
+
+## ZIP check
+`near.html` maps a ZIP code to a city page we already publish. Geography is the Census Bureau 2020 ZCTA-to-place relationship file (a ZCTA approximates a USPS ZIP code). A match requires about half or more of the ZCTA’s land area inside that Census place. Rates on the result are the city average, plus StorageCafe area examples already present in city `local_tips` where those sentences name a price. The page does not invent a ZIP dollar figure, and it does not assign a ZIP to a neighborhood.
+
+The browser loads `data/zip-lookup.json`. Rebuild that file only when cities or the Census extract change:
+
+```
+python3 scripts/build_zip_lookup.py --census-dir /tmp/census
+python3 scripts/test_zip_lookup.py
+```
+
+Census inputs (not committed): `tab20_zcta520_place20_natl.txt`, `2020_Gaz_zcta_national.txt`, `2020_Gaz_place_national.txt`.
 
 ## Renter quotes
 The "Renters say" strip under the key figures pulls 2 quotes per city (deterministic by slug) from `renter_quotes` in

@@ -18,7 +18,7 @@
 <header class="site"><div class="wrap">
   <div><a class="brand" href="../index.html">TrueTrueCost</a>
   <p class="tagline">Storage · the price after the promo</p></div>
-  <nav class="main" aria-label="Main"><a href="../index.html">Home</a><a href="../index.html#cities" aria-current="page">Cities</a><a href="../how-it-works.html">How it works</a><a href="../size-guide.html">Size guide</a><a href="../about.html">About</a></nav>
+  <nav class="main" aria-label="Main"><a href="../index.html">Home</a><a href="../index.html#cities" aria-current="page">Cities</a><a href="../how-it-works.html">How it works</a><a href="../size-guide.html">Size guide</a><a href="../near.html">Your ZIP</a><a href="../about.html">About</a></nav>
 </div></header>
 
 <main class="wrap">
@@ -34,6 +34,34 @@
 </div>
 
 <p class="note"><strong>Estimates, not live quotes.</strong> Built from public price pages (sources below; data as of Sep 2026 (StorageCafe street rates); Aug 2026 (StorageUnitCosts); Oct 2026 (Storage Stats metro)). Your facility, unit and move-in date will differ — always ask for the full move-in total and the rate-change policy in writing.</p>
+
+<section class="zip-tool" id="near">
+<h2>Your ZIP</h2>
+<p>The rates on this page are the Denver city average. A ZIP code is only used to choose a city page. Census land area decides the match: about half or more of the ZIP Code Tabulation Area has to sit inside the city. We do not publish a dollar figure for a ZIP code.</p>
+<form class="zip-form" action="../near.html" method="get">
+  <label>ZIP code
+    <input name="zip" inputmode="numeric" autocomplete="postal-code" pattern="[0-9]{5}" minlength="5" maxlength="5" required>
+  </label>
+  <input type="hidden" name="from" value="denver-co">
+  <button class="btn solid" type="submit">Check this ZIP</button>
+</form>
+<p class="small">The check opens a result page. The ZIP is put in the page address and looked up in your browser from a Census crosswalk. <a href="../near.html">How ZIP matching works</a>.</p>
+<div class="area-bands">
+<h3>Area examples StorageCafe published (Sep 2026)</h3>
+<p>These are street rates for what StorageCafe calls a standard unit, copied from that city statistics page. They show how wide the spread between named areas can be. They are not a price for your ZIP, not a facility quote, and not the six-month true cost on this page. Your ZIP is not matched to any of these areas.</p>
+<div class="band-grid">
+<div><h4>Lower-priced areas they named</h4><ul>
+<li><span class="band-name">Cory - Merrill</span><span class="band-rate">~$111</span></li>
+<li><span class="band-name">Hampden</span><span class="band-rate">~$118</span></li>
+<li><span class="band-name">Windsor</span><span class="band-rate">~$120</span></li>
+</ul></div>
+<div><h4>Higher-priced areas they named</h4><ul>
+<li><span class="band-name">Capitol Hill</span><span class="band-rate">~$553</span></li>
+</ul></div>
+</div>
+<p class="small">Source: <a href="https://www.storagecafe.com/self-storage-industry-statistics/us/co/denver/" rel="nofollow noopener" target="_blank">StorageCafe — Denver, CO self storage prices and stats (Sep 2026)</a></p>
+</div>
+</section>
 
 <p class="quotes-label" id="renters-say">Renters say</p>
 <div class="quotes" aria-labelledby="renters-say">
@@ -54,11 +82,11 @@
   <th scope="col">Notes</th>
 </tr></thead>
 <tbody>
-<tr><th scope="row">5x5</th><td class="true"><span class="big">~$67/mo</span><span class="small">range $64–$68<br>rent only $50</span></td><td><span class="big">$49</span><span class="small">avg of 2 sources<br>lowest promo: no public figure</span></td><td><span class="big">~$64</span><span class="small">range $56–$69</span></td><td class="notes">Locker / closet size. Fixed fees dominate the true cost at this size. StorageCafe street rate $49 (Sep 2026). StorageUnitCosts $49 (Aug 2026). Climate-controlled figure on the same page ~$54.</td></tr>
-<tr><th scope="row">5x10</th><td class="true"><span class="big">~$96/mo</span><span class="small">range $92–$98<br>rent only $79</span></td><td><span class="big">$78</span><span class="small">avg of 2 sources<br>lowest promo: no public figure</span></td><td><span class="big">~$101</span><span class="small">range $89–$108</span></td><td class="notes">Walk-in closet; studio overflow. StorageCafe street rate $77 (Sep 2026). StorageUnitCosts $78 (Aug 2026). Climate-controlled figure on the same page ~$84. No reliable lowest-promo figure published for this size (gap).</td></tr>
-<tr><th scope="row">10x10</th><td class="true"><span class="big">~$153/mo</span><span class="small">range $147–$158<br>rent only $137</span></td><td><span class="big">$134</span><span class="small">avg of 3 sources<br>lowest promo: no public figure</span></td><td><span class="big">~$175</span><span class="small">range $154–$188</span></td><td class="notes">Most rented size. City street rate $127, down 3.1% from a year earlier (StorageCafe industry statistics, Sep 2026). StorageUnitCosts $130, down 3% from a year earlier (Aug 2026). Storage Stats Denver metro non-climate asking rent $146, down 8.2% from a year earlier (updated Oct 28, 2026). That figure covers the metro, not Denver alone. Climate-controlled figure on the same page ~$137.</td></tr>
-<tr><th scope="row">10x15</th><td class="true"><span class="big">~$190/mo</span><span class="small">range $181–$195<br>rent only $173</span></td><td><span class="big">$170</span><span class="small">single source — estimate<br>lowest promo: no public figure</span></td><td><span class="big">~$221</span><span class="small">range $195–$238</span></td><td class="notes">Two-bedroom contents. StorageCafe street rate $170 (Sep 2026). Climate-controlled figure on the same page ~$183.</td></tr>
-<tr><th scope="row">10x20</th><td class="true"><span class="big">~$244/mo</span><span class="small">range $233–$252<br>rent only $227</span></td><td><span class="big">$224</span><span class="small">avg of 2 sources<br>lowest promo: no public figure</span></td><td><span class="big">~$291</span><span class="small">range $257–$313</span></td><td class="notes">Three-bedroom home or a car. StorageCafe street rate $223 (Sep 2026). StorageUnitCosts $224 (Aug 2026). Climate-controlled figure on the same page ~$252.</td></tr>
+<tr><th scope="row" id="size-5x5">5x5</th><td class="true"><span class="big">~$67/mo</span><span class="small">range $64–$68<br>rent only $50</span></td><td><span class="big">$49</span><span class="small">avg of 2 sources<br>lowest promo: no public figure</span></td><td><span class="big">~$64</span><span class="small">range $56–$69</span></td><td class="notes">Locker / closet size. Fixed fees dominate the true cost at this size. StorageCafe street rate $49 (Sep 2026). StorageUnitCosts $49 (Aug 2026). Climate-controlled figure on the same page ~$54.</td></tr>
+<tr><th scope="row" id="size-5x10">5x10</th><td class="true"><span class="big">~$96/mo</span><span class="small">range $92–$98<br>rent only $79</span></td><td><span class="big">$78</span><span class="small">avg of 2 sources<br>lowest promo: no public figure</span></td><td><span class="big">~$101</span><span class="small">range $89–$108</span></td><td class="notes">Walk-in closet; studio overflow. StorageCafe street rate $77 (Sep 2026). StorageUnitCosts $78 (Aug 2026). Climate-controlled figure on the same page ~$84. No reliable lowest-promo figure published for this size (gap).</td></tr>
+<tr><th scope="row" id="size-10x10">10x10</th><td class="true"><span class="big">~$153/mo</span><span class="small">range $147–$158<br>rent only $137</span></td><td><span class="big">$134</span><span class="small">avg of 3 sources<br>lowest promo: no public figure</span></td><td><span class="big">~$175</span><span class="small">range $154–$188</span></td><td class="notes">Most rented size. City street rate $127, down 3.1% from a year earlier (StorageCafe industry statistics, Sep 2026). StorageUnitCosts $130, down 3% from a year earlier (Aug 2026). Storage Stats Denver metro non-climate asking rent $146, down 8.2% from a year earlier (updated Oct 28, 2026). That figure covers the metro, not Denver alone. Climate-controlled figure on the same page ~$137.</td></tr>
+<tr><th scope="row" id="size-10x15">10x15</th><td class="true"><span class="big">~$190/mo</span><span class="small">range $181–$195<br>rent only $173</span></td><td><span class="big">$170</span><span class="small">single source — estimate<br>lowest promo: no public figure</span></td><td><span class="big">~$221</span><span class="small">range $195–$238</span></td><td class="notes">Two-bedroom contents. StorageCafe street rate $170 (Sep 2026). Climate-controlled figure on the same page ~$183.</td></tr>
+<tr><th scope="row" id="size-10x20">10x20</th><td class="true"><span class="big">~$244/mo</span><span class="small">range $233–$252<br>rent only $227</span></td><td><span class="big">$224</span><span class="small">avg of 2 sources<br>lowest promo: no public figure</span></td><td><span class="big">~$291</span><span class="small">range $257–$313</span></td><td class="notes">Three-bedroom home or a car. StorageCafe street rate $223 (Sep 2026). StorageUnitCosts $224 (Aug 2026). Climate-controlled figure on the same page ~$252.</td></tr>
 </tbody>
 </table>
 </div>
@@ -130,7 +158,7 @@
   </div>
   <div>
     <h4>Explore</h4>
-    <ul><li><a href="../index.html#cities">Cities</a></li><li><a href="../how-it-works.html">How it works &amp; methodology</a></li><li><a href="../size-guide.html">Size guide</a></li><li><a href="../about.html">About</a></li><li><a href="../privacy.html">Privacy Policy</a></li><li><a href="../terms.html">Terms of Use</a></li><li><a href="../sitemap.xml">Sitemap</a></li></ul>
+    <ul><li><a href="../index.html#cities">Cities</a></li><li><a href="../how-it-works.html">How it works &amp; methodology</a></li><li><a href="../size-guide.html">Size guide</a></li><li><a href="../near.html">Your ZIP</a></li><li><a href="../about.html">About</a></li><li><a href="../privacy.html">Privacy Policy</a></li><li><a href="../terms.html">Terms of Use</a></li><li><a href="../sitemap.xml">Sitemap</a></li></ul>
   </div>
   <div>
     <h4>Disclosure</h4>

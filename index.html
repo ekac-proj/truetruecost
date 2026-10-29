@@ -19,7 +19,7 @@
 <header class="site"><div class="wrap">
   <div><a class="brand" href="index.html">TrueTrueCost</a>
   <p class="tagline">Storage · the price after the promo</p></div>
-  <nav class="main" aria-label="Main"><a href="index.html" aria-current="page">Home</a><a href="index.html#cities">Cities</a><a href="how-it-works.html">How it works</a><a href="size-guide.html">Size guide</a><a href="about.html">About</a></nav>
+  <nav class="main" aria-label="Main"><a href="index.html" aria-current="page">Home</a><a href="index.html#cities">Cities</a><a href="how-it-works.html">How it works</a><a href="size-guide.html">Size guide</a><a href="near.html">Your ZIP</a><a href="about.html">About</a></nav>
 </div></header>
 
 <main class="wrap">
@@ -30,8 +30,16 @@
   <div class="actions">
     <a class="btn solid" href="#cities">Choose a city</a>
     <a class="btn" href="size-guide.html#quiz">What size do I need?</a>
+    <a class="btn" href="near.html">Check a ZIP</a>
     <a class="btn" href="how-it-works.html">How it works</a>
   </div>
+  <form class="zip-form" action="near.html" method="get">
+    <label>ZIP code
+      <input name="zip" inputmode="numeric" autocomplete="postal-code" pattern="[0-9]{5}" minlength="5" maxlength="5" required>
+    </label>
+    <button class="btn solid" type="submit">Find the city page</button>
+  </form>
+  <p class="small">A ZIP opens a city we already publish. The rates stay the city average. We do not invent a ZIP price.</p>
 </section>
 
 <h2 id="how">How it works</h2>
@@ -693,7 +701,7 @@
   </div>
   <div>
     <h4>Explore</h4>
-    <ul><li><a href="index.html#cities">Cities</a></li><li><a href="how-it-works.html">How it works &amp; methodology</a></li><li><a href="size-guide.html">Size guide</a></li><li><a href="about.html">About</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms of Use</a></li><li><a href="sitemap.xml">Sitemap</a></li></ul>
+    <ul><li><a href="index.html#cities">Cities</a></li><li><a href="how-it-works.html">How it works &amp; methodology</a></li><li><a href="size-guide.html">Size guide</a></li><li><a href="near.html">Your ZIP</a></li><li><a href="about.html">About</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms of Use</a></li><li><a href="sitemap.xml">Sitemap</a></li></ul>
   </div>
   <div>
     <h4>Disclosure</h4>

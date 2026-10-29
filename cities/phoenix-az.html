@@ -18,7 +18,7 @@
 <header class="site"><div class="wrap">
   <div><a class="brand" href="../index.html">TrueTrueCost</a>
   <p class="tagline">Storage · the price after the promo</p></div>
-  <nav class="main" aria-label="Main"><a href="../index.html">Home</a><a href="../index.html#cities" aria-current="page">Cities</a><a href="../how-it-works.html">How it works</a><a href="../size-guide.html">Size guide</a><a href="../about.html">About</a></nav>
+  <nav class="main" aria-label="Main"><a href="../index.html">Home</a><a href="../index.html#cities" aria-current="page">Cities</a><a href="../how-it-works.html">How it works</a><a href="../size-guide.html">Size guide</a><a href="../near.html">Your ZIP</a><a href="../about.html">About</a></nav>
 </div></header>
 
 <main class="wrap">
@@ -34,6 +34,35 @@
 </div>
 
 <p class="note"><strong>Estimates, not live quotes.</strong> Built from public price pages (sources below; data as of Aug–Oct 2026 (StorageCafe, StorageUnitCosts, Storage Stats)). Your facility, unit and move-in date will differ — always ask for the full move-in total and the rate-change policy in writing.</p>
+
+<section class="zip-tool" id="near">
+<h2>Your ZIP</h2>
+<p>The rates on this page are the Phoenix city average. A ZIP code is only used to choose a city page. Census land area decides the match: about half or more of the ZIP Code Tabulation Area has to sit inside the city. We do not publish a dollar figure for a ZIP code.</p>
+<form class="zip-form" action="../near.html" method="get">
+  <label>ZIP code
+    <input name="zip" inputmode="numeric" autocomplete="postal-code" pattern="[0-9]{5}" minlength="5" maxlength="5" required>
+  </label>
+  <input type="hidden" name="from" value="phoenix-az">
+  <button class="btn solid" type="submit">Check this ZIP</button>
+</form>
+<p class="small">The check opens a result page. The ZIP is put in the page address and looked up in your browser from a Census crosswalk. <a href="../near.html">How ZIP matching works</a>.</p>
+<div class="area-bands">
+<h3>Area examples StorageCafe published (Sep 2026)</h3>
+<p>These are 10x10 street rates, copied from that city statistics page. They show how wide the spread between named areas can be. They are not a price for your ZIP, not a facility quote, and not the six-month true cost on this page. Your ZIP is not matched to any of these areas.</p>
+<div class="band-grid">
+<div><h4>Lower-priced areas they named</h4><ul>
+<li><span class="band-name">Estrella Village</span><span class="band-rate">~$102</span></li>
+<li><span class="band-name">Alhambra</span><span class="band-rate">~$104</span></li>
+<li><span class="band-name">Downtown Phoenix</span><span class="band-rate">~$128</span></li>
+</ul></div>
+<div><h4>Higher-priced areas they named</h4><ul>
+<li><span class="band-name">Valley Vista</span><span class="band-rate">~$232</span></li>
+<li><span class="band-name">Ahwatukee Foothills</span><span class="band-rate">~$189</span></li>
+</ul></div>
+</div>
+<p class="small">Source: <a href="https://www.storagecafe.com/self-storage-industry-statistics/us/az/phoenix/" rel="nofollow noopener" target="_blank">StorageCafe — Phoenix, AZ self storage prices &amp; stats (Sep 2026)</a></p>
+</div>
+</section>
 
 <p class="quotes-label" id="renters-say">Renters say</p>
 <div class="quotes" aria-labelledby="renters-say">
@@ -54,11 +83,11 @@
   <th scope="col">Notes</th>
 </tr></thead>
 <tbody>
-<tr><th scope="row">5x5</th><td class="true"><span class="big">~$63/mo</span><span class="small">range $60–$64<br>rent only $46</span></td><td><span class="big">$45</span><span class="small">avg of 2 sources<br>promos from $13</span></td><td><span class="big">~$58</span><span class="small">range $52–$63</span></td><td class="notes">Locker / closet size. Fixed fees dominate the true cost at this size. Climate-controlled ~$48–$49.</td></tr>
-<tr><th scope="row">5x10</th><td class="true"><span class="big">~$84/mo</span><span class="small">range $81–$86<br>rent only $67</span></td><td><span class="big">$66</span><span class="small">avg of 2 sources<br>lowest promo: no public figure</span></td><td><span class="big">~$86</span><span class="small">range $76–$92</span></td><td class="notes">Walk-in closet; studio overflow. No reliable lowest-promo figure published for this size (gap). Climate-controlled ~$73.</td></tr>
-<tr><th scope="row">10x10</th><td class="true"><span class="big">~$131/mo</span><span class="small">range $125–$135<br>rent only $114</span></td><td><span class="big">$112</span><span class="small">avg of 3 sources<br>promos from $48</span></td><td><span class="big">~$146</span><span class="small">range $129–$157</span></td><td class="notes">Most rented size. City average $110, down 3.5% YoY (StorageCafe, Sep 2026); Phoenix metro averages $116, down 6.7% YoY (Storage Stats). Climate-controlled ~$123–$133.</td></tr>
-<tr><th scope="row">10x15</th><td class="true"><span class="big">~$167/mo</span><span class="small">range $160–$172<br>rent only $150</span></td><td><span class="big">$148</span><span class="small">single source — estimate<br>lowest promo: no public figure</span></td><td><span class="big">~$192</span><span class="small">range $170–$207</span></td><td class="notes">Two-bedroom contents. Estimate: single source (StorageCafe, Sep 2026). Climate-controlled ~$168–$186.</td></tr>
-<tr><th scope="row">10x20</th><td class="true"><span class="big">~$199/mo</span><span class="small">range $190–$205<br>rent only $182</span></td><td><span class="big">$180</span><span class="small">avg of 2 sources<br>promos from $68</span></td><td><span class="big">~$233</span><span class="small">range $206–$251</span></td><td class="notes">Three-bedroom home or a car. Climate-controlled ~$218–$259.</td></tr>
+<tr><th scope="row" id="size-5x5">5x5</th><td class="true"><span class="big">~$63/mo</span><span class="small">range $60–$64<br>rent only $46</span></td><td><span class="big">$45</span><span class="small">avg of 2 sources<br>promos from $13</span></td><td><span class="big">~$58</span><span class="small">range $52–$63</span></td><td class="notes">Locker / closet size. Fixed fees dominate the true cost at this size. Climate-controlled ~$48–$49.</td></tr>
+<tr><th scope="row" id="size-5x10">5x10</th><td class="true"><span class="big">~$84/mo</span><span class="small">range $81–$86<br>rent only $67</span></td><td><span class="big">$66</span><span class="small">avg of 2 sources<br>lowest promo: no public figure</span></td><td><span class="big">~$86</span><span class="small">range $76–$92</span></td><td class="notes">Walk-in closet; studio overflow. No reliable lowest-promo figure published for this size (gap). Climate-controlled ~$73.</td></tr>
+<tr><th scope="row" id="size-10x10">10x10</th><td class="true"><span class="big">~$131/mo</span><span class="small">range $125–$135<br>rent only $114</span></td><td><span class="big">$112</span><span class="small">avg of 3 sources<br>promos from $48</span></td><td><span class="big">~$146</span><span class="small">range $129–$157</span></td><td class="notes">Most rented size. City average $110, down 3.5% YoY (StorageCafe, Sep 2026); Phoenix metro averages $116, down 6.7% YoY (Storage Stats). Climate-controlled ~$123–$133.</td></tr>
+<tr><th scope="row" id="size-10x15">10x15</th><td class="true"><span class="big">~$167/mo</span><span class="small">range $160–$172<br>rent only $150</span></td><td><span class="big">$148</span><span class="small">single source — estimate<br>lowest promo: no public figure</span></td><td><span class="big">~$192</span><span class="small">range $170–$207</span></td><td class="notes">Two-bedroom contents. Estimate: single source (StorageCafe, Sep 2026). Climate-controlled ~$168–$186.</td></tr>
+<tr><th scope="row" id="size-10x20">10x20</th><td class="true"><span class="big">~$199/mo</span><span class="small">range $190–$205<br>rent only $182</span></td><td><span class="big">$180</span><span class="small">avg of 2 sources<br>promos from $68</span></td><td><span class="big">~$233</span><span class="small">range $206–$251</span></td><td class="notes">Three-bedroom home or a car. Climate-controlled ~$218–$259.</td></tr>
 </tbody>
 </table>
 </div>
@@ -132,7 +161,7 @@
   </div>
   <div>
     <h4>Explore</h4>
-    <ul><li><a href="../index.html#cities">Cities</a></li><li><a href="../how-it-works.html">How it works &amp; methodology</a></li><li><a href="../size-guide.html">Size guide</a></li><li><a href="../about.html">About</a></li><li><a href="../privacy.html">Privacy Policy</a></li><li><a href="../terms.html">Terms of Use</a></li><li><a href="../sitemap.xml">Sitemap</a></li></ul>
+    <ul><li><a href="../index.html#cities">Cities</a></li><li><a href="../how-it-works.html">How it works &amp; methodology</a></li><li><a href="../size-guide.html">Size guide</a></li><li><a href="../near.html">Your ZIP</a></li><li><a href="../about.html">About</a></li><li><a href="../privacy.html">Privacy Policy</a></li><li><a href="../terms.html">Terms of Use</a></li><li><a href="../sitemap.xml">Sitemap</a></li></ul>
   </div>
   <div>
     <h4>Disclosure</h4>

@@ -18,7 +18,7 @@
 <header class="site"><div class="wrap">
   <div><a class="brand" href="../index.html">TrueTrueCost</a>
   <p class="tagline">Storage · the price after the promo</p></div>
-  <nav class="main" aria-label="Main"><a href="../index.html">Home</a><a href="../index.html#cities" aria-current="page">Cities</a><a href="../how-it-works.html">How it works</a><a href="../size-guide.html">Size guide</a><a href="../about.html">About</a></nav>
+  <nav class="main" aria-label="Main"><a href="../index.html">Home</a><a href="../index.html#cities" aria-current="page">Cities</a><a href="../how-it-works.html">How it works</a><a href="../size-guide.html">Size guide</a><a href="../near.html">Your ZIP</a><a href="../about.html">About</a></nav>
 </div></header>
 
 <main class="wrap">
@@ -34,6 +34,34 @@
 </div>
 
 <p class="note"><strong>Estimates, not live quotes.</strong> Built from public price pages (sources below; data as of Sep 2026 (StorageCafe street rates); Aug 2026 (StorageUnitCosts); Oct 2026 (Storage Stats metro)). Your facility, unit and move-in date will differ — always ask for the full move-in total and the rate-change policy in writing.</p>
+
+<section class="zip-tool" id="near">
+<h2>Your ZIP</h2>
+<p>The rates on this page are the Charlotte city average. A ZIP code is only used to choose a city page. Census land area decides the match: about half or more of the ZIP Code Tabulation Area has to sit inside the city. We do not publish a dollar figure for a ZIP code.</p>
+<form class="zip-form" action="../near.html" method="get">
+  <label>ZIP code
+    <input name="zip" inputmode="numeric" autocomplete="postal-code" pattern="[0-9]{5}" minlength="5" maxlength="5" required>
+  </label>
+  <input type="hidden" name="from" value="charlotte-nc">
+  <button class="btn solid" type="submit">Check this ZIP</button>
+</form>
+<p class="small">The check opens a result page. The ZIP is put in the page address and looked up in your browser from a Census crosswalk. <a href="../near.html">How ZIP matching works</a>.</p>
+<div class="area-bands">
+<h3>Area examples StorageCafe published (Sep 2026)</h3>
+<p>These are street rates for what StorageCafe calls a standard unit, copied from that city statistics page. They show how wide the spread between named areas can be. They are not a price for your ZIP, not a facility quote, and not the six-month true cost on this page. Your ZIP is not matched to any of these areas.</p>
+<div class="band-grid">
+<div><h4>Lower-priced areas they named</h4><ul>
+<li><span class="band-name">Idlewild</span><span class="band-rate">~$79</span></li>
+<li><span class="band-name">Starmount</span><span class="band-rate">~$90</span></li>
+<li><span class="band-name">Farm Pond</span><span class="band-rate">~$94</span></li>
+</ul></div>
+<div><h4>Higher-priced areas they named</h4><ul>
+<li><span class="band-name">Stone Creek Ranch</span><span class="band-rate">~$227</span></li>
+</ul></div>
+</div>
+<p class="small">Source: <a href="https://www.storagecafe.com/self-storage-industry-statistics/us/nc/charlotte/" rel="nofollow noopener" target="_blank">StorageCafe — Charlotte, NC self storage prices and stats (Sep 2026)</a></p>
+</div>
+</section>
 
 <p class="quotes-label" id="renters-say">Renters say</p>
 <div class="quotes" aria-labelledby="renters-say">
@@ -54,11 +82,11 @@
   <th scope="col">Notes</th>
 </tr></thead>
 <tbody>
-<tr><th scope="row">5x5</th><td class="true"><span class="big">~$63/mo</span><span class="small">range $61–$65<br>rent only $46</span></td><td><span class="big">$46</span><span class="small">avg of 2 sources<br>lowest promo: no public figure</span></td><td><span class="big">~$59</span><span class="small">range $52–$64</span></td><td class="notes">Locker / closet size. Fixed fees dominate the true cost at this size. StorageCafe street rate $45 (Sep 2026). StorageUnitCosts $46 (Aug 2026). Climate-controlled figure on the same page ~$48.</td></tr>
-<tr><th scope="row">5x10</th><td class="true"><span class="big">~$81/mo</span><span class="small">range $78–$84<br>rent only $65</span></td><td><span class="big">$64</span><span class="small">avg of 2 sources<br>lowest promo: no public figure</span></td><td><span class="big">~$83</span><span class="small">range $73–$89</span></td><td class="notes">Walk-in closet; studio overflow. StorageCafe street rate $63 (Sep 2026). StorageUnitCosts $64 (Aug 2026). Climate-controlled figure on the same page ~$72. No reliable lowest-promo figure published for this size (gap).</td></tr>
-<tr><th scope="row">10x10</th><td class="true"><span class="big">~$120/mo</span><span class="small">range $115–$123<br>rent only $103</span></td><td><span class="big">$101</span><span class="small">avg of 3 sources<br>lowest promo: no public figure</span></td><td><span class="big">~$132</span><span class="small">range $117–$142</span></td><td class="notes">Most rented size. City street rate $101, down 1.9% from a year earlier (StorageCafe industry statistics, Sep 2026). StorageUnitCosts $103 (Aug 2026). Storage Stats Charlotte metro non-climate asking rent $100, down 7.8% from a year earlier (updated Oct 28, 2026). That figure covers the metro, not Charlotte alone. Climate-controlled figure on the same page ~$122.</td></tr>
-<tr><th scope="row">10x15</th><td class="true"><span class="big">~$157/mo</span><span class="small">range $150–$162<br>rent only $140</span></td><td><span class="big">$138</span><span class="small">single source — estimate<br>lowest promo: no public figure</span></td><td><span class="big">~$179</span><span class="small">range $159–$193</span></td><td class="notes">Two-bedroom contents. StorageCafe street rate $138 (Sep 2026). Climate-controlled figure on the same page ~$164.</td></tr>
-<tr><th scope="row">10x20</th><td class="true"><span class="big">~$189/mo</span><span class="small">range $180–$194<br>rent only $172</span></td><td><span class="big">$169</span><span class="small">avg of 2 sources<br>lowest promo: no public figure</span></td><td><span class="big">~$220</span><span class="small">range $194–$237</span></td><td class="notes">Three-bedroom home or a car. StorageCafe street rate $169 (Sep 2026). StorageUnitCosts $169 (Aug 2026). Climate-controlled figure on the same page ~$214.</td></tr>
+<tr><th scope="row" id="size-5x5">5x5</th><td class="true"><span class="big">~$63/mo</span><span class="small">range $61–$65<br>rent only $46</span></td><td><span class="big">$46</span><span class="small">avg of 2 sources<br>lowest promo: no public figure</span></td><td><span class="big">~$59</span><span class="small">range $52–$64</span></td><td class="notes">Locker / closet size. Fixed fees dominate the true cost at this size. StorageCafe street rate $45 (Sep 2026). StorageUnitCosts $46 (Aug 2026). Climate-controlled figure on the same page ~$48.</td></tr>
+<tr><th scope="row" id="size-5x10">5x10</th><td class="true"><span class="big">~$81/mo</span><span class="small">range $78–$84<br>rent only $65</span></td><td><span class="big">$64</span><span class="small">avg of 2 sources<br>lowest promo: no public figure</span></td><td><span class="big">~$83</span><span class="small">range $73–$89</span></td><td class="notes">Walk-in closet; studio overflow. StorageCafe street rate $63 (Sep 2026). StorageUnitCosts $64 (Aug 2026). Climate-controlled figure on the same page ~$72. No reliable lowest-promo figure published for this size (gap).</td></tr>
+<tr><th scope="row" id="size-10x10">10x10</th><td class="true"><span class="big">~$120/mo</span><span class="small">range $115–$123<br>rent only $103</span></td><td><span class="big">$101</span><span class="small">avg of 3 sources<br>lowest promo: no public figure</span></td><td><span class="big">~$132</span><span class="small">range $117–$142</span></td><td class="notes">Most rented size. City street rate $101, down 1.9% from a year earlier (StorageCafe industry statistics, Sep 2026). StorageUnitCosts $103 (Aug 2026). Storage Stats Charlotte metro non-climate asking rent $100, down 7.8% from a year earlier (updated Oct 28, 2026). That figure covers the metro, not Charlotte alone. Climate-controlled figure on the same page ~$122.</td></tr>
+<tr><th scope="row" id="size-10x15">10x15</th><td class="true"><span class="big">~$157/mo</span><span class="small">range $150–$162<br>rent only $140</span></td><td><span class="big">$138</span><span class="small">single source — estimate<br>lowest promo: no public figure</span></td><td><span class="big">~$179</span><span class="small">range $159–$193</span></td><td class="notes">Two-bedroom contents. StorageCafe street rate $138 (Sep 2026). Climate-controlled figure on the same page ~$164.</td></tr>
+<tr><th scope="row" id="size-10x20">10x20</th><td class="true"><span class="big">~$189/mo</span><span class="small">range $180–$194<br>rent only $172</span></td><td><span class="big">$169</span><span class="small">avg of 2 sources<br>lowest promo: no public figure</span></td><td><span class="big">~$220</span><span class="small">range $194–$237</span></td><td class="notes">Three-bedroom home or a car. StorageCafe street rate $169 (Sep 2026). StorageUnitCosts $169 (Aug 2026). Climate-controlled figure on the same page ~$214.</td></tr>
 </tbody>
 </table>
 </div>
@@ -130,7 +158,7 @@
   </div>
   <div>
     <h4>Explore</h4>
-    <ul><li><a href="../index.html#cities">Cities</a></li><li><a href="../how-it-works.html">How it works &amp; methodology</a></li><li><a href="../size-guide.html">Size guide</a></li><li><a href="../about.html">About</a></li><li><a href="../privacy.html">Privacy Policy</a></li><li><a href="../terms.html">Terms of Use</a></li><li><a href="../sitemap.xml">Sitemap</a></li></ul>
+    <ul><li><a href="../index.html#cities">Cities</a></li><li><a href="../how-it-works.html">How it works &amp; methodology</a></li><li><a href="../size-guide.html">Size guide</a></li><li><a href="../near.html">Your ZIP</a></li><li><a href="../about.html">About</a></li><li><a href="../privacy.html">Privacy Policy</a></li><li><a href="../terms.html">Terms of Use</a></li><li><a href="../sitemap.xml">Sitemap</a></li></ul>
   </div>
   <div>
     <h4>Disclosure</h4>

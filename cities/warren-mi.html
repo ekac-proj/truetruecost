@@ -18,7 +18,7 @@
 <header class="site"><div class="wrap">
   <div><a class="brand" href="../index.html">TrueTrueCost</a>
   <p class="tagline">Storage · the price after the promo</p></div>
-  <nav class="main" aria-label="Main"><a href="../index.html">Home</a><a href="../index.html#cities" aria-current="page">Cities</a><a href="../how-it-works.html">How it works</a><a href="../size-guide.html">Size guide</a><a href="../about.html">About</a></nav>
+  <nav class="main" aria-label="Main"><a href="../index.html">Home</a><a href="../index.html#cities" aria-current="page">Cities</a><a href="../how-it-works.html">How it works</a><a href="../size-guide.html">Size guide</a><a href="../near.html">Your ZIP</a><a href="../about.html">About</a></nav>
 </div></header>
 
 <main class="wrap">
@@ -34,6 +34,20 @@
 </div>
 
 <p class="note"><strong>Estimates, not live quotes.</strong> Built from public price pages (sources below; data as of Sep 2026 (StorageCafe listings non-climate averages; no industry-statistics page); no StorageUnitCosts city page; no Storage Stats market page). Your facility, unit and move-in date will differ — always ask for the full move-in total and the rate-change policy in writing.</p>
+
+<section class="zip-tool" id="near">
+<h2>Your ZIP</h2>
+<p>The rates on this page are the Warren city average. A ZIP code is only used to choose a city page. Census land area decides the match: about half or more of the ZIP Code Tabulation Area has to sit inside the city. We do not publish a dollar figure for a ZIP code.</p>
+<form class="zip-form" action="../near.html" method="get">
+  <label>ZIP code
+    <input name="zip" inputmode="numeric" autocomplete="postal-code" pattern="[0-9]{5}" minlength="5" maxlength="5" required>
+  </label>
+  <input type="hidden" name="from" value="warren-mi">
+  <button class="btn solid" type="submit">Check this ZIP</button>
+</form>
+<p class="small">The check opens a result page. The ZIP is put in the page address and looked up in your browser from a Census crosswalk. <a href="../near.html">How ZIP matching works</a>.</p>
+<p>Neighborhood street rates are not on file for Warren. The table on this page is the city average.</p>
+</section>
 
 <p class="quotes-label" id="renters-say">Renters say</p>
 <div class="quotes" aria-labelledby="renters-say">
@@ -54,11 +68,11 @@
   <th scope="col">Notes</th>
 </tr></thead>
 <tbody>
-<tr><th scope="row">5x5</th><td class="true"><span class="big">~$51/mo</span><span class="small">range $50–$53<br>rent only $35</span></td><td><span class="big">$34</span><span class="small">single source — estimate<br>promos from $42</span></td><td><span class="big">~$44</span><span class="small">range $39–$48</span></td><td class="notes">Locker / closet size. Fixed fees dominate the true cost at this size. StorageCafe listings non-climate average $34 (Sep 2026). Only one published figure for this size. Climate-controlled figure on the same page ~$45. Non-climate listings from about $42 (Oct 2026).</td></tr>
-<tr><th scope="row">5x10</th><td class="true"><span class="big">~$83/mo</span><span class="small">range $80–$85<br>rent only $66</span></td><td><span class="big">$65</span><span class="small">single source — estimate<br>lowest promo: no public figure</span></td><td><span class="big">~$84</span><span class="small">range $75–$91</span></td><td class="notes">Walk-in closet; studio overflow. StorageCafe listings non-climate average $65 (Sep 2026). Only one published figure for this size. Climate-controlled figure on the same page ~$53. No reliable lowest-promo figure published for this size (gap).</td></tr>
-<tr><th scope="row">10x10</th><td class="true"><span class="big">~$138/mo</span><span class="small">range $132–$142<br>rent only $121</span></td><td><span class="big">$119</span><span class="small">single source — estimate<br>promos from $160</span></td><td><span class="big">~$155</span><span class="small">range $137–$167</span></td><td class="notes">Most rented size. Listings-page non-climate average $119 (StorageCafe, Sep 2026). No industry-statistics street-rate page for this city. StorageUnitCosts does not publish this city. Storage Stats does not publish a market page for this city. Climate-controlled figure on the same page ~$113. Non-climate listings from about $160 (Oct 2026).</td></tr>
-<tr><th scope="row">10x15</th><td class="true"><span class="big">~$170/mo</span><span class="small">range $163–$175<br>rent only $154</span></td><td><span class="big">$151</span><span class="small">single source — estimate<br>lowest promo: no public figure</span></td><td><span class="big">~$196</span><span class="small">range $174–$211</span></td><td class="notes">Two-bedroom contents. StorageCafe listings non-climate average $151 (Sep 2026). Only one published figure for this size. Climate-controlled figure on the same page ~$139.</td></tr>
-<tr><th scope="row">10x20</th><td class="true"><span class="big">~$214/mo</span><span class="small">range $204–$221<br>rent only $197</span></td><td><span class="big">$194</span><span class="small">single source — estimate<br>promos from $174</span></td><td><span class="big">~$252</span><span class="small">range $223–$272</span></td><td class="notes">Three-bedroom home or a car. StorageCafe listings non-climate average $194 (Sep 2026). Only one published figure for this size. Climate-controlled figure on the same page ~$178. Non-climate listings from about $174 (Oct 2026).</td></tr>
+<tr><th scope="row" id="size-5x5">5x5</th><td class="true"><span class="big">~$51/mo</span><span class="small">range $50–$53<br>rent only $35</span></td><td><span class="big">$34</span><span class="small">single source — estimate<br>promos from $42</span></td><td><span class="big">~$44</span><span class="small">range $39–$48</span></td><td class="notes">Locker / closet size. Fixed fees dominate the true cost at this size. StorageCafe listings non-climate average $34 (Sep 2026). Only one published figure for this size. Climate-controlled figure on the same page ~$45. Non-climate listings from about $42 (Oct 2026).</td></tr>
+<tr><th scope="row" id="size-5x10">5x10</th><td class="true"><span class="big">~$83/mo</span><span class="small">range $80–$85<br>rent only $66</span></td><td><span class="big">$65</span><span class="small">single source — estimate<br>lowest promo: no public figure</span></td><td><span class="big">~$84</span><span class="small">range $75–$91</span></td><td class="notes">Walk-in closet; studio overflow. StorageCafe listings non-climate average $65 (Sep 2026). Only one published figure for this size. Climate-controlled figure on the same page ~$53. No reliable lowest-promo figure published for this size (gap).</td></tr>
+<tr><th scope="row" id="size-10x10">10x10</th><td class="true"><span class="big">~$138/mo</span><span class="small">range $132–$142<br>rent only $121</span></td><td><span class="big">$119</span><span class="small">single source — estimate<br>promos from $160</span></td><td><span class="big">~$155</span><span class="small">range $137–$167</span></td><td class="notes">Most rented size. Listings-page non-climate average $119 (StorageCafe, Sep 2026). No industry-statistics street-rate page for this city. StorageUnitCosts does not publish this city. Storage Stats does not publish a market page for this city. Climate-controlled figure on the same page ~$113. Non-climate listings from about $160 (Oct 2026).</td></tr>
+<tr><th scope="row" id="size-10x15">10x15</th><td class="true"><span class="big">~$170/mo</span><span class="small">range $163–$175<br>rent only $154</span></td><td><span class="big">$151</span><span class="small">single source — estimate<br>lowest promo: no public figure</span></td><td><span class="big">~$196</span><span class="small">range $174–$211</span></td><td class="notes">Two-bedroom contents. StorageCafe listings non-climate average $151 (Sep 2026). Only one published figure for this size. Climate-controlled figure on the same page ~$139.</td></tr>
+<tr><th scope="row" id="size-10x20">10x20</th><td class="true"><span class="big">~$214/mo</span><span class="small">range $204–$221<br>rent only $197</span></td><td><span class="big">$194</span><span class="small">single source — estimate<br>promos from $174</span></td><td><span class="big">~$252</span><span class="small">range $223–$272</span></td><td class="notes">Three-bedroom home or a car. StorageCafe listings non-climate average $194 (Sep 2026). Only one published figure for this size. Climate-controlled figure on the same page ~$178. Non-climate listings from about $174 (Oct 2026).</td></tr>
 </tbody>
 </table>
 </div>
@@ -126,7 +140,7 @@
   </div>
   <div>
     <h4>Explore</h4>
-    <ul><li><a href="../index.html#cities">Cities</a></li><li><a href="../how-it-works.html">How it works &amp; methodology</a></li><li><a href="../size-guide.html">Size guide</a></li><li><a href="../about.html">About</a></li><li><a href="../privacy.html">Privacy Policy</a></li><li><a href="../terms.html">Terms of Use</a></li><li><a href="../sitemap.xml">Sitemap</a></li></ul>
+    <ul><li><a href="../index.html#cities">Cities</a></li><li><a href="../how-it-works.html">How it works &amp; methodology</a></li><li><a href="../size-guide.html">Size guide</a></li><li><a href="../near.html">Your ZIP</a></li><li><a href="../about.html">About</a></li><li><a href="../privacy.html">Privacy Policy</a></li><li><a href="../terms.html">Terms of Use</a></li><li><a href="../sitemap.xml">Sitemap</a></li></ul>
   </div>
   <div>
     <h4>Disclosure</h4>

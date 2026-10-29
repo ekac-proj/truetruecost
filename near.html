@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+<title>Your ZIP — city storage averages, not ZIP quotes | TrueTrueCost</title>
+<meta name="description" content="Enter a ZIP code to open the TrueTrueCost city page that covers it. Rates stay city-level. We do not invent a price for a ZIP or a neighborhood we cannot cite.">
+<link rel="canonical" href="https://truetruecost.com/near.html">
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <div><a class="brand" href="index.html">TrueTrueCost</a>
+  <p class="tagline">Storage · the price after the promo</p></div>
+  <nav class="main" aria-label="Main"><a href="index.html">Home</a><a href="index.html#cities">Cities</a><a href="how-it-works.html">How it works</a><a href="size-guide.html">Size guide</a><a href="near.html" aria-current="page">Your ZIP</a><a href="about.html">About</a></nav>
+</div></header>
+
+<main class="wrap">
+<span class="eyebrow">Your ZIP</span>
+<h1 class="wide">Closer than a state. Still a city average.</h1>
+<p class="lede">Type a ZIP code and we open the city page whose Census area actually contains it. The dollar figures stay the city average, or a named-area example we can cite. We do not publish a price for the ZIP itself.</p>
+
+<section class="zip-tool" id="zip">
+  <h2>Check a ZIP</h2>
+  <form class="zip-form" id="zip-form" action="near.html" method="get">
+    <label>ZIP code
+      <input name="zip" inputmode="numeric" autocomplete="postal-code" pattern="[0-9]{5}" minlength="5" maxlength="5" required>
+    </label>
+    <input type="hidden" name="from" value="">
+    <input type="hidden" name="size" value="">
+    <button class="btn solid" type="submit">Check this ZIP</button>
+  </form>
+  <p class="small">Five digits. The lookup runs in your browser after this page loads a Census crosswalk. Submitting puts the ZIP in the page address so you can share the result. We do not keep an account for it.</p>
+  <div id="zip-result" aria-live="polite">
+    <noscript><p>The result needs JavaScript. The notes below still explain what a match means, and the <a href="index.html#cities">city list</a> is usable without it.</p></noscript>
+  </div>
+</section>
+
+<h2 id="how">What a match means</h2>
+<div class="prose">
+<p>The geography is the U.S. Census Bureau’s 2020 ZIP Code Tabulation Area (ZCTA) to Place relationship file, plus 2020 Gazetteer internal points for distance. A ZCTA approximates a USPS ZIP code. It is not a USPS product. PO Box and unique ZIP codes are often absent, and a ZCTA boundary can disagree with the postal city people expect.</p>
+<p>A city match means about half or more of that area’s land sits inside a Census place we already publish. You then get that city’s advertised 10x10 rate and six-month true average — the same numbers as on the city page. Partial overlap is labeled with the land share. We do not stretch a far-away city’s rate to fill a gap.</p>
+<p>Miles are straight-line between Census internal points, not drive time. Other published cities within 60 miles are listed so you can compare city averages when a facility there is realistic. A lower average on that list is not a price at your ZIP.</p>
+<h2 id="areas">Neighborhood examples</h2>
+<p>Where StorageCafe has published named areas and street rates, the result shows those examples with the date and the unit size the sentence actually names. Some lists are standard units, some are 10x10s, and some sentences never name the size. We do not relabel them as a central, suburban, and outer ring, and we do not assign your ZIP to one of the names. Cities without that list say so.</p>
+<p class="note"><strong>Limitation.</strong> This page will not get more precise than the sources. A facility on your block can sit far from the city average, and far from a neighborhood example a few miles away. Ask the facility for the month-four rate before you compare.</p>
+<p><a class="btn" href="how-it-works.html#zip">Methodology</a> <a class="btn" href="size-guide.html">Not sure what size?</a></p>
+</div>
+</main>
+
+<!-- FOOTER_START -->
+<footer class="site"><div class="wrap cols">
+  <div>
+    <a class="brand" href="index.html">TrueTrueCost</a>
+    <p>Storage · the price after the promo</p>
+  </div>
+  <div>
+    <h4>Explore</h4>
+    <ul><li><a href="index.html#cities">Cities</a></li><li><a href="how-it-works.html">How it works &amp; methodology</a></li><li><a href="size-guide.html">Size guide</a></li><li><a href="near.html">Your ZIP</a></li><li><a href="about.html">About</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms of Use</a></li><li><a href="sitemap.xml">Sitemap</a></li></ul>
+  </div>
+  <div>
+    <h4>Disclosure</h4>
+    <p>“Find storage” links open Neighbor’s public city pages (<code>rel="sponsored"</code>, no tracking parameters). We do not earn a commission on those clicks yet. Partners never influence our estimates.</p>
+    <p>Estimates only — not quotes, offers or financial advice.</p>
+  </div>
+</div></footer>
+<!-- FOOTER_END -->
+<script src="assets/zip-lookup.js"></script>
+</body>
+</html>

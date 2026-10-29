@@ -15,13 +15,26 @@
 <header class="site"><div class="wrap">
   <div><a class="brand" href="index.html">TrueTrueCost</a>
   <p class="tagline">Storage · the price after the promo</p></div>
-  <nav class="main" aria-label="Main"><a href="index.html">Home</a><a href="index.html#cities">Cities</a><a href="how-it-works.html">How it works</a><a href="size-guide.html" aria-current="page">Size guide</a><a href="about.html">About</a></nav>
+  <nav class="main" aria-label="Main"><a href="index.html">Home</a><a href="index.html#cities">Cities</a><a href="how-it-works.html">How it works</a><a href="size-guide.html" aria-current="page">Size guide</a><a href="near.html">Your ZIP</a><a href="about.html">About</a></nav>
 </div></header>
 
 <main class="wrap">
 <span class="eyebrow">Size guide</span>
 <h1 class="wide">What size storage unit do you need?</h1>
 <p class="lede">A 5x5 is a closet. A 10x20 is a one-car garage. These are the sizes our city pages price. The quiz maps your situation onto one of them, then you can compare the six-month true cost — not the first-month promo.</p>
+
+<section class="zip-tool" id="zip">
+  <h2>Then check the city, not a ZIP price</h2>
+  <p>Size and location are separate. A ZIP code opens the city page we already publish for that area. The price on that page stays the city average.</p>
+  <form class="zip-form" action="near.html" method="get">
+    <label>ZIP code
+      <input name="zip" inputmode="numeric" autocomplete="postal-code" pattern="[0-9]{5}" minlength="5" maxlength="5" required>
+    </label>
+    <input type="hidden" name="size" id="zip-size" value="">
+    <button class="btn solid" type="submit">Open the city page</button>
+  </form>
+  <p class="small">We do not publish a dollar figure for the ZIP. If you use the quiz first, the size comes along so the city page can open on that row.</p>
+</section>
 
 <section class="quiz" id="quiz" aria-labelledby="quiz-title">
   <h2 id="quiz-title">What do you need?</h2>
@@ -147,7 +160,7 @@
   </div>
   <div>
     <h4>Explore</h4>
-    <ul><li><a href="index.html#cities">Cities</a></li><li><a href="how-it-works.html">How it works &amp; methodology</a></li><li><a href="size-guide.html">Size guide</a></li><li><a href="about.html">About</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms of Use</a></li><li><a href="sitemap.xml">Sitemap</a></li></ul>
+    <ul><li><a href="index.html#cities">Cities</a></li><li><a href="how-it-works.html">How it works &amp; methodology</a></li><li><a href="size-guide.html">Size guide</a></li><li><a href="near.html">Your ZIP</a></li><li><a href="about.html">About</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms of Use</a></li><li><a href="sitemap.xml">Sitemap</a></li></ul>
   </div>
   <div>
     <h4>Disclosure</h4>

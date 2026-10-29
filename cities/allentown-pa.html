@@ -18,7 +18,7 @@
 <header class="site"><div class="wrap">
   <div><a class="brand" href="../index.html">TrueTrueCost</a>
   <p class="tagline">Storage · the price after the promo</p></div>
-  <nav class="main" aria-label="Main"><a href="../index.html">Home</a><a href="../index.html#cities" aria-current="page">Cities</a><a href="../how-it-works.html">How it works</a><a href="../size-guide.html">Size guide</a><a href="../about.html">About</a></nav>
+  <nav class="main" aria-label="Main"><a href="../index.html">Home</a><a href="../index.html#cities" aria-current="page">Cities</a><a href="../how-it-works.html">How it works</a><a href="../size-guide.html">Size guide</a><a href="../near.html">Your ZIP</a><a href="../about.html">About</a></nav>
 </div></header>
 
 <main class="wrap">
@@ -34,6 +34,20 @@
 </div>
 
 <p class="note"><strong>Estimates, not live quotes.</strong> Built from public price pages (sources below; data as of Sep 2026 (UnitSight street rates; SpareFoot 10x10 average). No StorageCafe industry-statistics page; no StorageUnitCosts city page; no Storage Stats market page.). Your facility, unit and move-in date will differ — always ask for the full move-in total and the rate-change policy in writing.</p>
+
+<section class="zip-tool" id="near">
+<h2>Your ZIP</h2>
+<p>The rates on this page are the Allentown city average. A ZIP code is only used to choose a city page. Census land area decides the match: about half or more of the ZIP Code Tabulation Area has to sit inside the city. We do not publish a dollar figure for a ZIP code.</p>
+<form class="zip-form" action="../near.html" method="get">
+  <label>ZIP code
+    <input name="zip" inputmode="numeric" autocomplete="postal-code" pattern="[0-9]{5}" minlength="5" maxlength="5" required>
+  </label>
+  <input type="hidden" name="from" value="allentown-pa">
+  <button class="btn solid" type="submit">Check this ZIP</button>
+</form>
+<p class="small">The check opens a result page. The ZIP is put in the page address and looked up in your browser from a Census crosswalk. <a href="../near.html">How ZIP matching works</a>.</p>
+<p>Neighborhood street rates are not on file for Allentown. The table on this page is the city average.</p>
+</section>
 
 <p class="quotes-label" id="renters-say">Renters say</p>
 <div class="quotes" aria-labelledby="renters-say">
@@ -54,11 +68,11 @@
   <th scope="col">Notes</th>
 </tr></thead>
 <tbody>
-<tr><th scope="row">5x5</th><td class="true"><span class="big">~$85/mo</span><span class="small">range $82–$87<br>rent only $68</span></td><td><span class="big">$67</span><span class="small">single source — estimate<br>lowest promo: no public figure</span></td><td><span class="big">~$87</span><span class="small">range $77–$94</span></td><td class="notes">UnitSight standard (non-climate) street rate $67 (Sep 2026). Climate-controlled on the same page ~$64. SpareFoot&#x27;s unspecified 5x5 average was $57.03 and is not mixed into this size.</td></tr>
-<tr><th scope="row">5x10</th><td class="true"><span class="big">~$110/mo</span><span class="small">range $106–$113<br>rent only $94</span></td><td><span class="big">$92</span><span class="small">single source — estimate<br>lowest promo: no public figure</span></td><td><span class="big">~$120</span><span class="small">range $106–$129</span></td><td class="notes">UnitSight standard street rate $92 (Sep 2026). Climate-controlled ~$93. No reliable lowest-promo figure published for this size (gap).</td></tr>
-<tr><th scope="row">10x10</th><td class="true"><span class="big">~$161/mo</span><span class="small">range $154–$165<br>rent only $144</span></td><td><span class="big">$142</span><span class="small">avg of 2 sources<br>lowest promo: no public figure</span></td><td><span class="big">~$184</span><span class="small">range $163–$198</span></td><td class="notes">UnitSight standard street rate $145 (Sep 2026), 24 facilities. SpareFoot unspecified average $138.34 on Sep 1, 2026, rounded to $138; that average is not split by climate. Climate-controlled on the UnitSight page ~$142. StorageCafe, StorageUnitCosts, and Storage Stats do not publish an Allentown market page.</td></tr>
-<tr><th scope="row">10x15</th><td class="true"><span class="big">~$206/mo</span><span class="small">range $197–$212<br>rent only $189</span></td><td><span class="big">$186</span><span class="small">single source — estimate<br>lowest promo: no public figure</span></td><td><span class="big">~$242</span><span class="small">range $214–$260</span></td><td class="notes">UnitSight standard street rate $186 (Sep 2026). Climate-controlled ~$179.</td></tr>
-<tr><th scope="row">10x20</th><td class="true"><span class="big">~$204/mo</span><span class="small">range $195–$210<br>rent only $187</span></td><td><span class="big">$184</span><span class="small">single source — estimate<br>lowest promo: no public figure</span></td><td><span class="big">~$239</span><span class="small">range $212–$258</span></td><td class="notes">UnitSight standard street rate $184 (Sep 2026). Climate-controlled ~$237.</td></tr>
+<tr><th scope="row" id="size-5x5">5x5</th><td class="true"><span class="big">~$85/mo</span><span class="small">range $82–$87<br>rent only $68</span></td><td><span class="big">$67</span><span class="small">single source — estimate<br>lowest promo: no public figure</span></td><td><span class="big">~$87</span><span class="small">range $77–$94</span></td><td class="notes">UnitSight standard (non-climate) street rate $67 (Sep 2026). Climate-controlled on the same page ~$64. SpareFoot&#x27;s unspecified 5x5 average was $57.03 and is not mixed into this size.</td></tr>
+<tr><th scope="row" id="size-5x10">5x10</th><td class="true"><span class="big">~$110/mo</span><span class="small">range $106–$113<br>rent only $94</span></td><td><span class="big">$92</span><span class="small">single source — estimate<br>lowest promo: no public figure</span></td><td><span class="big">~$120</span><span class="small">range $106–$129</span></td><td class="notes">UnitSight standard street rate $92 (Sep 2026). Climate-controlled ~$93. No reliable lowest-promo figure published for this size (gap).</td></tr>
+<tr><th scope="row" id="size-10x10">10x10</th><td class="true"><span class="big">~$161/mo</span><span class="small">range $154–$165<br>rent only $144</span></td><td><span class="big">$142</span><span class="small">avg of 2 sources<br>lowest promo: no public figure</span></td><td><span class="big">~$184</span><span class="small">range $163–$198</span></td><td class="notes">UnitSight standard street rate $145 (Sep 2026), 24 facilities. SpareFoot unspecified average $138.34 on Sep 1, 2026, rounded to $138; that average is not split by climate. Climate-controlled on the UnitSight page ~$142. StorageCafe, StorageUnitCosts, and Storage Stats do not publish an Allentown market page.</td></tr>
+<tr><th scope="row" id="size-10x15">10x15</th><td class="true"><span class="big">~$206/mo</span><span class="small">range $197–$212<br>rent only $189</span></td><td><span class="big">$186</span><span class="small">single source — estimate<br>lowest promo: no public figure</span></td><td><span class="big">~$242</span><span class="small">range $214–$260</span></td><td class="notes">UnitSight standard street rate $186 (Sep 2026). Climate-controlled ~$179.</td></tr>
+<tr><th scope="row" id="size-10x20">10x20</th><td class="true"><span class="big">~$204/mo</span><span class="small">range $195–$210<br>rent only $187</span></td><td><span class="big">$184</span><span class="small">single source — estimate<br>lowest promo: no public figure</span></td><td><span class="big">~$239</span><span class="small">range $212–$258</span></td><td class="notes">UnitSight standard street rate $184 (Sep 2026). Climate-controlled ~$237.</td></tr>
 </tbody>
 </table>
 </div>
@@ -128,7 +142,7 @@
   </div>
   <div>
     <h4>Explore</h4>
-    <ul><li><a href="../index.html#cities">Cities</a></li><li><a href="../how-it-works.html">How it works &amp; methodology</a></li><li><a href="../size-guide.html">Size guide</a></li><li><a href="../about.html">About</a></li><li><a href="../privacy.html">Privacy Policy</a></li><li><a href="../terms.html">Terms of Use</a></li><li><a href="../sitemap.xml">Sitemap</a></li></ul>
+    <ul><li><a href="../index.html#cities">Cities</a></li><li><a href="../how-it-works.html">How it works &amp; methodology</a></li><li><a href="../size-guide.html">Size guide</a></li><li><a href="../near.html">Your ZIP</a></li><li><a href="../about.html">About</a></li><li><a href="../privacy.html">Privacy Policy</a></li><li><a href="../terms.html">Terms of Use</a></li><li><a href="../sitemap.xml">Sitemap</a></li></ul>
   </div>
   <div>
     <h4>Disclosure</h4>

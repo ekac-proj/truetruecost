@@ -298,12 +298,15 @@ function mount(api) {
     var actions = el("div", "quiz-actions");
     if (city) {
       actions.appendChild(el("a", "btn solid", "See " + info.size + " true cost in " + city.name)).href =
-        "cities/" + city.slug + ".html#prices";
+        "cities/" + city.slug + ".html#size-" + info.size;
       actions.appendChild(el("a", "btn", "Find storage in " + city.name)).href =
         "cities/" + city.slug + ".html#compare";
     } else {
       actions.appendChild(el("a", "btn solid", "Find storage in your city")).href = "index.html#cities";
     }
+    actions.appendChild(el("a", "btn", "Check a ZIP for this size")).href = "near.html?size=" + info.size;
+    var sizeField = document.getElementById("zip-size");
+    if (sizeField) sizeField.value = info.size;
     var guideLink = el("a", "btn", "What fits in a " + info.size);
     guideLink.href = "#size-" + info.size;
     actions.appendChild(guideLink);

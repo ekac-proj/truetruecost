@@ -18,7 +18,7 @@
 <header class="site"><div class="wrap">
   <div><a class="brand" href="../index.html">TrueTrueCost</a>
   <p class="tagline">Storage · the price after the promo</p></div>
-  <nav class="main" aria-label="Main"><a href="../index.html">Home</a><a href="../index.html#cities" aria-current="page">Cities</a><a href="../how-it-works.html">How it works</a><a href="../size-guide.html">Size guide</a><a href="../about.html">About</a></nav>
+  <nav class="main" aria-label="Main"><a href="../index.html">Home</a><a href="../index.html#cities" aria-current="page">Cities</a><a href="../how-it-works.html">How it works</a><a href="../size-guide.html">Size guide</a><a href="../near.html">Your ZIP</a><a href="../about.html">About</a></nav>
 </div></header>
 
 <main class="wrap">
@@ -34,6 +34,20 @@
 </div>
 
 <p class="note"><strong>Estimates, not live quotes.</strong> Built from public price pages (sources below; data as of Sep 2026 (UnitSight street rates; SpareFoot 10x10 average). No StorageCafe industry-statistics page; no StorageUnitCosts city page; no Storage Stats market page.). Your facility, unit and move-in date will differ — always ask for the full move-in total and the rate-change policy in writing.</p>
+
+<section class="zip-tool" id="near">
+<h2>Your ZIP</h2>
+<p>The rates on this page are the Bangor city average. A ZIP code is only used to choose a city page. Census land area decides the match: about half or more of the ZIP Code Tabulation Area has to sit inside the city. We do not publish a dollar figure for a ZIP code.</p>
+<form class="zip-form" action="../near.html" method="get">
+  <label>ZIP code
+    <input name="zip" inputmode="numeric" autocomplete="postal-code" pattern="[0-9]{5}" minlength="5" maxlength="5" required>
+  </label>
+  <input type="hidden" name="from" value="bangor-me">
+  <button class="btn solid" type="submit">Check this ZIP</button>
+</form>
+<p class="small">The check opens a result page. The ZIP is put in the page address and looked up in your browser from a Census crosswalk. <a href="../near.html">How ZIP matching works</a>.</p>
+<p>Neighborhood street rates are not on file for Bangor. The table on this page is the city average.</p>
+</section>
 
 <p class="quotes-label" id="renters-say">Renters say</p>
 <div class="quotes" aria-labelledby="renters-say">
@@ -54,11 +68,11 @@
   <th scope="col">Notes</th>
 </tr></thead>
 <tbody>
-<tr><th scope="row">5x5</th><td class="true"><span class="big">~$82/mo</span><span class="small">range $79–$84<br>rent only $65</span></td><td><span class="big">$64</span><span class="small">single source — estimate<br>lowest promo: no public figure</span></td><td><span class="big">~$83</span><span class="small">range $74–$90</span></td><td class="notes">UnitSight standard street rate $64 (Sep 2026). Climate-controlled ~$86.</td></tr>
-<tr><th scope="row">5x10</th><td class="true"><span class="big">~$126/mo</span><span class="small">range $120–$129<br>rent only $109</span></td><td><span class="big">$107</span><span class="small">single source — estimate<br>lowest promo: no public figure</span></td><td><span class="big">~$139</span><span class="small">range $123–$150</span></td><td class="notes">UnitSight standard street rate $107 (Sep 2026). Climate-controlled ~$108. No reliable lowest-promo figure published for this size (gap).</td></tr>
-<tr><th scope="row">10x10</th><td class="true"><span class="big">~$163/mo</span><span class="small">range $156–$168<br>rent only $146</span></td><td><span class="big">$144</span><span class="small">avg of 2 sources<br>lowest promo: no public figure</span></td><td><span class="big">~$187</span><span class="small">range $165–$201</span></td><td class="notes">UnitSight standard street rate $153 (Sep 2026), 8 facilities. SpareFoot unspecified average $134.02 on Sep 1, 2026, rounded to $134. Climate-controlled on the UnitSight page ~$145.</td></tr>
-<tr><th scope="row">10x15</th><td class="true"><span class="big">~$169/mo</span><span class="small">range $162–$174<br>rent only $152</span></td><td><span class="big">$150</span><span class="small">single source — estimate<br>lowest promo: no public figure</span></td><td><span class="big">~$195</span><span class="small">range $172–$210</span></td><td class="notes">UnitSight standard street rate $150 (Sep 2026). Climate-controlled ~$174.</td></tr>
-<tr><th scope="row">10x20</th><td class="true"><span class="big">~$262/mo</span><span class="small">range $250–$270<br>rent only $245</span></td><td><span class="big">$241</span><span class="small">single source — estimate<br>lowest promo: no public figure</span></td><td><span class="big">~$313</span><span class="small">range $277–$337</span></td><td class="notes">UnitSight standard street rate $241 (Sep 2026). Climate-controlled ~$257.</td></tr>
+<tr><th scope="row" id="size-5x5">5x5</th><td class="true"><span class="big">~$82/mo</span><span class="small">range $79–$84<br>rent only $65</span></td><td><span class="big">$64</span><span class="small">single source — estimate<br>lowest promo: no public figure</span></td><td><span class="big">~$83</span><span class="small">range $74–$90</span></td><td class="notes">UnitSight standard street rate $64 (Sep 2026). Climate-controlled ~$86.</td></tr>
+<tr><th scope="row" id="size-5x10">5x10</th><td class="true"><span class="big">~$126/mo</span><span class="small">range $120–$129<br>rent only $109</span></td><td><span class="big">$107</span><span class="small">single source — estimate<br>lowest promo: no public figure</span></td><td><span class="big">~$139</span><span class="small">range $123–$150</span></td><td class="notes">UnitSight standard street rate $107 (Sep 2026). Climate-controlled ~$108. No reliable lowest-promo figure published for this size (gap).</td></tr>
+<tr><th scope="row" id="size-10x10">10x10</th><td class="true"><span class="big">~$163/mo</span><span class="small">range $156–$168<br>rent only $146</span></td><td><span class="big">$144</span><span class="small">avg of 2 sources<br>lowest promo: no public figure</span></td><td><span class="big">~$187</span><span class="small">range $165–$201</span></td><td class="notes">UnitSight standard street rate $153 (Sep 2026), 8 facilities. SpareFoot unspecified average $134.02 on Sep 1, 2026, rounded to $134. Climate-controlled on the UnitSight page ~$145.</td></tr>
+<tr><th scope="row" id="size-10x15">10x15</th><td class="true"><span class="big">~$169/mo</span><span class="small">range $162–$174<br>rent only $152</span></td><td><span class="big">$150</span><span class="small">single source — estimate<br>lowest promo: no public figure</span></td><td><span class="big">~$195</span><span class="small">range $172–$210</span></td><td class="notes">UnitSight standard street rate $150 (Sep 2026). Climate-controlled ~$174.</td></tr>
+<tr><th scope="row" id="size-10x20">10x20</th><td class="true"><span class="big">~$262/mo</span><span class="small">range $250–$270<br>rent only $245</span></td><td><span class="big">$241</span><span class="small">single source — estimate<br>lowest promo: no public figure</span></td><td><span class="big">~$313</span><span class="small">range $277–$337</span></td><td class="notes">UnitSight standard street rate $241 (Sep 2026). Climate-controlled ~$257.</td></tr>
 </tbody>
 </table>
 </div>
@@ -128,7 +142,7 @@
   </div>
   <div>
     <h4>Explore</h4>
-    <ul><li><a href="../index.html#cities">Cities</a></li><li><a href="../how-it-works.html">How it works &amp; methodology</a></li><li><a href="../size-guide.html">Size guide</a></li><li><a href="../about.html">About</a></li><li><a href="../privacy.html">Privacy Policy</a></li><li><a href="../terms.html">Terms of Use</a></li><li><a href="../sitemap.xml">Sitemap</a></li></ul>
+    <ul><li><a href="../index.html#cities">Cities</a></li><li><a href="../how-it-works.html">How it works &amp; methodology</a></li><li><a href="../size-guide.html">Size guide</a></li><li><a href="../near.html">Your ZIP</a></li><li><a href="../about.html">About</a></li><li><a href="../privacy.html">Privacy Policy</a></li><li><a href="../terms.html">Terms of Use</a></li><li><a href="../sitemap.xml">Sitemap</a></li></ul>
   </div>
   <div>
     <h4>Disclosure</h4>

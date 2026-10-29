@@ -15,6 +15,9 @@ import argparse, datetime, html, json, re, statistics, sys
 from pathlib import Path
 from urllib.parse import quote
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from area_bands import bands_for_config, render_band_html
+
 ROOT = Path(__file__).resolve().parent.parent
 TEMPLATE = ROOT / "cities" / "_template.html"
 INDEX_JSON = ROOT / "data" / "cities.json"
@@ -83,7 +86,8 @@ def unit_row(u):
              f"<span class=\"small\">{basis}<br>{low}</span>")
     after = (f"<span class=\"big\">~{money(after_mid)}</span>"
              f"<span class=\"small\">range {money(rate * (1 + M['increase_low']))}–{money(rate * (1 + M['increase_high']))}</span>")
-    row = (f"<tr><th scope=\"row\">{html.escape(u['size'])}</th><td class=\"true\">{true}</td>"
+    size = html.escape(u["size"])
+    row = (f"<tr><th scope=\"row\" id=\"size-{size}\">{size}</th><td class=\"true\">{true}</td>"
            f"<td>{promo}</td><td>{after}</td><td class=\"notes\">{html.escape(u.get('notes', ''))}</td></tr>")
     return row, round(avg_mid), round(rate), round(after_mid)
 
@@ -100,6 +104,28 @@ def quote_strip(slug):
     return ('<p class="quotes-label" id="renters-say">Renters say</p>\n'
             f'<div class="quotes" aria-labelledby="renters-say">\n{figs}\n</div>\n'
             '<p class="small quotes-note">Paraphrased and anonymized from public renter forums and social posts.</p>')
+
+
+def zip_block(slug, short, band_html):
+    """ZIP form plus any cited area examples. Rates stay city-level."""
+    if band_html:
+        extra = band_html
+    else:
+        extra = (f"<p>Neighborhood street rates are not on file for {html.escape(short)}. "
+                 "The table on this page is the city average.</p>")
+    return f"""<section class="zip-tool" id="near">
+<h2>Your ZIP</h2>
+<p>The rates on this page are the {html.escape(short)} city average. A ZIP code is only used to choose a city page. Census land area decides the match: about half or more of the ZIP Code Tabulation Area has to sit inside the city. We do not publish a dollar figure for a ZIP code.</p>
+<form class="zip-form" action="../near.html" method="get">
+  <label>ZIP code
+    <input name="zip" inputmode="numeric" autocomplete="postal-code" pattern="[0-9]{{5}}" minlength="5" maxlength="5" required>
+  </label>
+  <input type="hidden" name="from" value="{html.escape(slug, quote=True)}">
+  <button class="btn solid" type="submit">Check this ZIP</button>
+</form>
+<p class="small">The check opens a result page. The ZIP is put in the page address and looked up in your browser from a Census crosswalk. <a href="../near.html">How ZIP matching works</a>.</p>
+{extra}
+</section>"""
 
 
 def calc_subs(rate10):
@@ -134,7 +160,7 @@ def footer(prefix=""):
   </div>
   <div>
     <h4>Explore</h4>
-    <ul><li><a href="{p}index.html#cities">Cities</a></li><li><a href="{p}how-it-works.html">How it works &amp; methodology</a></li><li><a href="{p}size-guide.html">Size guide</a></li><li><a href="{p}about.html">About</a></li><li><a href="{p}privacy.html">Privacy Policy</a></li><li><a href="{p}terms.html">Terms of Use</a></li><li><a href="{p}sitemap.xml">Sitemap</a></li></ul>
+    <ul><li><a href="{p}index.html#cities">Cities</a></li><li><a href="{p}how-it-works.html">How it works &amp; methodology</a></li><li><a href="{p}size-guide.html">Size guide</a></li><li><a href="{p}near.html">Your ZIP</a></li><li><a href="{p}about.html">About</a></li><li><a href="{p}privacy.html">Privacy Policy</a></li><li><a href="{p}terms.html">Terms of Use</a></li><li><a href="{p}sitemap.xml">Sitemap</a></li></ul>
   </div>
   <div>
     <h4>Disclosure</h4>
@@ -154,7 +180,8 @@ def rebuild(idx):
     base = SITE["site_url"].rstrip("/")
     upd = idx.get("updated", TODAY)
     urls = [(f"{base}/", upd), (f"{base}/how-it-works.html", upd), (f"{base}/size-guide.html", upd),
-            (f"{base}/about.html", upd), (f"{base}/privacy.html", upd), (f"{base}/terms.html", upd)]
+            (f"{base}/near.html", upd), (f"{base}/about.html", upd), (f"{base}/privacy.html", upd),
+            (f"{base}/terms.html", upd)]
     urls += [(f"{base}/{c['path']}", c["updated"]) for c in live]
     xml = ['<?xml version="1.0" encoding="UTF-8"?>',
            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
@@ -192,7 +219,7 @@ def rebuild(idx):
         blocks.append("    </ul>")
         blocks.append("  </section>")
     blocks.append("  </div>")
-    for name in ["index.html", "about.html", "how-it-works.html", "size-guide.html", "privacy.html", "terms.html"]:
+    for name in ["index.html", "about.html", "how-it-works.html", "size-guide.html", "near.html", "privacy.html", "terms.html"]:
         f = ROOT / name
         if not f.exists():
             continue
@@ -263,6 +290,7 @@ def publish(idx, slug, name, config, force):
                             for s in cfg["sources"])
         subs = {"INTRO": html.escape(cfg["intro"]), "TABLE_ROWS": "\n".join(rows), "DATA_ASOF": html.escape(cfg["data_asof"]),
                 "LOCAL_TIPS": local, "SOURCES": sources, "ROBOTS_META": "",
+                "ZIP_BLOCK": zip_block(slug, short, render_band_html(bands_for_config(cfg))),
                 **calc_subs(rate10),
                 "RATE_10": money(rate10) if rate10 else "—", "AFTER_10": f"~{money(after10)}" if after10 else "—",
                 "TRUE_10": f"~{money(avg10)}" if avg10 else "—"}
@@ -270,6 +298,7 @@ def publish(idx, slug, name, config, force):
         subs = {"INTRO": f"Draft: research for {html.escape(name)} is pending.", "TABLE_ROWS": draft_rows(),
                 "RATE_10": "—", "AFTER_10": "—", "TRUE_10": "—",
                 "DATA_ASOF": "TBD", "LOCAL_TIPS": "", "SOURCES": "    <li>TBD</li>",
+                "ZIP_BLOCK": zip_block(slug, short, ""),
                 "ROBOTS_META": '<meta name="robots" content="noindex">', **calc_subs(None)}
     subs.update(QUOTES=quote_strip(slug), CITY_NAME=html.escape(name), CITY_NAME_Q=quote(name, safe=""),
                 CITY_SHORT=html.escape(short), SLUG=slug,

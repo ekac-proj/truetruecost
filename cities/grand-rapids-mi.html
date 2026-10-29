@@ -18,7 +18,7 @@
 <header class="site"><div class="wrap">
   <div><a class="brand" href="../index.html">TrueTrueCost</a>
   <p class="tagline">Storage · the price after the promo</p></div>
-  <nav class="main" aria-label="Main"><a href="../index.html">Home</a><a href="../index.html#cities" aria-current="page">Cities</a><a href="../how-it-works.html">How it works</a><a href="../size-guide.html">Size guide</a><a href="../about.html">About</a></nav>
+  <nav class="main" aria-label="Main"><a href="../index.html">Home</a><a href="../index.html#cities" aria-current="page">Cities</a><a href="../how-it-works.html">How it works</a><a href="../size-guide.html">Size guide</a><a href="../near.html">Your ZIP</a><a href="../about.html">About</a></nav>
 </div></header>
 
 <main class="wrap">
@@ -34,6 +34,20 @@
 </div>
 
 <p class="note"><strong>Estimates, not live quotes.</strong> Built from public price pages (sources below; data as of Sep 2026 (StorageCafe listings non-climate averages; no industry-statistics page); no StorageUnitCosts city page; Oct 2026 (Storage Stats metro)). Your facility, unit and move-in date will differ — always ask for the full move-in total and the rate-change policy in writing.</p>
+
+<section class="zip-tool" id="near">
+<h2>Your ZIP</h2>
+<p>The rates on this page are the Grand Rapids city average. A ZIP code is only used to choose a city page. Census land area decides the match: about half or more of the ZIP Code Tabulation Area has to sit inside the city. We do not publish a dollar figure for a ZIP code.</p>
+<form class="zip-form" action="../near.html" method="get">
+  <label>ZIP code
+    <input name="zip" inputmode="numeric" autocomplete="postal-code" pattern="[0-9]{5}" minlength="5" maxlength="5" required>
+  </label>
+  <input type="hidden" name="from" value="grand-rapids-mi">
+  <button class="btn solid" type="submit">Check this ZIP</button>
+</form>
+<p class="small">The check opens a result page. The ZIP is put in the page address and looked up in your browser from a Census crosswalk. <a href="../near.html">How ZIP matching works</a>.</p>
+<p>Neighborhood street rates are not on file for Grand Rapids. The table on this page is the city average.</p>
+</section>
 
 <p class="quotes-label" id="renters-say">Renters say</p>
 <div class="quotes" aria-labelledby="renters-say">
@@ -54,11 +68,11 @@
   <th scope="col">Notes</th>
 </tr></thead>
 <tbody>
-<tr><th scope="row">5x5</th><td class="true"><span class="big">~$61/mo</span><span class="small">range $58–$62<br>rent only $44</span></td><td><span class="big">$43</span><span class="small">single source — estimate<br>promos from $43</span></td><td><span class="big">~$56</span><span class="small">range $49–$60</span></td><td class="notes">Locker / closet size. Fixed fees dominate the true cost at this size. StorageCafe listings non-climate average $43 (Sep 2026). Only one published figure for this size. Climate-controlled figure on the same page ~$38. Non-climate listings from about $43 (Oct 2026).</td></tr>
-<tr><th scope="row">5x10</th><td class="true"><span class="big">~$98/mo</span><span class="small">range $94–$101<br>rent only $81</span></td><td><span class="big">$80</span><span class="small">single source — estimate<br>lowest promo: no public figure</span></td><td><span class="big">~$104</span><span class="small">range $92–$112</span></td><td class="notes">Walk-in closet; studio overflow. StorageCafe listings non-climate average $80 (Sep 2026). Only one published figure for this size. Climate-controlled figure on the same page ~$58. No reliable lowest-promo figure published for this size (gap).</td></tr>
-<tr><th scope="row">10x10</th><td class="true"><span class="big">~$122/mo</span><span class="small">range $116–$125<br>rent only $105</span></td><td><span class="big">$103</span><span class="small">avg of 2 sources<br>promos from $117</span></td><td><span class="big">~$134</span><span class="small">range $118–$144</span></td><td class="notes">Most rented size. Listings-page non-climate average $116 (StorageCafe, Sep 2026). No industry-statistics street-rate page for this city. Storage Stats Grand Rapids metro non-climate asking rent $90, down 12.6% from a year earlier (updated Oct 28, 2026). That figure covers the metro, not Grand Rapids alone. StorageUnitCosts does not publish this city. Climate-controlled figure on the same page ~$83. Non-climate listings from about $117 (Oct 2026).</td></tr>
-<tr><th scope="row">10x15</th><td class="true"><span class="big">~$165/mo</span><span class="small">range $158–$170<br>rent only $148</span></td><td><span class="big">$146</span><span class="small">single source — estimate<br>lowest promo: no public figure</span></td><td><span class="big">~$190</span><span class="small">range $168–$204</span></td><td class="notes">Two-bedroom contents. StorageCafe listings non-climate average $146 (Sep 2026). Only one published figure for this size. Climate-controlled figure on the same page ~$117.</td></tr>
-<tr><th scope="row">10x20</th><td class="true"><span class="big">~$199/mo</span><span class="small">range $190–$205<br>rent only $182</span></td><td><span class="big">$179</span><span class="small">single source — estimate<br>promos from $182</span></td><td><span class="big">~$233</span><span class="small">range $206–$251</span></td><td class="notes">Three-bedroom home or a car. StorageCafe listings non-climate average $179 (Sep 2026). Only one published figure for this size. Climate-controlled figure on the same page ~$155. Non-climate listings from about $182 (Oct 2026).</td></tr>
+<tr><th scope="row" id="size-5x5">5x5</th><td class="true"><span class="big">~$61/mo</span><span class="small">range $58–$62<br>rent only $44</span></td><td><span class="big">$43</span><span class="small">single source — estimate<br>promos from $43</span></td><td><span class="big">~$56</span><span class="small">range $49–$60</span></td><td class="notes">Locker / closet size. Fixed fees dominate the true cost at this size. StorageCafe listings non-climate average $43 (Sep 2026). Only one published figure for this size. Climate-controlled figure on the same page ~$38. Non-climate listings from about $43 (Oct 2026).</td></tr>
+<tr><th scope="row" id="size-5x10">5x10</th><td class="true"><span class="big">~$98/mo</span><span class="small">range $94–$101<br>rent only $81</span></td><td><span class="big">$80</span><span class="small">single source — estimate<br>lowest promo: no public figure</span></td><td><span class="big">~$104</span><span class="small">range $92–$112</span></td><td class="notes">Walk-in closet; studio overflow. StorageCafe listings non-climate average $80 (Sep 2026). Only one published figure for this size. Climate-controlled figure on the same page ~$58. No reliable lowest-promo figure published for this size (gap).</td></tr>
+<tr><th scope="row" id="size-10x10">10x10</th><td class="true"><span class="big">~$122/mo</span><span class="small">range $116–$125<br>rent only $105</span></td><td><span class="big">$103</span><span class="small">avg of 2 sources<br>promos from $117</span></td><td><span class="big">~$134</span><span class="small">range $118–$144</span></td><td class="notes">Most rented size. Listings-page non-climate average $116 (StorageCafe, Sep 2026). No industry-statistics street-rate page for this city. Storage Stats Grand Rapids metro non-climate asking rent $90, down 12.6% from a year earlier (updated Oct 28, 2026). That figure covers the metro, not Grand Rapids alone. StorageUnitCosts does not publish this city. Climate-controlled figure on the same page ~$83. Non-climate listings from about $117 (Oct 2026).</td></tr>
+<tr><th scope="row" id="size-10x15">10x15</th><td class="true"><span class="big">~$165/mo</span><span class="small">range $158–$170<br>rent only $148</span></td><td><span class="big">$146</span><span class="small">single source — estimate<br>lowest promo: no public figure</span></td><td><span class="big">~$190</span><span class="small">range $168–$204</span></td><td class="notes">Two-bedroom contents. StorageCafe listings non-climate average $146 (Sep 2026). Only one published figure for this size. Climate-controlled figure on the same page ~$117.</td></tr>
+<tr><th scope="row" id="size-10x20">10x20</th><td class="true"><span class="big">~$199/mo</span><span class="small">range $190–$205<br>rent only $182</span></td><td><span class="big">$179</span><span class="small">single source — estimate<br>promos from $182</span></td><td><span class="big">~$233</span><span class="small">range $206–$251</span></td><td class="notes">Three-bedroom home or a car. StorageCafe listings non-climate average $179 (Sep 2026). Only one published figure for this size. Climate-controlled figure on the same page ~$155. Non-climate listings from about $182 (Oct 2026).</td></tr>
 </tbody>
 </table>
 </div>
@@ -127,7 +141,7 @@
   </div>
   <div>
     <h4>Explore</h4>
-    <ul><li><a href="../index.html#cities">Cities</a></li><li><a href="../how-it-works.html">How it works &amp; methodology</a></li><li><a href="../size-guide.html">Size guide</a></li><li><a href="../about.html">About</a></li><li><a href="../privacy.html">Privacy Policy</a></li><li><a href="../terms.html">Terms of Use</a></li><li><a href="../sitemap.xml">Sitemap</a></li></ul>
+    <ul><li><a href="../index.html#cities">Cities</a></li><li><a href="../how-it-works.html">How it works &amp; methodology</a></li><li><a href="../size-guide.html">Size guide</a></li><li><a href="../near.html">Your ZIP</a></li><li><a href="../about.html">About</a></li><li><a href="../privacy.html">Privacy Policy</a></li><li><a href="../terms.html">Terms of Use</a></li><li><a href="../sitemap.xml">Sitemap</a></li></ul>
   </div>
   <div>
     <h4>Disclosure</h4>

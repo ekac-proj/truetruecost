@@ -18,7 +18,7 @@
 <header class="site"><div class="wrap">
   <div><a class="brand" href="../index.html">TrueTrueCost</a>
   <p class="tagline">Storage · the price after the promo</p></div>
-  <nav class="main" aria-label="Main"><a href="../index.html">Home</a><a href="../index.html#cities" aria-current="page">Cities</a><a href="../how-it-works.html">How it works</a><a href="../size-guide.html">Size guide</a><a href="../about.html">About</a></nav>
+  <nav class="main" aria-label="Main"><a href="../index.html">Home</a><a href="../index.html#cities" aria-current="page">Cities</a><a href="../how-it-works.html">How it works</a><a href="../size-guide.html">Size guide</a><a href="../near.html">Your ZIP</a><a href="../about.html">About</a></nav>
 </div></header>
 
 <main class="wrap">
@@ -34,6 +34,20 @@
 </div>
 
 <p class="note"><strong>Estimates, not live quotes.</strong> Built from public price pages (sources below; data as of Sep 2026 (UnitSight street rates). No StorageCafe industry-statistics page; no StorageUnitCosts city page; no Storage Stats market page. A SpareFoot average dated October 2025 was not averaged in.). Your facility, unit and move-in date will differ — always ask for the full move-in total and the rate-change policy in writing.</p>
+
+<section class="zip-tool" id="near">
+<h2>Your ZIP</h2>
+<p>The rates on this page are the South Burlington city average. A ZIP code is only used to choose a city page. Census land area decides the match: about half or more of the ZIP Code Tabulation Area has to sit inside the city. We do not publish a dollar figure for a ZIP code.</p>
+<form class="zip-form" action="../near.html" method="get">
+  <label>ZIP code
+    <input name="zip" inputmode="numeric" autocomplete="postal-code" pattern="[0-9]{5}" minlength="5" maxlength="5" required>
+  </label>
+  <input type="hidden" name="from" value="south-burlington-vt">
+  <button class="btn solid" type="submit">Check this ZIP</button>
+</form>
+<p class="small">The check opens a result page. The ZIP is put in the page address and looked up in your browser from a Census crosswalk. <a href="../near.html">How ZIP matching works</a>.</p>
+<p>Neighborhood street rates are not on file for South Burlington. The table on this page is the city average.</p>
+</section>
 
 <p class="quotes-label" id="renters-say">Renters say</p>
 <div class="quotes" aria-labelledby="renters-say">
@@ -54,11 +68,11 @@
   <th scope="col">Notes</th>
 </tr></thead>
 <tbody>
-<tr><th scope="row">5x5</th><td class="true"><span class="big">~$133/mo</span><span class="small">range $127–$137<br>rent only $116</span></td><td><span class="big">$114</span><span class="small">single source — estimate<br>lowest promo: no public figure</span></td><td><span class="big">~$148</span><span class="small">range $131–$160</span></td><td class="notes">UnitSight standard street rate $114 (Sep 2026). Climate-controlled figure not published for this size.</td></tr>
-<tr><th scope="row">5x10</th><td class="true"><span class="big">~$112/mo</span><span class="small">range $108–$116<br>rent only $96</span></td><td><span class="big">$94</span><span class="small">single source — estimate<br>lowest promo: no public figure</span></td><td><span class="big">~$122</span><span class="small">range $108–$132</span></td><td class="notes">UnitSight standard street rate $94 (Sep 2026). No reliable lowest-promo figure published for this size (gap).</td></tr>
-<tr><th scope="row">10x10</th><td class="true"><span class="big">~$161/mo</span><span class="small">range $154–$166<br>rent only $144</span></td><td><span class="big">$142</span><span class="small">single source — estimate<br>lowest promo: no public figure</span></td><td><span class="big">~$185</span><span class="small">range $163–$199</span></td><td class="notes">UnitSight standard street rate $142 (Sep 2026), 4 facilities and 40 listings. Climate-controlled ~$176. SpareFoot&#x27;s unspecified average of $116.50 is dated October 1, 2025 and is not included in the average.</td></tr>
-<tr><th scope="row">10x15</th><td class="true"><span class="big">~$207/mo</span><span class="small">range $198–$213<br>rent only $190</span></td><td><span class="big">$187</span><span class="small">single source — estimate<br>lowest promo: no public figure</span></td><td><span class="big">~$243</span><span class="small">range $215–$262</span></td><td class="notes">UnitSight standard street rate $187 (Sep 2026).</td></tr>
-<tr><th scope="row">10x20</th><td class="true"><span class="big">~$227/mo</span><span class="small">range $217–$234<br>rent only $210</span></td><td><span class="big">$207</span><span class="small">single source — estimate<br>lowest promo: no public figure</span></td><td><span class="big">~$269</span><span class="small">range $238–$290</span></td><td class="notes">UnitSight standard street rate $207 (Sep 2026).</td></tr>
+<tr><th scope="row" id="size-5x5">5x5</th><td class="true"><span class="big">~$133/mo</span><span class="small">range $127–$137<br>rent only $116</span></td><td><span class="big">$114</span><span class="small">single source — estimate<br>lowest promo: no public figure</span></td><td><span class="big">~$148</span><span class="small">range $131–$160</span></td><td class="notes">UnitSight standard street rate $114 (Sep 2026). Climate-controlled figure not published for this size.</td></tr>
+<tr><th scope="row" id="size-5x10">5x10</th><td class="true"><span class="big">~$112/mo</span><span class="small">range $108–$116<br>rent only $96</span></td><td><span class="big">$94</span><span class="small">single source — estimate<br>lowest promo: no public figure</span></td><td><span class="big">~$122</span><span class="small">range $108–$132</span></td><td class="notes">UnitSight standard street rate $94 (Sep 2026). No reliable lowest-promo figure published for this size (gap).</td></tr>
+<tr><th scope="row" id="size-10x10">10x10</th><td class="true"><span class="big">~$161/mo</span><span class="small">range $154–$166<br>rent only $144</span></td><td><span class="big">$142</span><span class="small">single source — estimate<br>lowest promo: no public figure</span></td><td><span class="big">~$185</span><span class="small">range $163–$199</span></td><td class="notes">UnitSight standard street rate $142 (Sep 2026), 4 facilities and 40 listings. Climate-controlled ~$176. SpareFoot&#x27;s unspecified average of $116.50 is dated October 1, 2025 and is not included in the average.</td></tr>
+<tr><th scope="row" id="size-10x15">10x15</th><td class="true"><span class="big">~$207/mo</span><span class="small">range $198–$213<br>rent only $190</span></td><td><span class="big">$187</span><span class="small">single source — estimate<br>lowest promo: no public figure</span></td><td><span class="big">~$243</span><span class="small">range $215–$262</span></td><td class="notes">UnitSight standard street rate $187 (Sep 2026).</td></tr>
+<tr><th scope="row" id="size-10x20">10x20</th><td class="true"><span class="big">~$227/mo</span><span class="small">range $217–$234<br>rent only $210</span></td><td><span class="big">$207</span><span class="small">single source — estimate<br>lowest promo: no public figure</span></td><td><span class="big">~$269</span><span class="small">range $238–$290</span></td><td class="notes">UnitSight standard street rate $207 (Sep 2026).</td></tr>
 </tbody>
 </table>
 </div>
@@ -127,7 +141,7 @@
   </div>
   <div>
     <h4>Explore</h4>
-    <ul><li><a href="../index.html#cities">Cities</a></li><li><a href="../how-it-works.html">How it works &amp; methodology</a></li><li><a href="../size-guide.html">Size guide</a></li><li><a href="../about.html">About</a></li><li><a href="../privacy.html">Privacy Policy</a></li><li><a href="../terms.html">Terms of Use</a></li><li><a href="../sitemap.xml">Sitemap</a></li></ul>
+    <ul><li><a href="../index.html#cities">Cities</a></li><li><a href="../how-it-works.html">How it works &amp; methodology</a></li><li><a href="../size-guide.html">Size guide</a></li><li><a href="../near.html">Your ZIP</a></li><li><a href="../about.html">About</a></li><li><a href="../privacy.html">Privacy Policy</a></li><li><a href="../terms.html">Terms of Use</a></li><li><a href="../sitemap.xml">Sitemap</a></li></ul>
   </div>
   <div>
     <h4>Disclosure</h4>

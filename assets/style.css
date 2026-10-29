@@ -238,3 +238,31 @@ button.quiz-opt:hover{border-color:var(--ink);background:var(--soft)}
   .quiz{padding:1.15rem 1rem 1rem}
   button.quiz-opt{padding:.95rem 1rem}
 }
+
+/* ZIP check */
+.zip-tool{border:1px solid var(--line);background:var(--surface);padding:1.5rem 1.4rem 1.3rem;margin:2rem 0 1rem}
+.zip-tool h2{margin-top:0}
+.zip-form{display:flex;flex-wrap:wrap;gap:.8rem 1rem;align-items:flex-end;margin:1rem 0 .6rem}
+.zip-form label{display:flex;flex-direction:column;font-size:.8rem;letter-spacing:.04em;color:var(--muted)}
+.zip-form input[name="zip"]{margin-top:.4rem;font:inherit;font-size:1.05rem;color:var(--ink);padding:.7rem .8rem;border:1px solid var(--line);border-radius:6px;background:var(--bg);width:8.5rem}
+.zip-form input:focus{border-color:var(--ink);outline:none}
+.zip-form button{cursor:pointer}
+.hero .zip-form{margin-top:1.4rem}
+.area-bands{margin-top:1.4rem}
+.area-bands h3{font-size:1.15rem;margin:0 0 .6rem}
+.band-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin:1rem 0}
+.band-grid > div{background:var(--bg);padding:1rem 1.05rem 1.1rem}
+.band-grid h4{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);font-weight:500;margin:0 0 .5rem}
+.band-grid ul{list-style:none;padding:0;margin:0}
+.band-grid li{display:flex;justify-content:space-between;gap:.8rem;padding:.4rem 0;border-top:1px solid var(--line);font-size:.95rem;color:var(--ink)}
+.band-rate{color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+.near-cities{list-style:none;padding:0;margin:0 0 1rem}
+.near-cities li{margin:0;padding:.85rem 0;border-top:1px solid var(--line);color:var(--text)}
+.near-cities a{font-weight:600;color:var(--ink)}
+.near-cities span{display:block;font-size:.9rem;color:var(--muted);margin-top:.15rem}
+.band-note{color:var(--ink) !important}
+#zip-result .keyfigs{margin:1.2rem 0}
+#zip-result .note{margin:1rem 0}
+@media (max-width:640px){
+  .zip-tool{padding:1.15rem 1rem 1rem}
+}

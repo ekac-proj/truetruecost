@@ -18,7 +18,7 @@
 <header class="site"><div class="wrap">
   <div><a class="brand" href="../index.html">TrueTrueCost</a>
   <p class="tagline">Storage · the price after the promo</p></div>
-  <nav class="main" aria-label="Main"><a href="../index.html">Home</a><a href="../index.html#cities" aria-current="page">Cities</a><a href="../how-it-works.html">How it works</a><a href="../size-guide.html">Size guide</a><a href="../about.html">About</a></nav>
+  <nav class="main" aria-label="Main"><a href="../index.html">Home</a><a href="../index.html#cities" aria-current="page">Cities</a><a href="../how-it-works.html">How it works</a><a href="../size-guide.html">Size guide</a><a href="../near.html">Your ZIP</a><a href="../about.html">About</a></nav>
 </div></header>
 
 <main class="wrap">
@@ -34,6 +34,20 @@
 </div>
 
 <p class="note"><strong>Estimates, not live quotes.</strong> Built from public price pages (sources below; data as of Sep 2026 (SpareFoot, StorageCafe) and Apr 2026 (Extra Space)). Your facility, unit and move-in date will differ — always ask for the full move-in total and the rate-change policy in writing.</p>
+
+<section class="zip-tool" id="near">
+<h2>Your ZIP</h2>
+<p>The rates on this page are the Austin city average. A ZIP code is only used to choose a city page. Census land area decides the match: about half or more of the ZIP Code Tabulation Area has to sit inside the city. We do not publish a dollar figure for a ZIP code.</p>
+<form class="zip-form" action="../near.html" method="get">
+  <label>ZIP code
+    <input name="zip" inputmode="numeric" autocomplete="postal-code" pattern="[0-9]{5}" minlength="5" maxlength="5" required>
+  </label>
+  <input type="hidden" name="from" value="austin-tx">
+  <button class="btn solid" type="submit">Check this ZIP</button>
+</form>
+<p class="small">The check opens a result page. The ZIP is put in the page address and looked up in your browser from a Census crosswalk. <a href="../near.html">How ZIP matching works</a>.</p>
+<p>Neighborhood street rates are not on file for Austin. The table on this page is the city average.</p>
+</section>
 
 <p class="quotes-label" id="renters-say">Renters say</p>
 <div class="quotes" aria-labelledby="renters-say">
@@ -54,11 +68,11 @@
   <th scope="col">Notes</th>
 </tr></thead>
 <tbody>
-<tr><th scope="row">5x5</th><td class="true"><span class="big">~$59/mo</span><span class="small">range $57–$60<br>rent only $42</span></td><td><span class="big">$41</span><span class="small">avg of 3 sources<br>promos from $7</span></td><td><span class="big">~$54</span><span class="small">range $47–$58</span></td><td class="notes">Locker / closet size. Deepest promos are often on small units; fixed fees ($29 admin + protection) are a large share of the true cost here. Climate control adds roughly $5–$10.</td></tr>
-<tr><th scope="row">5x10</th><td class="true"><span class="big">~$84/mo</span><span class="small">range $81–$86<br>rent only $67</span></td><td><span class="big">$66</span><span class="small">avg of 3 sources<br>promos from $15</span></td><td><span class="big">~$86</span><span class="small">range $76–$93</span></td><td class="notes">Walk-in closet; a studio&#x27;s boxes and small furniture. Climate-controlled average ~$78–$87.</td></tr>
-<tr><th scope="row">10x10</th><td class="true"><span class="big">~$122/mo</span><span class="small">range $117–$125<br>rent only $105</span></td><td><span class="big">$103</span><span class="small">avg of 3 sources<br>promos from $20</span></td><td><span class="big">~$134</span><span class="small">range $119–$145</span></td><td class="notes">Most rented size (one-bedroom apartment). Climate-controlled average ~$104–$132. Sources disagree by ~$17, so get quotes.</td></tr>
-<tr><th scope="row">10x15</th><td class="true"><span class="big">~$165/mo</span><span class="small">range $157–$169<br>rent only $148</span></td><td><span class="big">$145</span><span class="small">avg of 3 sources<br>promos from $40</span></td><td><span class="big">~$189</span><span class="small">range $167–$203</span></td><td class="notes">Two-bedroom contents. Climate-controlled average ~$151–$180.</td></tr>
-<tr><th scope="row">10x20</th><td class="true"><span class="big">~$200/mo</span><span class="small">range $191–$206<br>rent only $183</span></td><td><span class="big">$180</span><span class="small">avg of 3 sources<br>promos from $64</span></td><td><span class="big">~$234</span><span class="small">range $207–$252</span></td><td class="notes">Three-bedroom house or a car. Climate-controlled average ~$207–$233; drive-up units are often cheaper.</td></tr>
+<tr><th scope="row" id="size-5x5">5x5</th><td class="true"><span class="big">~$59/mo</span><span class="small">range $57–$60<br>rent only $42</span></td><td><span class="big">$41</span><span class="small">avg of 3 sources<br>promos from $7</span></td><td><span class="big">~$54</span><span class="small">range $47–$58</span></td><td class="notes">Locker / closet size. Deepest promos are often on small units; fixed fees ($29 admin + protection) are a large share of the true cost here. Climate control adds roughly $5–$10.</td></tr>
+<tr><th scope="row" id="size-5x10">5x10</th><td class="true"><span class="big">~$84/mo</span><span class="small">range $81–$86<br>rent only $67</span></td><td><span class="big">$66</span><span class="small">avg of 3 sources<br>promos from $15</span></td><td><span class="big">~$86</span><span class="small">range $76–$93</span></td><td class="notes">Walk-in closet; a studio&#x27;s boxes and small furniture. Climate-controlled average ~$78–$87.</td></tr>
+<tr><th scope="row" id="size-10x10">10x10</th><td class="true"><span class="big">~$122/mo</span><span class="small">range $117–$125<br>rent only $105</span></td><td><span class="big">$103</span><span class="small">avg of 3 sources<br>promos from $20</span></td><td><span class="big">~$134</span><span class="small">range $119–$145</span></td><td class="notes">Most rented size (one-bedroom apartment). Climate-controlled average ~$104–$132. Sources disagree by ~$17, so get quotes.</td></tr>
+<tr><th scope="row" id="size-10x15">10x15</th><td class="true"><span class="big">~$165/mo</span><span class="small">range $157–$169<br>rent only $148</span></td><td><span class="big">$145</span><span class="small">avg of 3 sources<br>promos from $40</span></td><td><span class="big">~$189</span><span class="small">range $167–$203</span></td><td class="notes">Two-bedroom contents. Climate-controlled average ~$151–$180.</td></tr>
+<tr><th scope="row" id="size-10x20">10x20</th><td class="true"><span class="big">~$200/mo</span><span class="small">range $191–$206<br>rent only $183</span></td><td><span class="big">$180</span><span class="small">avg of 3 sources<br>promos from $64</span></td><td><span class="big">~$234</span><span class="small">range $207–$252</span></td><td class="notes">Three-bedroom house or a car. Climate-controlled average ~$207–$233; drive-up units are often cheaper.</td></tr>
 </tbody>
 </table>
 </div>
@@ -132,7 +146,7 @@
   </div>
   <div>
     <h4>Explore</h4>
-    <ul><li><a href="../index.html#cities">Cities</a></li><li><a href="../how-it-works.html">How it works &amp; methodology</a></li><li><a href="../size-guide.html">Size guide</a></li><li><a href="../about.html">About</a></li><li><a href="../privacy.html">Privacy Policy</a></li><li><a href="../terms.html">Terms of Use</a></li><li><a href="../sitemap.xml">Sitemap</a></li></ul>
+    <ul><li><a href="../index.html#cities">Cities</a></li><li><a href="../how-it-works.html">How it works &amp; methodology</a></li><li><a href="../size-guide.html">Size guide</a></li><li><a href="../near.html">Your ZIP</a></li><li><a href="../about.html">About</a></li><li><a href="../privacy.html">Privacy Policy</a></li><li><a href="../terms.html">Terms of Use</a></li><li><a href="../sitemap.xml">Sitemap</a></li></ul>
   </div>
   <div>
     <h4>Disclosure</h4>

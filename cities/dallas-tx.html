@@ -18,7 +18,7 @@
 <header class="site"><div class="wrap">
   <div><a class="brand" href="../index.html">TrueTrueCost</a>
   <p class="tagline">Storage · the price after the promo</p></div>
-  <nav class="main" aria-label="Main"><a href="../index.html">Home</a><a href="../index.html#cities" aria-current="page">Cities</a><a href="../how-it-works.html">How it works</a><a href="../size-guide.html">Size guide</a><a href="../about.html">About</a></nav>
+  <nav class="main" aria-label="Main"><a href="../index.html">Home</a><a href="../index.html#cities" aria-current="page">Cities</a><a href="../how-it-works.html">How it works</a><a href="../size-guide.html">Size guide</a><a href="../near.html">Your ZIP</a><a href="../about.html">About</a></nav>
 </div></header>
 
 <main class="wrap">
@@ -34,6 +34,20 @@
 </div>
 
 <p class="note"><strong>Estimates, not live quotes.</strong> Built from public price pages (sources below; data as of Aug–Oct 2026 (StorageCafe, StorageUnitCosts, Storage Stats) and Mar 2026 (Extra Space)). Your facility, unit and move-in date will differ — always ask for the full move-in total and the rate-change policy in writing.</p>
+
+<section class="zip-tool" id="near">
+<h2>Your ZIP</h2>
+<p>The rates on this page are the Dallas city average. A ZIP code is only used to choose a city page. Census land area decides the match: about half or more of the ZIP Code Tabulation Area has to sit inside the city. We do not publish a dollar figure for a ZIP code.</p>
+<form class="zip-form" action="../near.html" method="get">
+  <label>ZIP code
+    <input name="zip" inputmode="numeric" autocomplete="postal-code" pattern="[0-9]{5}" minlength="5" maxlength="5" required>
+  </label>
+  <input type="hidden" name="from" value="dallas-tx">
+  <button class="btn solid" type="submit">Check this ZIP</button>
+</form>
+<p class="small">The check opens a result page. The ZIP is put in the page address and looked up in your browser from a Census crosswalk. <a href="../near.html">How ZIP matching works</a>.</p>
+<p>Neighborhood street rates are not on file for Dallas. The table on this page is the city average.</p>
+</section>
 
 <p class="quotes-label" id="renters-say">Renters say</p>
 <div class="quotes" aria-labelledby="renters-say">
@@ -54,11 +68,11 @@
   <th scope="col">Notes</th>
 </tr></thead>
 <tbody>
-<tr><th scope="row">5x5</th><td class="true"><span class="big">~$59/mo</span><span class="small">range $56–$60<br>rent only $42</span></td><td><span class="big">$41</span><span class="small">avg of 3 sources<br>promos from $11</span></td><td><span class="big">~$53</span><span class="small">range $47–$57</span></td><td class="notes">Locker / closet size. Fixed fees dominate the true cost at this size. Climate-controlled ~$46–$54.</td></tr>
-<tr><th scope="row">5x10</th><td class="true"><span class="big">~$82/mo</span><span class="small">range $79–$84<br>rent only $65</span></td><td><span class="big">$64</span><span class="small">avg of 3 sources<br>promos from $24</span></td><td><span class="big">~$84</span><span class="small">range $74–$90</span></td><td class="notes">Walk-in closet; dorm or studio overflow. Climate-controlled ~$71–$88.</td></tr>
-<tr><th scope="row">10x10</th><td class="true"><span class="big">~$126/mo</span><span class="small">range $121–$130<br>rent only $109</span></td><td><span class="big">$107</span><span class="small">avg of 3 sources<br>promos from $47</span></td><td><span class="big">~$140</span><span class="small">range $123–$150</span></td><td class="notes">Most rented size. DFW metro non-climate average $103 (Storage Stats, Oct 2026), down 8.7% YoY — leverage when negotiating. Climate-controlled ~$122–$160.</td></tr>
-<tr><th scope="row">10x15</th><td class="true"><span class="big">~$167/mo</span><span class="small">range $160–$172<br>rent only $150</span></td><td><span class="big">$148</span><span class="small">avg of 2 sources<br>promos from $64</span></td><td><span class="big">~$192</span><span class="small">range $170–$207</span></td><td class="notes">Two-bedroom contents. Climate-controlled ~$172–$237.</td></tr>
-<tr><th scope="row">10x20</th><td class="true"><span class="big">~$209/mo</span><span class="small">range $200–$216<br>rent only $192</span></td><td><span class="big">$189</span><span class="small">avg of 3 sources<br>promos from $52</span></td><td><span class="big">~$246</span><span class="small">range $218–$265</span></td><td class="notes">Three-bedroom house or a car. Climate-controlled ~$231–$338; outdoor/drive-up cheaper.</td></tr>
+<tr><th scope="row" id="size-5x5">5x5</th><td class="true"><span class="big">~$59/mo</span><span class="small">range $56–$60<br>rent only $42</span></td><td><span class="big">$41</span><span class="small">avg of 3 sources<br>promos from $11</span></td><td><span class="big">~$53</span><span class="small">range $47–$57</span></td><td class="notes">Locker / closet size. Fixed fees dominate the true cost at this size. Climate-controlled ~$46–$54.</td></tr>
+<tr><th scope="row" id="size-5x10">5x10</th><td class="true"><span class="big">~$82/mo</span><span class="small">range $79–$84<br>rent only $65</span></td><td><span class="big">$64</span><span class="small">avg of 3 sources<br>promos from $24</span></td><td><span class="big">~$84</span><span class="small">range $74–$90</span></td><td class="notes">Walk-in closet; dorm or studio overflow. Climate-controlled ~$71–$88.</td></tr>
+<tr><th scope="row" id="size-10x10">10x10</th><td class="true"><span class="big">~$126/mo</span><span class="small">range $121–$130<br>rent only $109</span></td><td><span class="big">$107</span><span class="small">avg of 3 sources<br>promos from $47</span></td><td><span class="big">~$140</span><span class="small">range $123–$150</span></td><td class="notes">Most rented size. DFW metro non-climate average $103 (Storage Stats, Oct 2026), down 8.7% YoY — leverage when negotiating. Climate-controlled ~$122–$160.</td></tr>
+<tr><th scope="row" id="size-10x15">10x15</th><td class="true"><span class="big">~$167/mo</span><span class="small">range $160–$172<br>rent only $150</span></td><td><span class="big">$148</span><span class="small">avg of 2 sources<br>promos from $64</span></td><td><span class="big">~$192</span><span class="small">range $170–$207</span></td><td class="notes">Two-bedroom contents. Climate-controlled ~$172–$237.</td></tr>
+<tr><th scope="row" id="size-10x20">10x20</th><td class="true"><span class="big">~$209/mo</span><span class="small">range $200–$216<br>rent only $192</span></td><td><span class="big">$189</span><span class="small">avg of 3 sources<br>promos from $52</span></td><td><span class="big">~$246</span><span class="small">range $218–$265</span></td><td class="notes">Three-bedroom house or a car. Climate-controlled ~$231–$338; outdoor/drive-up cheaper.</td></tr>
 </tbody>
 </table>
 </div>
@@ -131,7 +145,7 @@
   </div>
   <div>
     <h4>Explore</h4>
-    <ul><li><a href="../index.html#cities">Cities</a></li><li><a href="../how-it-works.html">How it works &amp; methodology</a></li><li><a href="../size-guide.html">Size guide</a></li><li><a href="../about.html">About</a></li><li><a href="../privacy.html">Privacy Policy</a></li><li><a href="../terms.html">Terms of Use</a></li><li><a href="../sitemap.xml">Sitemap</a></li></ul>
+    <ul><li><a href="../index.html#cities">Cities</a></li><li><a href="../how-it-works.html">How it works &amp; methodology</a></li><li><a href="../size-guide.html">Size guide</a></li><li><a href="../near.html">Your ZIP</a></li><li><a href="../about.html">About</a></li><li><a href="../privacy.html">Privacy Policy</a></li><li><a href="../terms.html">Terms of Use</a></li><li><a href="../sitemap.xml">Sitemap</a></li></ul>
   </div>
   <div>
     <h4>Disclosure</h4>
