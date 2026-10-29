@@ -1,0 +1,78 @@
+{
+  "intro": "Nashville's non-climate 10x10 street rate is $126/month, down 0.8% from a year earlier (StorageCafe, September 2026). StorageUnitCosts lists $127 (August 2026). Storage Stats puts the Nashville metro non-climate 10x10 asking rent at $110, down 10.2% from a year earlier (October 28, 2026). The climate-controlled 10x10 figure on the same StorageCafe page is about $147. The advertised rate on this page averages the published figures above. Once the move-in special ends and the first existing-customer increase lands, the six-month average sits above that street rate.",
+  "data_asof": "Sep 2026 (StorageCafe street rates); Aug 2026 (StorageUnitCosts); Oct 2026 (Storage Stats metro)",
+  "units": [
+    {
+      "size": "5x5",
+      "market": [
+        60,
+        62
+      ],
+      "low": null,
+      "notes": "Locker / closet size. Fixed fees dominate the true cost at this size. StorageCafe street rate $60 (Sep 2026). StorageUnitCosts $62 (Aug 2026). Climate-controlled figure on the same page ~$60."
+    },
+    {
+      "size": "5x10",
+      "market": [
+        81,
+        83
+      ],
+      "low": null,
+      "notes": "Walk-in closet; studio overflow. StorageCafe street rate $81 (Sep 2026). StorageUnitCosts $83 (Aug 2026). Climate-controlled figure on the same page ~$89. No reliable lowest-promo figure published for this size (gap)."
+    },
+    {
+      "size": "10x10",
+      "market": [
+        126,
+        127,
+        110
+      ],
+      "low": null,
+      "notes": "Most rented size. City street rate $126, down 0.8% from a year earlier (StorageCafe industry statistics, Sep 2026). StorageUnitCosts $127, down 1.6% from a year earlier (Aug 2026). Storage Stats Nashville metro non-climate asking rent $110, down 10.2% from a year earlier (updated Oct 28, 2026). That figure covers the metro, not Nashville alone. Climate-controlled figure on the same page ~$147."
+    },
+    {
+      "size": "10x15",
+      "market": [
+        169
+      ],
+      "low": null,
+      "notes": "Two-bedroom contents. StorageCafe street rate $169 (Sep 2026). Climate-controlled figure on the same page ~$204."
+    },
+    {
+      "size": "10x20",
+      "market": [
+        209,
+        210
+      ],
+      "low": null,
+      "notes": "Three-bedroom home or a car. StorageCafe street rate $209 (Sep 2026). StorageUnitCosts $210 (Aug 2026). Climate-controlled figure on the same page ~$275."
+    }
+  ],
+  "local_tips": [
+    "StorageCafe lists Aldrich Heights (~$94), Elysian Park (~$107), Hillwood (~$114) among the cheaper areas for a standard unit. Edgefield (~$346) is among the highest.",
+    "Nashville has about 57 facilities and 7.0 sq ft of storage per person (StorageCafe).",
+    "Extra Space's published admin fee is $50 on StorageUnitCosts' fee notes, higher than our $29 default; adjust the calculator if your facility charges more."
+  ],
+  "sources": [
+    {
+      "label": "StorageCafe — Nashville, TN self storage prices and stats (Sep 2026)",
+      "url": "https://www.storagecafe.com/self-storage-industry-statistics/us/tn/nashville/"
+    },
+    {
+      "label": "StorageUnitCosts — Storage unit prices in Nashville (Aug 2026 rates, updated Oct 2026)",
+      "url": "https://storageunitcosts.com/storage-unit-prices/nashville-tn/"
+    },
+    {
+      "label": "Storage Stats — Nashville metro self-storage market data (updated Oct 28, 2026)",
+      "url": "https://storagestats.com/markets/nashville-tn/"
+    },
+    {
+      "label": "Public Storage — Storage deals (promo terms; admin fee and other fees apply)",
+      "url": "https://www.publicstorage.com/storage-solutions/storage-deals"
+    },
+    {
+      "label": "LegalClarity — Existing customer rate increases (reported 30–40%, cases up to 56%)",
+      "url": "https://legalclarity.org/public-storage-price-gouging-lawsuits-settlements-fines/"
+    }
+  ]
+}

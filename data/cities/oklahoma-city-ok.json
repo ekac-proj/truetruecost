@@ -1,0 +1,75 @@
+{
+  "intro": "Oklahoma City's non-climate 10x10 street rate is $73/month, down 5.2% from a year earlier (StorageCafe, September 2026). Storage Stats puts the Oklahoma City metro non-climate 10x10 asking rent at $75, down 9% from a year earlier (October 28, 2026). The climate-controlled 10x10 figure on the same StorageCafe page is about $90. The advertised rate on this page averages the published figures above. Once the move-in special ends and the first existing-customer increase lands, the six-month average sits above that street rate.",
+  "data_asof": "Sep 2026 (StorageCafe street rates); no StorageUnitCosts city page; Oct 2026 (Storage Stats metro)",
+  "units": [
+    {
+      "size": "5x5",
+      "market": [
+        30
+      ],
+      "low": null,
+      "notes": "Locker / closet size. Fixed fees dominate the true cost at this size. StorageCafe street rate $30 (Sep 2026). Climate-controlled figure on the same page ~$38."
+    },
+    {
+      "size": "5x10",
+      "market": [
+        44
+      ],
+      "low": null,
+      "notes": "Walk-in closet; studio overflow. StorageCafe street rate $44 (Sep 2026). Climate-controlled figure on the same page ~$58. No reliable lowest-promo figure published for this size (gap)."
+    },
+    {
+      "size": "10x10",
+      "market": [
+        73,
+        75
+      ],
+      "low": null,
+      "notes": "Most rented size. City street rate $73, down 5.2% from a year earlier (StorageCafe industry statistics, Sep 2026). Storage Stats Oklahoma City metro non-climate asking rent $75, down 9% from a year earlier (updated Oct 28, 2026). That figure covers the metro, not Oklahoma City alone. StorageUnitCosts does not publish this city. Climate-controlled figure on the same page ~$90."
+    },
+    {
+      "size": "10x15",
+      "market": [
+        101
+      ],
+      "low": null,
+      "notes": "Two-bedroom contents. StorageCafe street rate $101 (Sep 2026). Climate-controlled figure on the same page ~$124."
+    },
+    {
+      "size": "10x20",
+      "market": [
+        122
+      ],
+      "low": null,
+      "notes": "Three-bedroom home or a car. StorageCafe street rate $122 (Sep 2026). Climate-controlled figure on the same page ~$148."
+    }
+  ],
+  "local_tips": [
+    "StorageCafe lists Ranchwood Villas (~$61), South Lindsey (~$63), Rose Creek (~$64) among the cheaper areas for a standard unit. Highland Park (~$312) is among the highest.",
+    "Oklahoma City has about 138 facilities and 9.2 sq ft of storage per person (StorageCafe).",
+    "About 210,469 sq ft of new storage is projected for 2026, a increase of 45.1% from the year before (StorageCafe). Ask what month five costs before taking a move-in discount.",
+    "Extra Space's published admin fee is $50 on StorageUnitCosts' fee notes, higher than our $29 default; adjust the calculator if your facility charges more."
+  ],
+  "sources": [
+    {
+      "label": "StorageCafe — Oklahoma City, OK self storage prices and stats (Sep 2026)",
+      "url": "https://www.storagecafe.com/self-storage-industry-statistics/us/ok/oklahoma-city/"
+    },
+    {
+      "label": "StorageUnitCosts — Prices by city (20-city set; this city is not included) and the Extra Space admin-fee example",
+      "url": "https://storageunitcosts.com/storage-unit-prices/"
+    },
+    {
+      "label": "Storage Stats — Oklahoma City metro self-storage market data (updated Oct 28, 2026)",
+      "url": "https://storagestats.com/markets/oklahoma-city-ok/"
+    },
+    {
+      "label": "Public Storage — Storage deals (promo terms; admin fee and other fees apply)",
+      "url": "https://www.publicstorage.com/storage-solutions/storage-deals"
+    },
+    {
+      "label": "LegalClarity — Existing customer rate increases (reported 30–40%, cases up to 56%)",
+      "url": "https://legalclarity.org/public-storage-price-gouging-lawsuits-settlements-fines/"
+    }
+  ]
+}

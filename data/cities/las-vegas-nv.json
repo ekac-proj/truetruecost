@@ -1,0 +1,79 @@
+{
+  "intro": "Las Vegas's non-climate 10x10 street rate is $112/month, down 4.3% from a year earlier (StorageCafe, September 2026). StorageUnitCosts lists $113 (August 2026). Storage Stats puts the Las Vegas metro non-climate 10x10 asking rent at $123, down 16.4% from a year earlier (October 28, 2026). The climate-controlled 10x10 figure on the same StorageCafe page is about $114. The advertised rate on this page averages the published figures above. Once the move-in special ends and the first existing-customer increase lands, the six-month average sits above that street rate.",
+  "data_asof": "Sep 2026 (StorageCafe street rates); Aug 2026 (StorageUnitCosts); Oct 2026 (Storage Stats metro)",
+  "units": [
+    {
+      "size": "5x5",
+      "market": [
+        45,
+        45
+      ],
+      "low": null,
+      "notes": "Locker / closet size. Fixed fees dominate the true cost at this size. StorageCafe street rate $45 (Sep 2026). StorageUnitCosts $45 (Aug 2026). Climate-controlled figure on the same page ~$46."
+    },
+    {
+      "size": "5x10",
+      "market": [
+        70,
+        70
+      ],
+      "low": null,
+      "notes": "Walk-in closet; studio overflow. StorageCafe street rate $70 (Sep 2026). StorageUnitCosts $70 (Aug 2026). Climate-controlled figure on the same page ~$70. No reliable lowest-promo figure published for this size (gap)."
+    },
+    {
+      "size": "10x10",
+      "market": [
+        112,
+        113,
+        123
+      ],
+      "low": null,
+      "notes": "Most rented size. City street rate $112, down 4.3% from a year earlier (StorageCafe industry statistics, Sep 2026). StorageUnitCosts $113, down 2.6% from a year earlier (Aug 2026). Storage Stats Las Vegas metro non-climate asking rent $123, down 16.4% from a year earlier (updated Oct 28, 2026). That figure covers the metro, not Las Vegas alone. Climate-controlled figure on the same page ~$114."
+    },
+    {
+      "size": "10x15",
+      "market": [
+        153
+      ],
+      "low": null,
+      "notes": "Two-bedroom contents. StorageCafe street rate $153 (Sep 2026). Climate-controlled figure on the same page ~$159."
+    },
+    {
+      "size": "10x20",
+      "market": [
+        199,
+        199
+      ],
+      "low": null,
+      "notes": "Three-bedroom home or a car. StorageCafe street rate $199 (Sep 2026). StorageUnitCosts $199 (Aug 2026). Climate-controlled figure on the same page ~$212."
+    }
+  ],
+  "local_tips": [
+    "StorageCafe lists Stewart Place (~$101), Downtown Las Vegas (~$108), The Strip (~$110) among the cheaper areas for a standard unit. Gateway District (~$364) is among the highest.",
+    "Las Vegas has about 215 facilities and 8.0 sq ft of storage per person (StorageCafe).",
+    "About 886,466 sq ft of new storage is projected for 2026, a increase of 45.5% from the year before (StorageCafe). Ask what month five costs before taking a move-in discount.",
+    "Extra Space's published admin fee is $50 on StorageUnitCosts' fee notes, higher than our $29 default; adjust the calculator if your facility charges more."
+  ],
+  "sources": [
+    {
+      "label": "StorageCafe — Las Vegas, NV self storage prices and stats (Sep 2026)",
+      "url": "https://www.storagecafe.com/self-storage-industry-statistics/us/nv/las-vegas/"
+    },
+    {
+      "label": "StorageUnitCosts — Storage unit prices in Las Vegas (Aug 2026 rates, updated Oct 2026)",
+      "url": "https://storageunitcosts.com/storage-unit-prices/las-vegas-nv/"
+    },
+    {
+      "label": "Storage Stats — Las Vegas metro self-storage market data (updated Oct 28, 2026)",
+      "url": "https://storagestats.com/markets/las-vegas-nv/"
+    },
+    {
+      "label": "Public Storage — Storage deals (promo terms; admin fee and other fees apply)",
+      "url": "https://www.publicstorage.com/storage-solutions/storage-deals"
+    },
+    {
+      "label": "LegalClarity — Existing customer rate increases (reported 30–40%, cases up to 56%)",
+      "url": "https://legalclarity.org/public-storage-price-gouging-lawsuits-settlements-fines/"
+    }
+  ]
+}

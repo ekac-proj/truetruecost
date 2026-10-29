@@ -1,0 +1,69 @@
+{
+  "intro": "San Jose's non-climate 10x10 street rate is $176/month, down 2.2% from a year earlier (StorageCafe, September 2026). The climate-controlled 10x10 figure on the same StorageCafe page is about $175. StorageUnitCosts does not publish this city, and Storage Stats has no market page for it, so that StorageCafe figure is the advertised rate. Once the move-in special ends and the first existing-customer increase lands, the six-month average sits above that street rate.",
+  "data_asof": "Sep 2026 (StorageCafe street rates); no StorageUnitCosts city page; no Storage Stats market page",
+  "units": [
+    {
+      "size": "5x5",
+      "market": [
+        68
+      ],
+      "low": null,
+      "notes": "Locker / closet size. Fixed fees dominate the true cost at this size. StorageCafe street rate $68 (Sep 2026). Climate-controlled figure on the same page ~$70."
+    },
+    {
+      "size": "5x10",
+      "market": [
+        106
+      ],
+      "low": null,
+      "notes": "Walk-in closet; studio overflow. StorageCafe street rate $106 (Sep 2026). Climate-controlled figure on the same page ~$107. No reliable lowest-promo figure published for this size (gap)."
+    },
+    {
+      "size": "10x10",
+      "market": [
+        176
+      ],
+      "low": null,
+      "notes": "Most rented size. City street rate $176, down 2.2% from a year earlier (StorageCafe industry statistics, Sep 2026). StorageUnitCosts does not publish this city. Storage Stats does not publish a market page for this city. Climate-controlled figure on the same page ~$175."
+    },
+    {
+      "size": "10x15",
+      "market": [
+        235
+      ],
+      "low": null,
+      "notes": "Two-bedroom contents. StorageCafe street rate $235 (Sep 2026). Climate-controlled figure on the same page ~$235."
+    },
+    {
+      "size": "10x20",
+      "market": [
+        313
+      ],
+      "low": null,
+      "notes": "Three-bedroom home or a car. StorageCafe street rate $313 (Sep 2026). Climate-controlled figure on the same page ~$324."
+    }
+  ],
+  "local_tips": [
+    "StorageCafe lists North San Jose (~$175), Blossom Valley (~$182), Downtown San Jose (~$191) among the cheaper areas for a standard unit. Cambrian Park (~$269) is among the highest.",
+    "San Jose has about 68 facilities and 4.0 sq ft of storage per person (StorageCafe).",
+    "Extra Space's published admin fee is $50 on StorageUnitCosts' fee notes, higher than our $29 default; adjust the calculator if your facility charges more."
+  ],
+  "sources": [
+    {
+      "label": "StorageCafe — San Jose, CA self storage prices and stats (Sep 2026)",
+      "url": "https://www.storagecafe.com/self-storage-industry-statistics/us/ca/san-jose/"
+    },
+    {
+      "label": "StorageUnitCosts — Prices by city (20-city set; this city is not included) and the Extra Space admin-fee example",
+      "url": "https://storageunitcosts.com/storage-unit-prices/"
+    },
+    {
+      "label": "Public Storage — Storage deals (promo terms; admin fee and other fees apply)",
+      "url": "https://www.publicstorage.com/storage-solutions/storage-deals"
+    },
+    {
+      "label": "LegalClarity — Existing customer rate increases (reported 30–40%, cases up to 56%)",
+      "url": "https://legalclarity.org/public-storage-price-gouging-lawsuits-settlements-fines/"
+    }
+  ]
+}

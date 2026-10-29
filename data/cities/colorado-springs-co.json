@@ -1,0 +1,70 @@
+{
+  "intro": "Colorado Springs's non-climate 10x10 street rate is $103/month, down 2.8% from a year earlier (StorageCafe, September 2026). The climate-controlled 10x10 figure on the same StorageCafe page is about $111. StorageUnitCosts does not publish this city, and Storage Stats has no market page for it, so that StorageCafe figure is the advertised rate. Once the move-in special ends and the first existing-customer increase lands, the six-month average sits above that street rate.",
+  "data_asof": "Sep 2026 (StorageCafe street rates); no StorageUnitCosts city page; no Storage Stats market page",
+  "units": [
+    {
+      "size": "5x5",
+      "market": [
+        40
+      ],
+      "low": null,
+      "notes": "Locker / closet size. Fixed fees dominate the true cost at this size. StorageCafe street rate $40 (Sep 2026). Climate-controlled figure on the same page ~$39."
+    },
+    {
+      "size": "5x10",
+      "market": [
+        57
+      ],
+      "low": null,
+      "notes": "Walk-in closet; studio overflow. StorageCafe street rate $57 (Sep 2026). Climate-controlled figure on the same page ~$64. No reliable lowest-promo figure published for this size (gap)."
+    },
+    {
+      "size": "10x10",
+      "market": [
+        103
+      ],
+      "low": null,
+      "notes": "Most rented size. City street rate $103, down 2.8% from a year earlier (StorageCafe industry statistics, Sep 2026). StorageUnitCosts does not publish this city. Storage Stats does not publish a market page for this city. Climate-controlled figure on the same page ~$111."
+    },
+    {
+      "size": "10x15",
+      "market": [
+        132
+      ],
+      "low": null,
+      "notes": "Two-bedroom contents. StorageCafe street rate $132 (Sep 2026). Climate-controlled figure on the same page ~$150."
+    },
+    {
+      "size": "10x20",
+      "market": [
+        165
+      ],
+      "low": null,
+      "notes": "Three-bedroom home or a car. StorageCafe street rate $165 (Sep 2026). Climate-controlled figure on the same page ~$191."
+    }
+  ],
+  "local_tips": [
+    "StorageCafe lists Pleasant Valley (~$89), Pikes Peak Park (~$95), Banning Lewis Ranch (~$97) among the cheaper areas for a standard unit. Skyway (~$266) is among the highest.",
+    "Colorado Springs has about 121 facilities and 11.7 sq ft of storage per person (StorageCafe).",
+    "About 271,600 sq ft of new storage is projected for 2026 (StorageCafe). Ask what month five costs before taking a move-in discount.",
+    "Extra Space's published admin fee is $50 on StorageUnitCosts' fee notes, higher than our $29 default; adjust the calculator if your facility charges more."
+  ],
+  "sources": [
+    {
+      "label": "StorageCafe — Colorado Springs, CO self storage prices and stats (Sep 2026)",
+      "url": "https://www.storagecafe.com/self-storage-industry-statistics/us/co/colorado-springs/"
+    },
+    {
+      "label": "StorageUnitCosts — Prices by city (20-city set; this city is not included) and the Extra Space admin-fee example",
+      "url": "https://storageunitcosts.com/storage-unit-prices/"
+    },
+    {
+      "label": "Public Storage — Storage deals (promo terms; admin fee and other fees apply)",
+      "url": "https://www.publicstorage.com/storage-solutions/storage-deals"
+    },
+    {
+      "label": "LegalClarity — Existing customer rate increases (reported 30–40%, cases up to 56%)",
+      "url": "https://legalclarity.org/public-storage-price-gouging-lawsuits-settlements-fines/"
+    }
+  ]
+}

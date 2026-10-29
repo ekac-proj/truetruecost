@@ -1,0 +1,78 @@
+{
+  "intro": "Boston's non-climate 10x10 street rate is $256/month, up 1.6% from a year earlier (StorageCafe, September 2026). StorageUnitCosts lists $268 (August 2026). Storage Stats puts the Boston metro non-climate 10x10 asking rent at $172, up 1.9% from a year earlier (October 28, 2026). The climate-controlled 10x10 figure on the same StorageCafe page is about $236. The advertised rate on this page averages the published figures above. Once the move-in special ends and the first existing-customer increase lands, the six-month average sits above that street rate.",
+  "data_asof": "Sep 2026 (StorageCafe street rates); Aug 2026 (StorageUnitCosts); Oct 2026 (Storage Stats metro)",
+  "units": [
+    {
+      "size": "5x5",
+      "market": [
+        128,
+        135
+      ],
+      "low": null,
+      "notes": "Locker / closet size. Fixed fees dominate the true cost at this size. StorageCafe street rate $128 (Sep 2026). StorageUnitCosts $135 (Aug 2026). Climate-controlled figure on the same page ~$108."
+    },
+    {
+      "size": "5x10",
+      "market": [
+        151,
+        158
+      ],
+      "low": null,
+      "notes": "Walk-in closet; studio overflow. StorageCafe street rate $151 (Sep 2026). StorageUnitCosts $158 (Aug 2026). Climate-controlled figure on the same page ~$155. No reliable lowest-promo figure published for this size (gap)."
+    },
+    {
+      "size": "10x10",
+      "market": [
+        256,
+        268,
+        172
+      ],
+      "low": null,
+      "notes": "Most rented size. City street rate $256, up 1.6% from a year earlier (StorageCafe industry statistics, Sep 2026). StorageUnitCosts $268, up 5.5% from a year earlier (Aug 2026). Storage Stats Boston metro non-climate asking rent $172, up 1.9% from a year earlier (updated Oct 28, 2026). That figure covers the metro, not Boston alone. Climate-controlled figure on the same page ~$236."
+    },
+    {
+      "size": "10x15",
+      "market": [
+        363
+      ],
+      "low": null,
+      "notes": "Two-bedroom contents. StorageCafe street rate $363 (Sep 2026). Climate-controlled figure on the same page ~$326."
+    },
+    {
+      "size": "10x20",
+      "market": [
+        474,
+        493
+      ],
+      "low": null,
+      "notes": "Three-bedroom home or a car. StorageCafe street rate $474 (Sep 2026). StorageUnitCosts $493 (Aug 2026). Climate-controlled figure on the same page ~$462."
+    }
+  ],
+  "local_tips": [
+    "StorageCafe lists Mattapan (~$154), Roxbury (~$160), Jamaica Plain (~$186) among the cheaper areas for a standard unit. South End Boston (~$358) is among the highest.",
+    "Boston has about 11 facilities and 0.7 sq ft of storage per person (StorageCafe).",
+    "Extra Space's published admin fee is $50 on StorageUnitCosts' fee notes, higher than our $29 default; adjust the calculator if your facility charges more."
+  ],
+  "sources": [
+    {
+      "label": "StorageCafe — Boston, MA self storage prices and stats (Sep 2026)",
+      "url": "https://www.storagecafe.com/self-storage-industry-statistics/us/ma/boston/"
+    },
+    {
+      "label": "StorageUnitCosts — Storage unit prices in Boston (Aug 2026 rates, updated Oct 2026)",
+      "url": "https://storageunitcosts.com/storage-unit-prices/boston-ma/"
+    },
+    {
+      "label": "Storage Stats — Boston metro self-storage market data (updated Oct 28, 2026)",
+      "url": "https://storagestats.com/markets/boston-ma/"
+    },
+    {
+      "label": "Public Storage — Storage deals (promo terms; admin fee and other fees apply)",
+      "url": "https://www.publicstorage.com/storage-solutions/storage-deals"
+    },
+    {
+      "label": "LegalClarity — Existing customer rate increases (reported 30–40%, cases up to 56%)",
+      "url": "https://legalclarity.org/public-storage-price-gouging-lawsuits-settlements-fines/"
+    }
+  ]
+}

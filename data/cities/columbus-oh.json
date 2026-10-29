@@ -1,0 +1,74 @@
+{
+  "intro": "Columbus's non-climate 10x10 street rate is $95/month, down 1% from a year earlier (StorageCafe, September 2026). Storage Stats puts the Columbus metro non-climate 10x10 asking rent at $108, up 3.3% from a year earlier (October 28, 2026). The climate-controlled 10x10 figure on the same StorageCafe page is about $124. The advertised rate on this page averages the published figures above. Once the move-in special ends and the first existing-customer increase lands, the six-month average sits above that street rate.",
+  "data_asof": "Sep 2026 (StorageCafe street rates); no StorageUnitCosts city page; Oct 2026 (Storage Stats metro)",
+  "units": [
+    {
+      "size": "5x5",
+      "market": [
+        38
+      ],
+      "low": null,
+      "notes": "Locker / closet size. Fixed fees dominate the true cost at this size. StorageCafe street rate $38 (Sep 2026). Climate-controlled figure on the same page ~$50."
+    },
+    {
+      "size": "5x10",
+      "market": [
+        57
+      ],
+      "low": null,
+      "notes": "Walk-in closet; studio overflow. StorageCafe street rate $57 (Sep 2026). Climate-controlled figure on the same page ~$71. No reliable lowest-promo figure published for this size (gap)."
+    },
+    {
+      "size": "10x10",
+      "market": [
+        95,
+        108
+      ],
+      "low": null,
+      "notes": "Most rented size. City street rate $95, down 1% from a year earlier (StorageCafe industry statistics, Sep 2026). Storage Stats Columbus metro non-climate asking rent $108, up 3.3% from a year earlier (updated Oct 28, 2026). That figure covers the metro, not Columbus alone. StorageUnitCosts does not publish this city. Climate-controlled figure on the same page ~$124."
+    },
+    {
+      "size": "10x15",
+      "market": [
+        125
+      ],
+      "low": null,
+      "notes": "Two-bedroom contents. StorageCafe street rate $125 (Sep 2026). Climate-controlled figure on the same page ~$155."
+    },
+    {
+      "size": "10x20",
+      "market": [
+        153
+      ],
+      "low": null,
+      "notes": "Three-bedroom home or a car. StorageCafe street rate $153 (Sep 2026). Climate-controlled figure on the same page ~$210."
+    }
+  ],
+  "local_tips": [
+    "StorageCafe lists Eastland (~$90), Hilltop (~$94), Riverbend (~$97) among the cheaper areas for a standard unit. Fairgrounds (~$275) is among the highest.",
+    "Columbus has about 87 facilities and 4.5 sq ft of storage per person (StorageCafe).",
+    "Extra Space's published admin fee is $50 on StorageUnitCosts' fee notes, higher than our $29 default; adjust the calculator if your facility charges more."
+  ],
+  "sources": [
+    {
+      "label": "StorageCafe — Columbus, OH self storage prices and stats (Sep 2026)",
+      "url": "https://www.storagecafe.com/self-storage-industry-statistics/us/oh/columbus/"
+    },
+    {
+      "label": "StorageUnitCosts — Prices by city (20-city set; this city is not included) and the Extra Space admin-fee example",
+      "url": "https://storageunitcosts.com/storage-unit-prices/"
+    },
+    {
+      "label": "Storage Stats — Columbus metro self-storage market data (updated Oct 28, 2026)",
+      "url": "https://storagestats.com/markets/columbus-oh/"
+    },
+    {
+      "label": "Public Storage — Storage deals (promo terms; admin fee and other fees apply)",
+      "url": "https://www.publicstorage.com/storage-solutions/storage-deals"
+    },
+    {
+      "label": "LegalClarity — Existing customer rate increases (reported 30–40%, cases up to 56%)",
+      "url": "https://legalclarity.org/public-storage-price-gouging-lawsuits-settlements-fines/"
+    }
+  ]
+}

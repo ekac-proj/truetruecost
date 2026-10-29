@@ -1,0 +1,74 @@
+{
+  "intro": "Milwaukee's non-climate 10x10 street rate is $104/month (StorageCafe, September 2026). Storage Stats puts the Milwaukee metro non-climate 10x10 asking rent at $106, down 7.1% from a year earlier (October 28, 2026). The climate-controlled 10x10 figure on the same StorageCafe page is about $116. The advertised rate on this page averages the published figures above. Once the move-in special ends and the first existing-customer increase lands, the six-month average sits above that street rate.",
+  "data_asof": "Sep 2026 (StorageCafe street rates); no StorageUnitCosts city page; Oct 2026 (Storage Stats metro)",
+  "units": [
+    {
+      "size": "5x5",
+      "market": [
+        46
+      ],
+      "low": null,
+      "notes": "Locker / closet size. Fixed fees dominate the true cost at this size. StorageCafe street rate $46 (Sep 2026). Climate-controlled figure on the same page ~$44."
+    },
+    {
+      "size": "5x10",
+      "market": [
+        67
+      ],
+      "low": null,
+      "notes": "Walk-in closet; studio overflow. StorageCafe street rate $67 (Sep 2026). Climate-controlled figure on the same page ~$72. No reliable lowest-promo figure published for this size (gap)."
+    },
+    {
+      "size": "10x10",
+      "market": [
+        104,
+        106
+      ],
+      "low": null,
+      "notes": "Most rented size. City street rate $104 (StorageCafe industry statistics, Sep 2026). Storage Stats Milwaukee metro non-climate asking rent $106, down 7.1% from a year earlier (updated Oct 28, 2026). That figure covers the metro, not Milwaukee alone. StorageUnitCosts does not publish this city. Climate-controlled figure on the same page ~$116."
+    },
+    {
+      "size": "10x15",
+      "market": [
+        128
+      ],
+      "low": null,
+      "notes": "Two-bedroom contents. StorageCafe street rate $128 (Sep 2026). Climate-controlled figure on the same page ~$149."
+    },
+    {
+      "size": "10x20",
+      "market": [
+        158
+      ],
+      "low": null,
+      "notes": "Three-bedroom home or a car. StorageCafe street rate $158 (Sep 2026). Climate-controlled figure on the same page ~$191."
+    }
+  ],
+  "local_tips": [
+    "StorageCafe lists Timmerman Airport (~$42), Kilbourn Town (~$75), Granville Woods (~$79) among the cheaper areas for a standard unit. Wick Field (~$344) is among the highest.",
+    "Milwaukee has about 48 facilities and 3.9 sq ft of storage per person (StorageCafe).",
+    "Extra Space's published admin fee is $50 on StorageUnitCosts' fee notes, higher than our $29 default; adjust the calculator if your facility charges more."
+  ],
+  "sources": [
+    {
+      "label": "StorageCafe — Milwaukee, WI self storage prices and stats (Sep 2026)",
+      "url": "https://www.storagecafe.com/self-storage-industry-statistics/us/wi/milwaukee/"
+    },
+    {
+      "label": "StorageUnitCosts — Prices by city (20-city set; this city is not included) and the Extra Space admin-fee example",
+      "url": "https://storageunitcosts.com/storage-unit-prices/"
+    },
+    {
+      "label": "Storage Stats — Milwaukee metro self-storage market data (updated Oct 28, 2026)",
+      "url": "https://storagestats.com/markets/milwaukee-wi/"
+    },
+    {
+      "label": "Public Storage — Storage deals (promo terms; admin fee and other fees apply)",
+      "url": "https://www.publicstorage.com/storage-solutions/storage-deals"
+    },
+    {
+      "label": "LegalClarity — Existing customer rate increases (reported 30–40%, cases up to 56%)",
+      "url": "https://legalclarity.org/public-storage-price-gouging-lawsuits-settlements-fines/"
+    }
+  ]
+}
