@@ -5,7 +5,7 @@ self-storage by city (promo rate vs. post-increase rate + fees). Plain HTML/CSS/
 
 ## Layout
 ```
-index.html            home: problem, method, city list (auto-generated between CITY_LIST markers), disclaimer
+index.html            home: problem, method, US state map, city tiles grouped by state (auto-generated between CITY_LIST markers), disclaimer
 about.html            about / affiliate disclosure
 how-it-works.html     methodology (linked from nav + footer)
 cities/_template.html city page template ({{PLACEHOLDERS}})
@@ -34,7 +34,7 @@ cd /workspace/storage-true-cost && python3 -m http.server 8080
 3. Publish: `python3 scripts/add_city.py houston-tx "Houston, TX" --config data/cities/houston-tx.json --force`
    This computes the table, writes the page, upserts `data/cities.json`, regenerates `sitemap.xml`
    and the home page city list.
-4. `python3 scripts/add_city.py --rebuild` regenerates sitemap, robots, home city tiles and shared footers.
+4. `python3 scripts/add_city.py --rebuild` regenerates sitemap, robots, the homepage state groups (inside the CITY_LIST markers) and shared footers. The US map markup in index.html stays put; assets/map.js highlights a state and jumps to its group, and reports an empty state by clearing the filter.
 5. `python3 scripts/add_city.py --all` re-publishes every city from its JSON (use after template/CSS/model changes).
 
 Slugs: lowercase, hyphenated, `city-st`. To change the cost model, edit `data/site.json` and re-run

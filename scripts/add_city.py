@@ -3,7 +3,7 @@
 
 Usage:
   python3 scripts/add_city.py <slug> "<Metro name, ST>" [--config data/cities/<slug>.json] [--force]
-  python3 scripts/add_city.py --rebuild          # regenerate sitemap.xml (incl. privacy & terms), home city tiles, shared footers
+  python3 scripts/add_city.py --rebuild          # regenerate sitemap.xml (incl. privacy & terms), home city groups, shared footers
   python3 scripts/add_city.py --all              # re-publish every city that has data/cities/<slug>.json
 
 Without --config the page is created as a DRAFT (noindex, placeholder rows, not in
@@ -21,6 +21,19 @@ SITE = json.loads((ROOT / "data" / "site.json").read_text())
 M = SITE["model"]
 TODAY = datetime.date.today().isoformat()
 SLUG_RE = re.compile(r"^[a-z0-9]+(-[a-z0-9]+)*$")
+STATE_NAMES = {
+    "AL": "Alabama", "AK": "Alaska", "AZ": "Arizona", "AR": "Arkansas", "CA": "California",
+    "CO": "Colorado", "CT": "Connecticut", "DE": "Delaware", "DC": "District of Columbia",
+    "FL": "Florida", "GA": "Georgia", "HI": "Hawaii", "ID": "Idaho", "IL": "Illinois",
+    "IN": "Indiana", "IA": "Iowa", "KS": "Kansas", "KY": "Kentucky", "LA": "Louisiana",
+    "ME": "Maine", "MD": "Maryland", "MA": "Massachusetts", "MI": "Michigan", "MN": "Minnesota",
+    "MS": "Mississippi", "MO": "Missouri", "MT": "Montana", "NE": "Nebraska", "NV": "Nevada",
+    "NH": "New Hampshire", "NJ": "New Jersey", "NM": "New Mexico", "NY": "New York",
+    "NC": "North Carolina", "ND": "North Dakota", "OH": "Ohio", "OK": "Oklahoma", "OR": "Oregon",
+    "PA": "Pennsylvania", "RI": "Rhode Island", "SC": "South Carolina", "SD": "South Dakota",
+    "TN": "Tennessee", "TX": "Texas", "UT": "Utah", "VT": "Vermont", "VA": "Virginia",
+    "WA": "Washington", "WV": "West Virginia", "WI": "Wisconsin", "WY": "Wyoming",
+}
 
 
 def money(x):
@@ -134,22 +147,40 @@ def rebuild(idx):
                                      "Disallow: /previews/\nDisallow: /outreach/\nDisallow: /revenue-model/\n\n"
                                      f"Sitemap: {base}/sitemap.xml\n")
 
-    order = idx.get("order") or []
-    live_sorted = sorted(live, key=lambda c: (order.index(c["slug"]) if c["slug"] in order else 99, c["name"]))
-    tiles = []
-    for c in live_sorted:
-        fig = (f'<span class="fig">${c["true_avg_10x10"]}<small>/mo</small></span>'
-               f'<span class="cap">10x10 true 6-month average</span>'
-               f'<span class="adv">vs ${c["rate_10x10"]} advertised rate</span>') if c.get("true_avg_10x10") else ""
-        tiles.append(f'  <li><a class="tile" href="{c["path"]}"><span class="name">{html.escape(c["name"])}</span>{fig}'
-                     f'<span class="go">View sizes &amp; sources →</span></a></li>')
+    groups = {}
+    for c in live:
+        code = c["slug"].rsplit("-", 1)[-1].upper()
+        groups.setdefault(code, []).append(c)
+    codes = sorted(groups, key=lambda s: (STATE_NAMES.get(s, s), s))
+    blocks = ['  <div class="state-chips" role="toolbar" aria-label="States with city pages">',
+              '    <button type="button" class="chip" data-state="*" aria-pressed="false">All cities</button>']
+    for code in codes:
+        blocks.append(f'    <button type="button" class="chip" data-state="{code}" aria-pressed="false">{html.escape(STATE_NAMES.get(code, code))}</button>')
+    blocks.append("  </div>")
+    blocks.append('  <div class="state-groups">')
+    for code in codes:
+        name = STATE_NAMES.get(code, code)
+        cities = sorted(groups[code], key=lambda c: c["name"])
+        count = "1 city" if len(cities) == 1 else f"{len(cities)} cities"
+        blocks.append(f'  <section class="state-group" id="state-{code.lower()}" data-state="{code}" data-state-name="{html.escape(name)}">')
+        blocks.append(f'    <h3 class="state-heading" tabindex="-1">{html.escape(name)} <span class="state-count">{count}</span></h3>')
+        blocks.append('    <ul class="cities">')
+        for c in cities:
+            fig = (f'<span class="fig">${c["true_avg_10x10"]}<small>/mo</small></span>'
+                   f'<span class="cap">10x10 true 6-month average</span>'
+                   f'<span class="adv">vs ${c["rate_10x10"]} advertised rate</span>') if c.get("true_avg_10x10") else ""
+            blocks.append(f'    <li data-state="{code}"><a class="tile" href="{c["path"]}"><span class="name">{html.escape(c["name"])}</span>{fig}'
+                          f'<span class="go">View sizes &amp; sources →</span></a></li>')
+        blocks.append("    </ul>")
+        blocks.append("  </section>")
+    blocks.append("  </div>")
     for name in ["index.html", "about.html", "how-it-works.html", "privacy.html", "terms.html"]:
         f = ROOT / name
         if not f.exists():
             continue
         text = f.read_text()
         if name == "index.html":
-            text = replace_block(text, "CITY_LIST", "\n".join(tiles))
+            text = replace_block(text, "CITY_LIST", "\n".join(blocks))
         text = replace_block(text, "FOOTER", footer(""))
         f.write_text(text)
     city_footer = footer("../")
@@ -160,7 +191,7 @@ def rebuild(idx):
         new, n = re.subn(r'<footer class="site">.*?</footer>', city_footer, text, count=1, flags=re.S)
         if n:
             city_html.write_text(new)
-    print(f"sitemap.xml: {len(urls)} urls; index.html: {len(live)} cities listed")
+    print(f"sitemap.xml: {len(urls)} urls; index.html: {len(live)} cities in {len(codes)} states")
 
 
 def main():
@@ -232,6 +263,10 @@ def publish(idx, slug, name, config, force):
         sys.exit(f"unfilled placeholders: {left}")
     out.write_text(page)
     idx["cities"] = [c for c in idx["cities"] if c["slug"] != slug] + [entry]
+    if cfg:
+        order = idx.setdefault("order", [])
+        if slug not in order:
+            order.append(slug)
     save_index(idx)
     print(f"wrote {out.relative_to(ROOT)} ({entry['status']})")
 
