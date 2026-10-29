@@ -1,0 +1,67 @@
+{
+  "intro": "StorageCafe has no industry-statistics page for Augusta. Its listings page puts the non-climate 10x10 average at $67/month (September 2026). The climate-controlled 10x10 figure on the same StorageCafe page is about $102. StorageUnitCosts does not publish this city, and Storage Stats has no market page for it, so that StorageCafe figure is the advertised rate. Once the move-in special ends and the first existing-customer increase lands, the six-month average sits above that street rate.",
+  "data_asof": "Sep 2026 (StorageCafe listings non-climate averages; no industry-statistics page); no StorageUnitCosts city page; no Storage Stats market page",
+  "units": [
+    {
+      "size": "5x5",
+      "market": [
+        27
+      ],
+      "low": 9,
+      "notes": "Locker / closet size. Fixed fees dominate the true cost at this size. StorageCafe listings non-climate average $27 (Sep 2026). Only one published figure for this size. Climate-controlled figure on the same page ~$50. Non-climate listings from about $9 (Oct 2026)."
+    },
+    {
+      "size": "5x10",
+      "market": [
+        43
+      ],
+      "low": null,
+      "notes": "Walk-in closet; studio overflow. StorageCafe listings non-climate average $43 (Sep 2026). Only one published figure for this size. Climate-controlled figure on the same page ~$70. No reliable lowest-promo figure published for this size (gap)."
+    },
+    {
+      "size": "10x10",
+      "market": [
+        67
+      ],
+      "low": 19,
+      "notes": "Most rented size. Listings-page non-climate average $67 (StorageCafe, Sep 2026). No industry-statistics street-rate page for this city. StorageUnitCosts does not publish this city. Storage Stats does not publish a market page for this city. Climate-controlled figure on the same page ~$102. Non-climate listings from about $19 (Oct 2026)."
+    },
+    {
+      "size": "10x15",
+      "market": [
+        95
+      ],
+      "low": null,
+      "notes": "Two-bedroom contents. StorageCafe listings non-climate average $95 (Sep 2026). Only one published figure for this size. Climate-controlled figure on the same page ~$164."
+    },
+    {
+      "size": "10x20",
+      "market": [
+        111
+      ],
+      "low": 38,
+      "notes": "Three-bedroom home or a car. StorageCafe listings non-climate average $111 (Sep 2026). Only one published figure for this size. Climate-controlled figure on the same page ~$186. Non-climate listings from about $38 (Oct 2026)."
+    }
+  ],
+  "local_tips": [
+    "Extra Space's published admin fee is $50 on StorageUnitCosts' fee notes, higher than our $29 default; adjust the calculator if your facility charges more."
+  ],
+  "sources": [
+    {
+      "label": "StorageCafe — Storage units in Augusta, GA (average prices, Sep 2026)",
+      "url": "https://www.storagecafe.com/self-storage/us/ga/augusta/"
+    },
+    {
+      "label": "StorageUnitCosts — Prices by city (20-city set; this city is not included) and the Extra Space admin-fee example",
+      "url": "https://storageunitcosts.com/storage-unit-prices/"
+    },
+    {
+      "label": "Public Storage — Storage deals (promo terms; admin fee and other fees apply)",
+      "url": "https://www.publicstorage.com/storage-solutions/storage-deals"
+    },
+    {
+      "label": "LegalClarity — Existing customer rate increases (reported 30–40%, cases up to 56%)",
+      "url": "https://legalclarity.org/public-storage-price-gouging-lawsuits-settlements-fines/"
+    }
+  ]
+}

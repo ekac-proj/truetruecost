@@ -1,0 +1,68 @@
+{
+  "intro": "Tacoma's non-climate 10x10 street rate is $134/month, down 2.9% from a year earlier (StorageCafe, September 2026). The climate-controlled 10x10 figure on the same StorageCafe page is about $149. StorageUnitCosts does not publish this city, and Storage Stats has no market page for it, so that StorageCafe figure is the advertised rate. Once the move-in special ends and the first existing-customer increase lands, the six-month average sits above that street rate.",
+  "data_asof": "Sep 2026 (StorageCafe street rates); no StorageUnitCosts city page; no Storage Stats market page",
+  "units": [
+    {
+      "size": "5x5",
+      "market": [
+        52
+      ],
+      "low": null,
+      "notes": "Locker / closet size. Fixed fees dominate the true cost at this size. StorageCafe street rate $52 (Sep 2026). Climate-controlled figure on the same page ~$64."
+    },
+    {
+      "size": "5x10",
+      "market": [
+        82
+      ],
+      "low": null,
+      "notes": "Walk-in closet; studio overflow. StorageCafe street rate $82 (Sep 2026). Climate-controlled figure on the same page ~$101. No reliable lowest-promo figure published for this size (gap)."
+    },
+    {
+      "size": "10x10",
+      "market": [
+        134
+      ],
+      "low": null,
+      "notes": "Most rented size. City street rate $134, down 2.9% from a year earlier (StorageCafe industry statistics, Sep 2026). StorageUnitCosts does not publish this city. Storage Stats does not publish a market page for this city. Climate-controlled figure on the same page ~$149."
+    },
+    {
+      "size": "10x15",
+      "market": [
+        178
+      ],
+      "low": null,
+      "notes": "Two-bedroom contents. StorageCafe street rate $178 (Sep 2026). Climate-controlled figure on the same page ~$201."
+    },
+    {
+      "size": "10x20",
+      "market": [
+        226
+      ],
+      "low": null,
+      "notes": "Three-bedroom home or a car. StorageCafe street rate $226 (Sep 2026). Climate-controlled figure on the same page ~$247."
+    }
+  ],
+  "local_tips": [
+    "Tacoma has about 45 facilities and 5.1 sq ft of storage per person (StorageCafe).",
+    "Extra Space's published admin fee is $50 on StorageUnitCosts' fee notes, higher than our $29 default; adjust the calculator if your facility charges more."
+  ],
+  "sources": [
+    {
+      "label": "StorageCafe — Tacoma, WA self storage prices and stats (Sep 2026)",
+      "url": "https://www.storagecafe.com/self-storage-industry-statistics/us/wa/tacoma/"
+    },
+    {
+      "label": "StorageUnitCosts — Prices by city (20-city set; this city is not included) and the Extra Space admin-fee example",
+      "url": "https://storageunitcosts.com/storage-unit-prices/"
+    },
+    {
+      "label": "Public Storage — Storage deals (promo terms; admin fee and other fees apply)",
+      "url": "https://www.publicstorage.com/storage-solutions/storage-deals"
+    },
+    {
+      "label": "LegalClarity — Existing customer rate increases (reported 30–40%, cases up to 56%)",
+      "url": "https://legalclarity.org/public-storage-price-gouging-lawsuits-settlements-fines/"
+    }
+  ]
+}
