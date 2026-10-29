@@ -13,6 +13,7 @@ Every run updates data/cities.json, sitemap.xml and the city list in index.html.
 """
 import argparse, datetime, html, json, re, statistics, sys
 from pathlib import Path
+from urllib.parse import quote
 
 ROOT = Path(__file__).resolve().parent.parent
 TEMPLATE = ROOT / "cities" / "_template.html"
@@ -133,7 +134,7 @@ def footer(prefix=""):
   </div>
   <div>
     <h4>Explore</h4>
-    <ul><li><a href="{p}index.html#cities">Cities</a></li><li><a href="{p}how-it-works.html">How it works &amp; methodology</a></li><li><a href="{p}about.html">About</a></li><li><a href="{p}privacy.html">Privacy Policy</a></li><li><a href="{p}terms.html">Terms of Use</a></li><li><a href="{p}sitemap.xml">Sitemap</a></li></ul>
+    <ul><li><a href="{p}index.html#cities">Cities</a></li><li><a href="{p}how-it-works.html">How it works &amp; methodology</a></li><li><a href="{p}size-guide.html">Size guide</a></li><li><a href="{p}about.html">About</a></li><li><a href="{p}privacy.html">Privacy Policy</a></li><li><a href="{p}terms.html">Terms of Use</a></li><li><a href="{p}sitemap.xml">Sitemap</a></li></ul>
   </div>
   <div>
     <h4>Disclosure</h4>
@@ -152,8 +153,8 @@ def rebuild(idx):
     live = [c for c in idx["cities"] if c.get("status") == "published"]
     base = SITE["site_url"].rstrip("/")
     upd = idx.get("updated", TODAY)
-    urls = [(f"{base}/", upd), (f"{base}/how-it-works.html", upd), (f"{base}/about.html", upd),
-            (f"{base}/privacy.html", upd), (f"{base}/terms.html", upd)]
+    urls = [(f"{base}/", upd), (f"{base}/how-it-works.html", upd), (f"{base}/size-guide.html", upd),
+            (f"{base}/about.html", upd), (f"{base}/privacy.html", upd), (f"{base}/terms.html", upd)]
     urls += [(f"{base}/{c['path']}", c["updated"]) for c in live]
     xml = ['<?xml version="1.0" encoding="UTF-8"?>',
            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
@@ -191,7 +192,7 @@ def rebuild(idx):
         blocks.append("    </ul>")
         blocks.append("  </section>")
     blocks.append("  </div>")
-    for name in ["index.html", "about.html", "how-it-works.html", "privacy.html", "terms.html"]:
+    for name in ["index.html", "about.html", "how-it-works.html", "size-guide.html", "privacy.html", "terms.html"]:
         f = ROOT / name
         if not f.exists():
             continue
@@ -270,7 +271,8 @@ def publish(idx, slug, name, config, force):
                 "RATE_10": "—", "AFTER_10": "—", "TRUE_10": "—",
                 "DATA_ASOF": "TBD", "LOCAL_TIPS": "", "SOURCES": "    <li>TBD</li>",
                 "ROBOTS_META": '<meta name="robots" content="noindex">', **calc_subs(None)}
-    subs.update(QUOTES=quote_strip(slug), CITY_NAME=html.escape(name), CITY_SHORT=html.escape(short), SLUG=slug,
+    subs.update(QUOTES=quote_strip(slug), CITY_NAME=html.escape(name), CITY_NAME_Q=quote(name, safe=""),
+                CITY_SHORT=html.escape(short), SLUG=slug,
                 NEIGHBOR_URL=html.escape(neighbor_url(slug), quote=True),
                 UPDATED=TODAY, SITE_URL=SITE["site_url"].rstrip("/"), FOOTER=footer("../"))
     page = TEMPLATE.read_text()
