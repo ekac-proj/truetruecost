@@ -309,7 +309,7 @@ function mount(api) {
     actions.appendChild(guideLink);
     app.appendChild(actions);
 
-    app.appendChild(el("p", "small", "City pages include partner links, such as Neighbor, marked sponsored. We may earn a commission if you book. It does not change this suggestion or the estimates."));
+    app.appendChild(el("p", "small", "Find storage on a city page opens Neighbor’s public listings, marked sponsored, with no tracking parameters. We do not earn a commission on those clicks yet. It does not change this suggestion or the estimates."));
 
     var nav = el("div", "quiz-nav");
     var back = el("button", "calc-reset", "Back");

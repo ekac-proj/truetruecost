@@ -50,9 +50,17 @@ The "Renters say" strip under the key figures pulls 2 quotes per city (determini
 `data/site.json`. Keep them short, paraphrased and anonymized; edit the pool and run `--all`.
 
 ## Partner links
-CTA buttons are placeholders: `href="#" rel="nofollow sponsored" data-partner="sparefoot|neighbor|storageunits"`.
-When affiliate deals exist, replace `#` in `cities/_template.html` (or add a small JS map from
-`data-partner` to the tracking URL) and rebuild pages.
+“Find storage” buttons on city pages open Neighbor’s public city pages (no Impact or other
+affiliate parameters — those clicks do not track a commission):
+
+`https://www.neighbor.com/self-storage-near-me/{state}/{city}`
+
+`scripts/add_city.py` builds that URL from the city slug (`neighbor_url`). Links use
+`target="_blank"` and `rel="sponsored nofollow noopener noreferrer"`.
+
+SpareFoot and StorageUnits.com buttons are still placeholders (`href="#"`) until those
+destinations exist. When an affiliate program is live, replace the public Neighbor URL
+in `neighbor_url` (do not invent tracking parameters before then) and rebuild with `--all`.
 
 ## Deploy (not done yet — needs instructions)
 - Static files only. Netlify: drag-and-drop the folder or `netlify deploy --dir . --prod`.
