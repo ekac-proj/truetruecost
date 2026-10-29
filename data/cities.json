@@ -232,6 +232,17 @@
       "data_asof": "Sep 2026 (StorageCafe listings non-climate averages; no industry-statistics page); no StorageUnitCosts city page; no Storage Stats market page"
     },
     {
+      "slug": "burlington-vt",
+      "name": "Burlington, VT",
+      "path": "cities/burlington-vt.html",
+      "status": "published",
+      "updated": "2026-10-29",
+      "published": "2026-10-29",
+      "true_avg_10x10": 161,
+      "rate_10x10": 142,
+      "data_asof": "Sep 2026 (UnitSight South Burlington standard street rates, metro proxy for Burlington). Burlington proper UnitSight rates unpublished (viewed Oct 29, 2026). No StorageCafe industry-statistics page or citywide average. SpareFoot South Burlington 10x10 dated Oct 1, 2025 not averaged in. No StorageUnitCosts city page. No Storage Stats market page."
+    },
+    {
       "slug": "casper-wy",
       "name": "Casper, WY",
       "path": "cities/casper-wy.html",
@@ -1898,6 +1909,7 @@
     "morgantown-wv",
     "juneau-ak",
     "east-honolulu-hi",
-    "phoenix-az"
+    "phoenix-az",
+    "burlington-vt"
   ]
 }

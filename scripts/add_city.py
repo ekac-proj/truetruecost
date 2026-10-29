@@ -106,16 +106,25 @@ def quote_strip(slug):
             '<p class="small quotes-note">Paraphrased and anonymized from public renter forums and social posts.</p>')
 
 
-def zip_block(slug, short, band_html):
-    """ZIP form plus any cited area examples. Rates stay city-level."""
+def zip_block(slug, short, band_html, cfg=None):
+    """ZIP form plus any cited area examples. Rates stay city-level.
+
+    Optional config sentences exist for a metro proxy, where calling the table
+    a city average would contradict the page.
+    """
+    cfg = cfg or {}
     if band_html:
         extra = band_html
     else:
-        extra = (f"<p>Neighborhood street rates are not on file for {html.escape(short)}. "
-                 "The table on this page is the city average.</p>")
+        area = cfg.get("zip_area_sentence") or (
+            f"Neighborhood street rates are not on file for {short}. "
+            "The table on this page is the city average."
+        )
+        extra = f"<p>{html.escape(area)}</p>"
+    lead = html.escape(cfg.get("zip_rates_sentence") or f"The rates on this page are the {short} city average.")
     return f"""<section class="zip-tool" id="near">
 <h2>Your ZIP</h2>
-<p>The rates on this page are the {html.escape(short)} city average. A ZIP code is only used to choose a city page. Census land area decides the match: about half or more of the ZIP Code Tabulation Area has to sit inside the city. We do not publish a dollar figure for a ZIP code.</p>
+<p>{lead} A ZIP code is only used to choose a city page. Census land area decides the match: about half or more of the ZIP Code Tabulation Area has to sit inside the city. We do not publish a dollar figure for a ZIP code.</p>
 <form class="zip-form" action="../near.html" method="get">
   <label>ZIP code
     <input name="zip" inputmode="numeric" autocomplete="postal-code" pattern="[0-9]{{5}}" minlength="5" maxlength="5" required>
@@ -290,7 +299,7 @@ def publish(idx, slug, name, config, force):
                             for s in cfg["sources"])
         subs = {"INTRO": html.escape(cfg["intro"]), "TABLE_ROWS": "\n".join(rows), "DATA_ASOF": html.escape(cfg["data_asof"]),
                 "LOCAL_TIPS": local, "SOURCES": sources, "ROBOTS_META": "",
-                "ZIP_BLOCK": zip_block(slug, short, render_band_html(bands_for_config(cfg))),
+                "ZIP_BLOCK": zip_block(slug, short, render_band_html(bands_for_config(cfg)), cfg),
                 **calc_subs(rate10),
                 "RATE_10": money(rate10) if rate10 else "—", "AFTER_10": f"~{money(after10)}" if after10 else "—",
                 "TRUE_10": f"~{money(avg10)}" if avg10 else "—"}
