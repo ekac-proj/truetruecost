@@ -1,0 +1,73 @@
+{
+  "intro": "StorageCafe has no city statistics page for Morgantown. UnitSight's September 2026 street-rate index, from 26 facilities and 425 listings, puts the standard 10x10 at $88. SpareFoot's unspecified 10x10 average was $125.08 on September 1, 2026, included here as $125. The advertised rate averages those two figures. Once the move-in special ends and the first existing-customer increase lands, the six-month average sits above that street rate.",
+  "data_asof": "Sep 2026 (UnitSight street rates; SpareFoot 10x10 average). No StorageCafe industry-statistics page; no StorageUnitCosts city page; no Storage Stats market page.",
+  "units": [
+    {
+      "size": "5x5",
+      "market": [
+        40
+      ],
+      "low": null,
+      "notes": "UnitSight standard street rate $40 (Sep 2026). Climate-controlled ~$90."
+    },
+    {
+      "size": "5x10",
+      "market": [
+        38
+      ],
+      "low": null,
+      "notes": "UnitSight standard street rate $38 (Sep 2026). Climate-controlled ~$92. No reliable lowest-promo figure published for this size (gap)."
+    },
+    {
+      "size": "10x10",
+      "market": [
+        88,
+        125
+      ],
+      "low": null,
+      "notes": "UnitSight standard street rate $88 (Sep 2026), 26 facilities. SpareFoot unspecified average $125.08 on Sep 1, 2026, rounded to $125. Climate-controlled on the UnitSight page ~$124."
+    },
+    {
+      "size": "10x15",
+      "market": [
+        132
+      ],
+      "low": null,
+      "notes": "UnitSight standard street rate $132 (Sep 2026). Climate-controlled ~$149."
+    },
+    {
+      "size": "10x20",
+      "market": [
+        137
+      ],
+      "low": null,
+      "notes": "UnitSight standard street rate $137 (Sep 2026). Climate-controlled ~$170."
+    }
+  ],
+  "local_tips": [
+    "UnitSight tracks 26 facilities and 425 listings in Morgantown (September 2026). The standard 5x10 ($38) prints below the 5x5 ($40) on that page; both figures are used as published.",
+    "Extra Space's published admin fee is $50 on StorageUnitCosts' fee notes, higher than our $29 default; adjust the calculator if your facility charges more."
+  ],
+  "sources": [
+    {
+      "label": "UnitSight — Morgantown, WV self storage prices (September 2026 street rates)",
+      "url": "https://unitsight.com/storage-prices/wv/morgantown"
+    },
+    {
+      "label": "SpareFoot — Morgantown, WV average prices (updated Sep 1, 2026; not split by climate)",
+      "url": "https://www.sparefoot.com/Morgantown-WV-self-storage.html"
+    },
+    {
+      "label": "StorageUnitCosts — Prices by city (20-city set; this city is not included) and the Extra Space admin-fee example",
+      "url": "https://storageunitcosts.com/storage-unit-prices/"
+    },
+    {
+      "label": "Public Storage — Storage deals (promo terms; admin fee and other fees apply)",
+      "url": "https://www.publicstorage.com/storage-solutions/storage-deals"
+    },
+    {
+      "label": "LegalClarity — Existing customer rate increases (reported 30–40%, cases up to 56%)",
+      "url": "https://legalclarity.org/public-storage-price-gouging-lawsuits-settlements-fines/"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "intro": "StorageCafe, StorageUnitCosts, and Storage Stats do not publish an East Honolulu market average. The rates below are the advertised web rates at one facility in the East Honolulu / Hawaii Kai area: Extra Space Storage at 6800 Kalanianaole Hwy, Honolulu, HI 96825, within a mile of Hawaii Kai. They are climate-controlled elevator-access web rates checked October 29, 2026, not an average of several facilities. A first-floor 10x10 at the same building was listed at a $560 web rate. Once the move-in special ends and the first existing-customer increase lands, the six-month average sits above the web rate used here.",
+  "data_asof": "Oct 29, 2026 (one Extra Space facility web rate; climate-controlled elevator access). No StorageCafe East Honolulu average; no StorageUnitCosts city page; no Storage Stats market page.",
+  "units": [
+    {
+      "size": "5x5",
+      "market": [
+        177
+      ],
+      "low": 124,
+      "notes": "Extra Space web rate for a climate-controlled elevator-access 5x5, $177. A first-floor climate-controlled 5x5 locker was listed at a $124 web rate. One facility, not a city average."
+    },
+    {
+      "size": "5x10",
+      "market": [
+        240
+      ],
+      "low": null,
+      "notes": "Extra Space web rate for a climate-controlled elevator-access 5x10, $240. A first-floor 5x10 was also listed at a $240 web rate. No reliable separate promo floor (gap). One facility."
+    },
+    {
+      "size": "10x10",
+      "market": [
+        348
+      ],
+      "low": null,
+      "notes": "Extra Space web rate for a climate-controlled elevator-access 10x10, $348, at 6800 Kalanianaole Hwy (96825). The first-floor climate-controlled 10x10 web rate was $560. Not a multi-facility average. Honolulu citywide StorageCafe averages were not substituted."
+    },
+    {
+      "size": "10x15",
+      "market": [
+        533
+      ],
+      "low": null,
+      "notes": "Extra Space web rate for a climate-controlled elevator-access 10x15, $533. The first-floor web rate was $560. One facility."
+    },
+    {
+      "size": "10x20",
+      "market": [
+        899
+      ],
+      "low": null,
+      "notes": "Extra Space web rate for a climate-controlled elevator-access 10x20 (listed as 20x10), $899. One facility."
+    }
+  ],
+  "local_tips": [
+    "These figures are one building's web rates, checked October 29, 2026. East Honolulu does not have its own StorageCafe statistics page, so nothing here is a citywide average.",
+    "The facility is by Kalanianaole Hwy and Keahole St, within about a mile of Hawaii Kai Towne Center.",
+    "Extra Space's published admin fee is $50 on StorageUnitCosts' fee notes, higher than our $29 default; adjust the calculator if this building charges more."
+  ],
+  "sources": [
+    {
+      "label": "Extra Space Storage \u2014 6800 Kalanianaole Hwy, Honolulu, HI 96825 (web rates checked Oct 29, 2026)",
+      "url": "https://www.extraspace.com/storage/facilities/us/hawaii/honolulu/1000000763/"
+    },
+    {
+      "label": "StorageUnitCosts \u2014 Prices by city (20-city set; East Honolulu is not included) and the Extra Space admin-fee example",
+      "url": "https://storageunitcosts.com/storage-unit-prices/"
+    },
+    {
+      "label": "Public Storage \u2014 Storage deals (promo terms; admin fee and other fees apply)",
+      "url": "https://www.publicstorage.com/storage-solutions/storage-deals"
+    },
+    {
+      "label": "LegalClarity \u2014 Existing customer rate increases (reported 30\u201340%, cases up to 56%)",
+      "url": "https://legalclarity.org/public-storage-price-gouging-lawsuits-settlements-fines/"
+    }
+  ]
+}

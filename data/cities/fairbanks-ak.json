@@ -1,0 +1,68 @@
+{
+  "intro": "StorageCafe has no city statistics page for Fairbanks. UnitSight's September 2026 street-rate index, from 6 facilities and 78 listings, puts the standard 10x10 at $168. Climate-controlled rates were not published. StorageUnitCosts and Storage Stats do not publish this city, so the advertised rate is that UnitSight figure. Once the move-in special ends and the first existing-customer increase lands, the six-month average sits above that street rate.",
+  "data_asof": "Sep 2026 (UnitSight standard street rates). No StorageCafe industry-statistics page; climate-controlled rates not published; no StorageUnitCosts city page; no Storage Stats market page.",
+  "units": [
+    {
+      "size": "5x5",
+      "market": [
+        101
+      ],
+      "low": null,
+      "notes": "UnitSight standard street rate $101 (Sep 2026). Climate-controlled not published."
+    },
+    {
+      "size": "5x10",
+      "market": [
+        135
+      ],
+      "low": null,
+      "notes": "UnitSight standard street rate $135 (Sep 2026). No reliable lowest-promo figure published for this size (gap)."
+    },
+    {
+      "size": "10x10",
+      "market": [
+        168
+      ],
+      "low": null,
+      "notes": "UnitSight standard street rate $168 (Sep 2026), 6 facilities and 78 listings. Climate-controlled not published."
+    },
+    {
+      "size": "10x15",
+      "market": [
+        185
+      ],
+      "low": null,
+      "notes": "UnitSight standard street rate $185 (Sep 2026)."
+    },
+    {
+      "size": "10x20",
+      "market": [
+        177
+      ],
+      "low": null,
+      "notes": "UnitSight standard street rate $177 (Sep 2026)."
+    }
+  ],
+  "local_tips": [
+    "UnitSight tracks 6 facilities and 78 listings in Fairbanks (September 2026). A North Pole comparison row on the same page is a different place and is not used here.",
+    "Extra Space's published admin fee is $50 on StorageUnitCosts' fee notes, higher than our $29 default; adjust the calculator if your facility charges more."
+  ],
+  "sources": [
+    {
+      "label": "UnitSight — Fairbanks, AK self storage prices (September 2026 street rates)",
+      "url": "https://unitsight.com/storage-prices/ak/fairbanks"
+    },
+    {
+      "label": "StorageUnitCosts — Prices by city (20-city set; this city is not included) and the Extra Space admin-fee example",
+      "url": "https://storageunitcosts.com/storage-unit-prices/"
+    },
+    {
+      "label": "Public Storage — Storage deals (promo terms; admin fee and other fees apply)",
+      "url": "https://www.publicstorage.com/storage-solutions/storage-deals"
+    },
+    {
+      "label": "LegalClarity — Existing customer rate increases (reported 30–40%, cases up to 56%)",
+      "url": "https://legalclarity.org/public-storage-price-gouging-lawsuits-settlements-fines/"
+    }
+  ]
+}
