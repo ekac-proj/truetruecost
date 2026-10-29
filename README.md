@@ -8,9 +8,11 @@ self-storage by city (promo rate vs. post-increase rate + fees). Plain HTML/CSS/
 index.html            home: problem, method, US state map, city tiles grouped by state (auto-generated between CITY_LIST markers), disclaimer
 about.html            about / affiliate disclosure
 how-it-works.html     methodology (linked from nav + footer)
+size-guide.html       5x5–10x20 size guide and a browser-only "what do you need?" quiz
 cities/_template.html city page template ({{PLACEHOLDERS}})
 cities/<slug>.html    generated city pages (austin-tx, dallas-tx)
 assets/style.css      styles;  assets/calc.js  6-month true-cost calculator
+assets/size-quiz.js   size quiz used by size-guide.html (no network, no storage)
 data/site.json        site URL + cost-model assumptions (promo 50%, +30% increase from month 5, $29 fee, $12/mo protection)
 data/cities.json      index of all cities (nightly routine appends here via the script)
 data/cities/<slug>.json  per-city market data + sources used to build the page
@@ -36,6 +38,8 @@ cd /workspace/storage-true-cost && python3 -m http.server 8080
    and the home page city list.
 4. `python3 scripts/add_city.py --rebuild` regenerates sitemap, robots, the homepage state groups (inside the CITY_LIST markers) and shared footers. The US map markup in index.html stays put; assets/map.js highlights a state and jumps to its group, and reports an empty state by clearing the filter.
 5. `python3 scripts/add_city.py --all` re-publishes every city from its JSON (use after template/CSS/model changes).
+
+City pages link “Not sure what size?” to `size-guide.html?city=<slug>&name=<City, ST>#quiz`. The sentence is in `cities/_template.html` (`{{CITY_NAME_Q}}` is the URL-encoded metro name). Existing pages were updated in place. `--all` rewrites every city page from JSON, so use it when the template or the cost model changes, not merely to refresh that link.
 
 Slugs: lowercase, hyphenated, `city-st`. To change the cost model, edit `data/site.json` and re-run
 `python3 scripts/add_city.py --all` — calculator defaults (fee, protection, increase %, increase month, promo %, months) are filled from
