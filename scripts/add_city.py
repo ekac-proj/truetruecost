@@ -3,7 +3,7 @@
 
 Usage:
   python3 scripts/add_city.py <slug> "<Metro name, ST>" [--config data/cities/<slug>.json] [--force]
-  python3 scripts/add_city.py --rebuild          # regenerate sitemap.xml (incl. privacy & terms), home city tiles, shared footers
+  python3 scripts/add_city.py --rebuild          # regenerate sitemap.xml (incl. privacy & terms), home city tiles grouped by state, map highlights, shared footers
   python3 scripts/add_city.py --all              # re-publish every city that has data/cities/<slug>.json
 
 Without --config the page is created as a DRAFT (noindex, placeholder rows, not in
@@ -21,6 +21,67 @@ SITE = json.loads((ROOT / "data" / "site.json").read_text())
 M = SITE["model"]
 TODAY = datetime.date.today().isoformat()
 SLUG_RE = re.compile(r"^[a-z0-9]+(-[a-z0-9]+)*$")
+STATES = {
+    "AL": "Alabama", "AK": "Alaska", "AZ": "Arizona", "AR": "Arkansas", "CA": "California",
+    "CO": "Colorado", "CT": "Connecticut", "DE": "Delaware", "DC": "District of Columbia",
+    "FL": "Florida", "GA": "Georgia", "HI": "Hawaii", "ID": "Idaho", "IL": "Illinois",
+    "IN": "Indiana", "IA": "Iowa", "KS": "Kansas", "KY": "Kentucky", "LA": "Louisiana",
+    "ME": "Maine", "MD": "Maryland", "MA": "Massachusetts", "MI": "Michigan", "MN": "Minnesota",
+    "MS": "Mississippi", "MO": "Missouri", "MT": "Montana", "NE": "Nebraska", "NV": "Nevada",
+    "NH": "New Hampshire", "NJ": "New Jersey", "NM": "New Mexico", "NY": "New York",
+    "NC": "North Carolina", "ND": "North Dakota", "OH": "Ohio", "OK": "Oklahoma", "OR": "Oregon",
+    "PA": "Pennsylvania", "RI": "Rhode Island", "SC": "South Carolina", "SD": "South Dakota",
+    "TN": "Tennessee", "TX": "Texas", "UT": "Utah", "VT": "Vermont", "VA": "Virginia",
+    "WA": "Washington", "WV": "West Virginia", "WI": "Wisconsin", "WY": "Wyoming",
+}
+
+
+def state_abbr(city):
+    parts = [p.strip() for p in city.get("name", "").split(",")]
+    abbr = parts[-1].upper() if len(parts) > 1 else ""
+    return abbr if abbr in STATES else ""
+
+
+def city_tile(c):
+    fig = (f'<span class="fig">${c["true_avg_10x10"]}<small>/mo</small></span>'
+           f'<span class="cap">10x10 true 6-month average</span>'
+           f'<span class="adv">vs ${c["rate_10x10"]} advertised rate</span>') if c.get("true_avg_10x10") else ""
+    return (f'    <li><a class="tile" href="{c["path"]}"><span class="name">{html.escape(c["name"])}</span>{fig}'
+            f'<span class="go">View sizes &amp; sources →</span></a></li>')
+
+
+def city_groups_html(live, order):
+    """City tiles grouped by state. States A–Z; within a state, data/cities.json order, then name."""
+    def sort_key(c):
+        abbr = state_abbr(c)
+        return (STATES.get(abbr, "zzz"), order.index(c["slug"]) if c["slug"] in order else 99, c["name"])
+    groups, seen = {}, []
+    for c in sorted(live, key=sort_key):
+        abbr = state_abbr(c) or "??"
+        if abbr not in groups:
+            groups[abbr] = []
+            seen.append(abbr)
+        groups[abbr].append(c)
+    blocks = []
+    for abbr in seen:
+        cities = groups[abbr]
+        label = STATES.get(abbr, abbr)
+        count = "1 city" if len(cities) == 1 else f"{len(cities)} cities"
+        tiles = "\n".join(city_tile(c) for c in cities)
+        blocks.append(
+            f'<section class="state-block" id="state-{abbr.lower()}" data-state="{abbr}">\n'
+            f'  <h3><span class="state-name">{html.escape(label)}</span> <span class="count">{count}</span></h3>\n'
+            f'  <ul class="cities">\n{tiles}\n  </ul>\n</section>')
+    return "\n".join(blocks)
+
+
+def mark_map(text, abbrs):
+    """Light states that have a published city. No-op if the homepage has no map."""
+    def repl(m):
+        code = m.group(1)
+        extra = " has-cities" if code in abbrs else ""
+        return f'data-state="{code}" class="state{extra}"'
+    return re.sub(r'data-state="([A-Z]{2})" class="state(?: has-cities)?"', repl, text)
 
 
 def money(x):
@@ -135,21 +196,16 @@ def rebuild(idx):
                                      f"Sitemap: {base}/sitemap.xml\n")
 
     order = idx.get("order") or []
-    live_sorted = sorted(live, key=lambda c: (order.index(c["slug"]) if c["slug"] in order else 99, c["name"]))
-    tiles = []
-    for c in live_sorted:
-        fig = (f'<span class="fig">${c["true_avg_10x10"]}<small>/mo</small></span>'
-               f'<span class="cap">10x10 true 6-month average</span>'
-               f'<span class="adv">vs ${c["rate_10x10"]} advertised rate</span>') if c.get("true_avg_10x10") else ""
-        tiles.append(f'  <li><a class="tile" href="{c["path"]}"><span class="name">{html.escape(c["name"])}</span>{fig}'
-                     f'<span class="go">View sizes &amp; sources →</span></a></li>')
+    groups = city_groups_html(live, order)
+    abbrs = {state_abbr(c) for c in live if state_abbr(c)}
     for name in ["index.html", "about.html", "how-it-works.html", "privacy.html", "terms.html"]:
         f = ROOT / name
         if not f.exists():
             continue
         text = f.read_text()
         if name == "index.html":
-            text = replace_block(text, "CITY_LIST", "\n".join(tiles))
+            text = replace_block(text, "CITY_LIST", groups)
+            text = mark_map(text, abbrs)
         text = replace_block(text, "FOOTER", footer(""))
         f.write_text(text)
     city_footer = footer("../")

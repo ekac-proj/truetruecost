@@ -1,0 +1,25 @@
+{
+  "intro": "Philadelphia listings advertise non-climate 10x10 units from about $63, while typical non-climate 10x10 street rates run about $136–$140/month. Rates are down slightly year over year, but the city has only about 3.5 square feet of storage per person, and once the move-in special ends and the first existing-customer increase lands, the six-month average still sits well above the banner price.",
+  "data_asof": "Aug–Oct 2026 (StorageCafe, StorageUnitCosts, Storage Stats)",
+  "units": [
+    {"size": "5x5", "market": [61, 61], "low": 20, "notes": "Locker / closet size. Fixed fees dominate the true cost at this size. Climate-controlled street rate ~$62; climate promos from about $5."},
+    {"size": "5x10", "market": [88, 89], "low": null, "notes": "Walk-in closet; studio overflow. No reliable lowest-promo figure published for this size (gap). Climate-controlled ~$100."},
+    {"size": "10x10", "market": [136, 136, 140], "low": 63, "notes": "Most rented size. City average $136, down 1.5% YoY (StorageCafe, Sep 2026); StorageUnitCosts lists the same $136 for August 2026, down 2.9% YoY. Philadelphia metro averages $140, down 3.2% YoY (Storage Stats). Climate-controlled ~$149."},
+    {"size": "10x15", "market": [190], "low": null, "notes": "Two-bedroom contents. Estimate: single source (StorageCafe, Sep 2026). Climate-controlled ~$194."},
+    {"size": "10x20", "market": [242, 243], "low": 125, "notes": "Three-bedroom home or a car. Climate-controlled ~$244."}
+  ],
+  "local_tips": [
+    "Location drives price: StorageCafe lists Parkwood (~$91), Olney (~$95) and Allegheny West (~$107) among the cheapest areas for a standard unit, while Northeast Philadelphia Airport (~$384) and Logan Square (~$244) run highest.",
+    "Philadelphia rates tend to be lowest around December and highest in June (StorageCafe).",
+    "About 112,000 sq ft of new storage is due in Philadelphia in 2026, down about 46% from 2025 (StorageCafe). Supply is thin at 3.5 sq ft per capita, so a cheap promo in Center City is rarer than one in the Northeast.",
+    "Extra Space charges a $50 admin fee (per StorageUnitCosts), higher than our $29 default; adjust the calculator if your facility charges more."
+  ],
+  "sources": [
+    {"label": "StorageCafe — Philadelphia, PA self storage prices & stats (Sep 2026)", "url": "https://www.storagecafe.com/self-storage-industry-statistics/us/pa/philadelphia/"},
+    {"label": "StorageCafe — Storage units in Philadelphia, PA (min listed prices, Oct 2026)", "url": "https://www.storagecafe.com/self-storage/us/pa/philadelphia/"},
+    {"label": "StorageUnitCosts — Storage unit prices in Philadelphia (Aug 2026 rates, updated Oct 2026) and fees", "url": "https://storageunitcosts.com/storage-unit-prices/philadelphia-pa/"},
+    {"label": "Storage Stats — Philadelphia metro self-storage market data (updated Oct 28, 2026)", "url": "https://storagestats.com/markets/philadelphia-pa/"},
+    {"label": "Public Storage — Storage deals (promo terms; admin fee and other fees apply)", "url": "https://www.publicstorage.com/storage-solutions/storage-deals"},
+    {"label": "LegalClarity — Existing customer rate increases (reported 30–40%, cases up to 56%)", "url": "https://legalclarity.org/public-storage-price-gouging-lawsuits-settlements-fines/"}
+  ]
+}

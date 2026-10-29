@@ -1,0 +1,26 @@
+{
+  "intro": "San Diego listings advertise non-climate 10x10 units from about $39. City street rates run about $174–$178/month, while the metro asking rent is about $220; the advertised rate in the table is the average of those sources. Rates are down a few percent year over year, but the six-month average still clears the promo by a wide margin. On StorageCafe's size table a climate-controlled 10x10 ($172) is a hair under the non-climate city average, so check the unit rather than assuming climate control costs more here.",
+  "data_asof": "Aug–Oct 2026 (StorageCafe, StorageUnitCosts, Storage Stats)",
+  "units": [
+    {"size": "5x5", "market": [75, 75], "low": 15, "notes": "Locker / closet size. Fixed fees dominate the true cost at this size. Climate-controlled street rate ~$80."},
+    {"size": "5x10", "market": [105, 107], "low": null, "notes": "Walk-in closet; studio overflow. No reliable lowest-promo figure published for this size (gap). Climate-controlled ~$109."},
+    {"size": "10x10", "market": [174, 178, 220], "low": 39, "notes": "Most rented size. City average $174, down 3.3% YoY (StorageCafe, Sep 2026); StorageUnitCosts lists $178 for August 2026, down 2.2% YoY, about 48% above the national average. San Diego metro averages $220, down 3.1% YoY (Storage Stats), higher than the city figure because the metro includes pricier suburbs. Climate-controlled city street rate ~$172."},
+    {"size": "10x15", "market": [248], "low": null, "notes": "Two-bedroom contents. Estimate: single source (StorageCafe, Sep 2026). Climate-controlled ~$241."},
+    {"size": "10x20", "market": [327, 329], "low": 148, "notes": "Three-bedroom home or a car. Climate-controlled ~$318."}
+  ],
+  "local_tips": [
+    "Location drives price: StorageCafe lists Lincoln Park (~$153), Fairmont Park (~$162) and Palm City (~$162) among the cheapest areas, while Bernardo Springs (~$349) and Carmel Mountain (~$316) run highest.",
+    "Nearby 10x10 street rates (StorageCafe, Sep 2026) run from about $132 in Spring Valley and $148 in La Mesa up to about $201 in Encinitas. That spread is why the metro average sits above the city figure.",
+    "San Diego rates tend to be lowest around January and highest in August (StorageCafe).",
+    "The city added about 91,000 sq ft in 2025, roughly 1.4% of inventory, and has about 4.1 sq ft per capita (StorageCafe) — tighter than the Texas markets, which is why street rates stay high even as they ease.",
+    "Extra Space charges a $50 admin fee (per StorageUnitCosts), higher than our $29 default; adjust the calculator if your facility charges more."
+  ],
+  "sources": [
+    {"label": "StorageCafe — San Diego, CA self storage prices & stats (Sep 2026)", "url": "https://www.storagecafe.com/self-storage-industry-statistics/us/ca/san-diego/"},
+    {"label": "StorageCafe — Storage units in San Diego, CA (min listed prices, Oct 2026)", "url": "https://www.storagecafe.com/self-storage/us/ca/san-diego/"},
+    {"label": "StorageUnitCosts — Storage unit prices in San Diego (Aug 2026 rates, updated Oct 2026) and fees", "url": "https://storageunitcosts.com/storage-unit-prices/san-diego-ca/"},
+    {"label": "Storage Stats — San Diego metro self-storage market data (updated Oct 28, 2026)", "url": "https://storagestats.com/markets/san-diego-ca/"},
+    {"label": "Public Storage — Storage deals (promo terms; admin fee and other fees apply)", "url": "https://www.publicstorage.com/storage-solutions/storage-deals"},
+    {"label": "LegalClarity — Existing customer rate increases (reported 30–40%, cases up to 56%)", "url": "https://legalclarity.org/public-storage-price-gouging-lawsuits-settlements-fines/"}
+  ]
+}

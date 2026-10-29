@@ -5,7 +5,7 @@ self-storage by city (promo rate vs. post-increase rate + fees). Plain HTML/CSS/
 
 ## Layout
 ```
-index.html            home: problem, method, city list (auto-generated between CITY_LIST markers), disclaimer
+index.html            home: problem, method, US state map, city tiles grouped by state (auto-generated between CITY_LIST markers), disclaimer
 about.html            about / affiliate disclosure
 how-it-works.html     methodology (linked from nav + footer)
 cities/_template.html city page template ({{PLACEHOLDERS}})

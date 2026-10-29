@@ -1,0 +1,26 @@
+{
+  "intro": "San Antonio listings advertise non-climate 10x10 units from about $27, while typical non-climate 10x10 street rates run about $90–$98/month — among the lowest of the big cities we track, and down year over year. New supply is still opening, which is where the aggressive move-in specials show up. The six-month average, after fees and the first existing-customer increase, still sits above the banner price.",
+  "data_asof": "Aug–Oct 2026 (StorageCafe, StorageUnitCosts, Storage Stats)",
+  "units": [
+    {"size": "5x5", "market": [41, 41], "low": 20, "notes": "Locker / closet size. Fixed fees dominate the true cost at this size. Climate-controlled street rate ~$42; climate promos from about $13."},
+    {"size": "5x10", "market": [58, 58], "low": null, "notes": "Walk-in closet; studio overflow. No reliable lowest-promo figure published for this size (gap). Climate-controlled ~$62."},
+    {"size": "10x10", "market": [97, 98, 90], "low": 27, "notes": "Most rented size. City average $97, down 3% YoY (StorageCafe, Sep 2026); StorageUnitCosts lists $98 for August 2026, down 2.0% YoY and about 18% under the national average. San Antonio metro averages $90, down 5.1% YoY (Storage Stats). Climate-controlled ~$106."},
+    {"size": "10x15", "market": [135], "low": null, "notes": "Two-bedroom contents. Estimate: single source (StorageCafe, Sep 2026). Climate-controlled ~$146."},
+    {"size": "10x20", "market": [172, 172], "low": 45, "notes": "Three-bedroom home or a car. Climate-controlled ~$189."}
+  ],
+  "local_tips": [
+    "Location drives price: StorageCafe lists Dignowity Hill (~$72), Nogalitos–South Zarzamora (~$82) and Ingram Hills (~$85) among the cheapest areas, while Forest Crest (~$261) and Midtown (~$250) run highest.",
+    "San Antonio rates tend to be lowest around December and highest in August (StorageCafe). The seasonal gap in the all-units average is only a few dollars, so the promo terms matter more than the month.",
+    "About 589,000 sq ft of new storage is due in San Antonio in 2026 (StorageCafe), after roughly 844,000 sq ft opened in 2025. The city already has about 9.4 sq ft per capita, so newer facilities often run aggressive move-in specials — ask what month 5 will cost.",
+    "Storage Stats describes a large military presence under the metro's demand. StorageCafe's Fort Sam Houston neighborhood average runs about $209, well above the city street rate.",
+    "Extra Space charges a $50 admin fee (per StorageUnitCosts), higher than our $29 default; adjust the calculator if your facility charges more."
+  ],
+  "sources": [
+    {"label": "StorageCafe — San Antonio, TX self storage prices & stats (Sep 2026)", "url": "https://www.storagecafe.com/self-storage-industry-statistics/us/tx/san-antonio/"},
+    {"label": "StorageCafe — Storage units in San Antonio, TX (min listed prices, Oct 2026)", "url": "https://www.storagecafe.com/self-storage/us/tx/bexar-county/san-antonio/"},
+    {"label": "StorageUnitCosts — Storage unit prices in San Antonio (Aug 2026 rates, updated Oct 2026) and fees", "url": "https://storageunitcosts.com/storage-unit-prices/san-antonio-tx/"},
+    {"label": "Storage Stats — San Antonio metro self-storage market data (updated Oct 28, 2026)", "url": "https://storagestats.com/markets/san-antonio-tx/"},
+    {"label": "Public Storage — Storage deals (promo terms; admin fee and other fees apply)", "url": "https://www.publicstorage.com/storage-solutions/storage-deals"},
+    {"label": "LegalClarity — Existing customer rate increases (reported 30–40%, cases up to 56%)", "url": "https://legalclarity.org/public-storage-price-gouging-lawsuits-settlements-fines/"}
+  ]
+}

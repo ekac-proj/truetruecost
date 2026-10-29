@@ -1,0 +1,27 @@
+{
+  "intro": "Fort Worth listings advertise non-climate 10x10 units from about $23, while the city's typical non-climate 10x10 street rate is about $89/month, down 4.3% year over year. That is below Dallas, and below the combined Dallas–Fort Worth metro asking rent of $103. The promo is still not the six-month cost: fees and the first existing-customer increase land after move-in.",
+  "data_asof": "Sep 2026 (StorageCafe city street rates). Storage Stats publishes the Dallas–Fort Worth metro only ($103 for a non-climate 10x10, updated Oct 28, 2026). StorageUnitCosts does not publish a Fort Worth city page.",
+  "units": [
+    {"size": "5x5", "market": [38], "low": 12, "notes": "Locker / closet size. Fixed fees dominate the true cost at this size. Estimate: single source (StorageCafe, Sep 2026). Climate-controlled street rate ~$38; climate promos from about $10."},
+    {"size": "5x10", "market": [55], "low": null, "notes": "Walk-in closet; studio overflow. No reliable lowest-promo figure published for this size (gap). Estimate: single source (StorageCafe, Sep 2026). Climate-controlled ~$58."},
+    {"size": "10x10", "market": [89], "low": 23, "notes": "Most rented size. City average $89, down 4.3% YoY (StorageCafe, Sep 2026). The Dallas–Fort Worth metro asking rent is $103, down 8.7% YoY (Storage Stats) — that figure includes Dallas and is not averaged in here. Climate-controlled ~$102."},
+    {"size": "10x15", "market": [118], "low": null, "notes": "Two-bedroom contents. Estimate: single source (StorageCafe, Sep 2026). Climate-controlled ~$134."},
+    {"size": "10x20", "market": [149], "low": 42, "notes": "Three-bedroom home or a car. Estimate: single source (StorageCafe, Sep 2026). Climate-controlled ~$171."}
+  ],
+  "local_tips": [
+    "Location drives price: StorageCafe lists Southland Terrace (~$58), Sylvania Park (~$71) and Handley Heights South (~$73) among the cheapest areas, while Primrose Crossing (~$222) and Stonegate (~$220) run highest. Downtown Fort Worth averages about $156.",
+    "On the same September 2026 10x10 comparison, Dallas's city street rate is about $106 and Fort Worth's is $89 (StorageCafe). Use the Fort Worth page, not the Dallas page, if the unit is west of the metro.",
+    "Fort Worth rates tend to be lowest around November and highest in August (StorageCafe). The seasonal swing in the all-units average is only a few dollars.",
+    "Fort Worth added about 115,000 sq ft in 2025, roughly 1.2% of inventory, and has about 6.4 sq ft per capita (StorageCafe). Storage Stats tracks 1,500+ facilities across the whole Dallas–Fort Worth metro.",
+    "StorageUnitCosts, which tracks 20 major cities, publishes Dallas but not Fort Worth. Every size on this page is a StorageCafe city street rate.",
+    "Extra Space's published example admin fee is $50, higher than our $29 default; adjust the calculator if your facility charges more (StorageUnitCosts)."
+  ],
+  "sources": [
+    {"label": "StorageCafe — Fort Worth, TX self storage prices & stats (Sep 2026)", "url": "https://www.storagecafe.com/self-storage-industry-statistics/us/tx/fort-worth/"},
+    {"label": "StorageCafe — Storage units in Fort Worth, TX (min listed prices, Oct 2026)", "url": "https://www.storagecafe.com/self-storage/us/tx/fort-worth/"},
+    {"label": "Storage Stats — Dallas–Fort Worth metro self-storage market data (updated Oct 28, 2026; metro figure, not Fort Worth alone)", "url": "https://storagestats.com/markets/dallas-fort-worth-tx/"},
+    {"label": "StorageUnitCosts — 20-city price index (Fort Worth is not one of the published cities; Dallas is; admin-fee example)", "url": "https://storageunitcosts.com/storage-unit-prices/"},
+    {"label": "Public Storage — Storage deals (promo terms; admin fee and other fees apply)", "url": "https://www.publicstorage.com/storage-solutions/storage-deals"},
+    {"label": "LegalClarity — Existing customer rate increases (reported 30–40%, cases up to 56%)", "url": "https://legalclarity.org/public-storage-price-gouging-lawsuits-settlements-fines/"}
+  ]
+}

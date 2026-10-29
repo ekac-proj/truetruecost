@@ -1,0 +1,27 @@
+{
+  "intro": "Jacksonville listings advertise non-climate 10x10 units from about $49, while typical non-climate 10x10 street rates run about $107 in the city and $116 across the metro. Rents are down year over year — the metro asking rent fell about 14% — and a large block of new storage is due in 2026. The banner price is still not the six-month price once fees and the first existing-customer increase land.",
+  "data_asof": "Sep–Oct 2026 (StorageCafe, Storage Stats). StorageUnitCosts does not publish a Jacksonville city page.",
+  "units": [
+    {"size": "5x5", "market": [52], "low": 40, "notes": "Locker / closet size. Fixed fees dominate the true cost at this size. Estimate: single source (StorageCafe, Sep 2026). Climate-controlled ~$53; climate promos from about $16."},
+    {"size": "5x10", "market": [65], "low": null, "notes": "Walk-in closet; studio overflow. No reliable lowest-promo figure published for this size (gap). Estimate: single source (StorageCafe, Sep 2026). Climate-controlled ~$79."},
+    {"size": "10x10", "market": [107, 116], "low": 49, "notes": "Most rented size. City average $107, down 1.8% YoY (StorageCafe, Sep 2026). Jacksonville metro averages $116, down 14.1% YoY (Storage Stats). Climate-controlled ~$124."},
+    {"size": "10x15", "market": [140], "low": null, "notes": "Two-bedroom contents. Estimate: single source (StorageCafe, Sep 2026). Climate-controlled ~$165."},
+    {"size": "10x20", "market": [173], "low": 70, "notes": "Three-bedroom home or a car. Estimate: single source (StorageCafe, Sep 2026). Climate-controlled ~$217."}
+  ],
+  "local_tips": [
+    "Location drives price: StorageCafe lists Woodland Acres (~$87), Northbank (~$88) and Cedar Hills Estates (~$94) among the cheapest areas, while Spring Glen (~$355) and Southpoint (~$282) run highest.",
+    "Outside the city, a non-climate 10x10 street rate is about $83 in Middleburg and $99 on Fleming Island, against about $129 in Jacksonville Beach and $152 in Fernandina Beach (StorageCafe, Sep 2026).",
+    "Jacksonville rates tend to be lowest around December and highest in October (StorageCafe). The seasonal swing in the all-units average is only a few dollars.",
+    "About 726,000 sq ft of new storage is due in Jacksonville in 2026, up about 36% from 2025 (StorageCafe). The city already has about 10.1 sq ft per capita, so ask a new facility what month 5 costs before taking the move-in special.",
+    "StorageUnitCosts, which tracks 20 major cities, does not publish a Jacksonville page. Size rates other than the 10x10 are StorageCafe only.",
+    "Extra Space's published example admin fee is $50, higher than our $29 default; adjust the calculator if your facility charges more (StorageUnitCosts)."
+  ],
+  "sources": [
+    {"label": "StorageCafe — Jacksonville, FL self storage prices & stats (Sep 2026)", "url": "https://www.storagecafe.com/self-storage-industry-statistics/us/fl/jacksonville/"},
+    {"label": "StorageCafe — Storage units in Jacksonville, FL (min listed prices, Oct 2026)", "url": "https://www.storagecafe.com/self-storage/us/fl/jacksonville/"},
+    {"label": "Storage Stats — Jacksonville metro self-storage market data (updated Oct 28, 2026)", "url": "https://storagestats.com/markets/jacksonville-fl/"},
+    {"label": "StorageUnitCosts — 20-city price index (Jacksonville is not one of the published cities; admin-fee example)", "url": "https://storageunitcosts.com/storage-unit-prices/"},
+    {"label": "Public Storage — Storage deals (promo terms; admin fee and other fees apply)", "url": "https://www.publicstorage.com/storage-solutions/storage-deals"},
+    {"label": "LegalClarity — Existing customer rate increases (reported 30–40%, cases up to 56%)", "url": "https://legalclarity.org/public-storage-price-gouging-lawsuits-settlements-fines/"}
+  ]
+}
