@@ -34,6 +34,17 @@
       "data_asof": "Aug\u2013Oct 2026 (StorageCafe, StorageUnitCosts, Storage Stats) and Mar 2026 (Extra Space)"
     },
     {
+      "slug": "fort-worth-tx",
+      "name": "Fort Worth, TX",
+      "path": "cities/fort-worth-tx.html",
+      "status": "published",
+      "updated": "2026-10-29",
+      "published": "2026-10-29",
+      "true_avg_10x10": 114,
+      "rate_10x10": 96,
+      "data_asof": "Aug\u2013Oct 2026 (StorageCafe, Storage Stats). StorageUnitCosts does not publish a Fort Worth city page; the metro figure is Dallas\u2013Fort Worth."
+    },
+    {
       "slug": "houston-tx",
       "name": "Houston, TX",
       "path": "cities/houston-tx.html",
@@ -43,6 +54,17 @@
       "true_avg_10x10": 114,
       "rate_10x10": 96,
       "data_asof": "Aug\u2013Oct 2026 (StorageCafe, StorageUnitCosts, Storage Stats)"
+    },
+    {
+      "slug": "jacksonville-fl",
+      "name": "Jacksonville, FL",
+      "path": "cities/jacksonville-fl.html",
+      "status": "published",
+      "updated": "2026-10-29",
+      "published": "2026-10-29",
+      "true_avg_10x10": 130,
+      "rate_10x10": 112,
+      "data_asof": "Aug\u2013Oct 2026 (StorageCafe, Storage Stats). StorageUnitCosts does not publish a Jacksonville city page."
     },
     {
       "slug": "los-angeles-ca",
@@ -67,6 +89,17 @@
       "data_asof": "Aug\u2013Oct 2026 (StorageCafe, StorageUnitCosts, Storage Stats)"
     },
     {
+      "slug": "philadelphia-pa",
+      "name": "Philadelphia, PA",
+      "path": "cities/philadelphia-pa.html",
+      "status": "published",
+      "updated": "2026-10-29",
+      "published": "2026-10-29",
+      "true_avg_10x10": 156,
+      "rate_10x10": 137,
+      "data_asof": "Aug\u2013Oct 2026 (StorageCafe, StorageUnitCosts, Storage Stats)"
+    },
+    {
       "slug": "phoenix-az",
       "name": "Phoenix, AZ",
       "path": "cities/phoenix-az.html",
@@ -75,6 +108,28 @@
       "published": "2026-10-28",
       "true_avg_10x10": 131,
       "rate_10x10": 112,
+      "data_asof": "Aug\u2013Oct 2026 (StorageCafe, StorageUnitCosts, Storage Stats)"
+    },
+    {
+      "slug": "san-antonio-tx",
+      "name": "San Antonio, TX",
+      "path": "cities/san-antonio-tx.html",
+      "status": "published",
+      "updated": "2026-10-29",
+      "published": "2026-10-29",
+      "true_avg_10x10": 113,
+      "rate_10x10": 95,
+      "data_asof": "Aug\u2013Oct 2026 (StorageCafe, StorageUnitCosts, Storage Stats)"
+    },
+    {
+      "slug": "san-diego-ca",
+      "name": "San Diego, CA",
+      "path": "cities/san-diego-ca.html",
+      "status": "published",
+      "updated": "2026-10-29",
+      "published": "2026-10-29",
+      "true_avg_10x10": 211,
+      "rate_10x10": 191,
       "data_asof": "Aug\u2013Oct 2026 (StorageCafe, StorageUnitCosts, Storage Stats)"
     },
     {
@@ -100,7 +155,7 @@
       "data_asof": "Aug\u2013Oct 2026 (StorageCafe, StorageUnitCosts, Storage Stats)"
     }
   ],
-  "updated": "2026-10-28",
+  "updated": "2026-10-29",
   "order": [
     "dallas-tx",
     "houston-tx",
@@ -109,6 +164,11 @@
     "los-angeles-ca",
     "seattle-wa",
     "san-francisco-ca",
-    "chicago-il"
+    "chicago-il",
+    "philadelphia-pa",
+    "san-antonio-tx",
+    "san-diego-ca",
+    "jacksonville-fl",
+    "fort-worth-tx"
   ]
 }

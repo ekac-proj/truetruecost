@@ -170,4 +170,35 @@ footer.site li{margin:.25rem 0}
 .calc-reset{background:none;border:0;padding:0;font:inherit;font-size:.86rem;color:var(--muted);text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px;cursor:pointer}
 .calc-reset:hover{color:var(--ink);text-decoration-color:var(--ink)}
 .softcta{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem 1.2rem;margin:1.6rem 0 0}
+
+/* Homepage state map */
+.map-panel{background:var(--surface);border:1px solid var(--line);padding:1.3rem 1.3rem 1rem;margin:1.6rem 0 0}
+.map-kicker{font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin:0 0 .7rem}
+.us-map{max-width:760px;margin:0 auto}
+.us-map-svg{display:block;width:100%;height:auto}
+.us-map .state-shape{fill:var(--soft);stroke:var(--bg);stroke-width:.8;cursor:pointer;transition:fill .15s}
+.us-map .state-shape.has-cities{fill:#dfd3c2}
+.us-map .state-shape:hover,.us-map .state-shape:focus-visible{fill:#d4c4ab}
+.us-map .state-shape.is-active{fill:var(--ink);stroke:var(--gold);stroke-width:1.5}
+.us-map .state-border{fill:none;stroke:rgba(42,38,34,.22);stroke-width:1;pointer-events:none}
+.us-map .map-separator{fill:none;stroke:var(--muted);stroke-width:1.25;pointer-events:none}
+.map-legend{display:flex;flex-wrap:wrap;gap:.4rem 1.1rem;align-items:center;margin:.8rem 0 0;font-size:.8rem;color:var(--muted)}
+.map-legend .swatch{display:inline-block;width:.85rem;height:.85rem;margin-right:.35rem;vertical-align:-.1rem;background:var(--soft);border:1px solid var(--line)}
+.map-legend .swatch.has{background:#dfd3c2}
+.map-status{min-height:1.4em;margin:.7rem 0 0;font-size:.95rem;color:var(--text)}
+.map-status.is-empty{color:var(--ink)}
+.state-chips{display:flex;flex-wrap:wrap;gap:.45rem;margin:1.3rem 0 .4rem}
+.chip{font:inherit;font-size:.84rem;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:.38rem .85rem;cursor:pointer}
+.chip:hover{border-color:var(--ink);color:var(--ink)}
+.chip.is-active{background:var(--ink);color:#fff;border-color:var(--ink)}
+.state-heading{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:.4rem 1rem;margin:2.2rem 0 0;font-size:1.25rem}
+.state-heading:focus{outline:none}
+.state-heading:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.state-count{font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:500}
+.state-group{scroll-margin-top:1rem}
+.state-group .cities{margin-top:.8rem}
+@media (max-width:640px){
+  .map-panel{padding:1rem .8rem .8rem}
+  .state-heading{margin-top:1.8rem}
+}
 .softcta .small{margin:0}
