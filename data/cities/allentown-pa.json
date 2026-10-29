@@ -1,0 +1,73 @@
+{
+  "intro": "StorageCafe has no city statistics page for Allentown. UnitSight's September 2026 street-rate index, from 24 facilities and 398 listings, puts the standard (non-climate) 10x10 at $145. SpareFoot's unspecified average for a 10x10 was $138.34 on September 1, 2026, included here as $138. The advertised rate averages those two published figures. Once the move-in special ends and the first existing-customer increase lands, the six-month average sits above that street rate.",
+  "data_asof": "Sep 2026 (UnitSight street rates; SpareFoot 10x10 average). No StorageCafe industry-statistics page; no StorageUnitCosts city page; no Storage Stats market page.",
+  "units": [
+    {
+      "size": "5x5",
+      "market": [
+        67
+      ],
+      "low": null,
+      "notes": "UnitSight standard (non-climate) street rate $67 (Sep 2026). Climate-controlled on the same page ~$64. SpareFoot's unspecified 5x5 average was $57.03 and is not mixed into this size."
+    },
+    {
+      "size": "5x10",
+      "market": [
+        92
+      ],
+      "low": null,
+      "notes": "UnitSight standard street rate $92 (Sep 2026). Climate-controlled ~$93. No reliable lowest-promo figure published for this size (gap)."
+    },
+    {
+      "size": "10x10",
+      "market": [
+        145,
+        138
+      ],
+      "low": null,
+      "notes": "UnitSight standard street rate $145 (Sep 2026), 24 facilities. SpareFoot unspecified average $138.34 on Sep 1, 2026, rounded to $138; that average is not split by climate. Climate-controlled on the UnitSight page ~$142. StorageCafe, StorageUnitCosts, and Storage Stats do not publish an Allentown market page."
+    },
+    {
+      "size": "10x15",
+      "market": [
+        186
+      ],
+      "low": null,
+      "notes": "UnitSight standard street rate $186 (Sep 2026). Climate-controlled ~$179."
+    },
+    {
+      "size": "10x20",
+      "market": [
+        184
+      ],
+      "low": null,
+      "notes": "UnitSight standard street rate $184 (Sep 2026). Climate-controlled ~$237."
+    }
+  ],
+  "local_tips": [
+    "UnitSight tracks 24 facilities and 398 listings in Allentown (September 2026). Listings without an advertised price are excluded rather than estimated.",
+    "Extra Space's published admin fee is $50 on StorageUnitCosts' fee notes, higher than our $29 default; adjust the calculator if your facility charges more."
+  ],
+  "sources": [
+    {
+      "label": "UnitSight — Allentown, PA self storage prices (September 2026 street rates)",
+      "url": "https://unitsight.com/storage-prices/pa/allentown"
+    },
+    {
+      "label": "SpareFoot — Allentown, PA average prices (updated Sep 1, 2026; not split by climate)",
+      "url": "https://www.sparefoot.com/Allentown-PA-self-storage.html"
+    },
+    {
+      "label": "StorageUnitCosts — Prices by city (20-city set; this city is not included) and the Extra Space admin-fee example",
+      "url": "https://storageunitcosts.com/storage-unit-prices/"
+    },
+    {
+      "label": "Public Storage — Storage deals (promo terms; admin fee and other fees apply)",
+      "url": "https://www.publicstorage.com/storage-solutions/storage-deals"
+    },
+    {
+      "label": "LegalClarity — Existing customer rate increases (reported 30–40%, cases up to 56%)",
+      "url": "https://legalclarity.org/public-storage-price-gouging-lawsuits-settlements-fines/"
+    }
+  ]
+}
