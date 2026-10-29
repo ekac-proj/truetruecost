@@ -18,7 +18,7 @@
 <header class="site"><div class="wrap">
   <div><a class="brand" href="../index.html">TrueTrueCost</a>
   <p class="tagline">Storage · the price after the promo</p></div>
-  <nav class="main" aria-label="Main"><a href="../index.html">Home</a><a href="../index.html#cities" aria-current="page">Cities</a><a href="../how-it-works.html">How it works</a><a href="../size-guide.html">Size guide</a><a href="../about.html">About</a></nav>
+  <nav class="main" aria-label="Main"><a href="../index.html">Home</a><a href="../index.html#cities" aria-current="page">Cities</a><a href="../how-it-works.html">How it works</a><a href="../size-guide.html">Size guide</a><a href="../near.html">Your ZIP</a><a href="../about.html">About</a></nav>
 </div></header>
 
 <main class="wrap">
@@ -34,6 +34,35 @@
 </div>
 
 <p class="note"><strong>Estimates, not live quotes.</strong> Built from public price pages (sources below; data as of Aug–Oct 2026 (StorageCafe, StorageUnitCosts, Storage Stats)). Your facility, unit and move-in date will differ — always ask for the full move-in total and the rate-change policy in writing.</p>
+
+<section class="zip-tool" id="near">
+<h2>Your ZIP</h2>
+<p>The rates on this page are the Los Angeles city average. A ZIP code is only used to choose a city page. Census land area decides the match: about half or more of the ZIP Code Tabulation Area has to sit inside the city. We do not publish a dollar figure for a ZIP code.</p>
+<form class="zip-form" action="../near.html" method="get">
+  <label>ZIP code
+    <input name="zip" inputmode="numeric" autocomplete="postal-code" pattern="[0-9]{5}" minlength="5" maxlength="5" required>
+  </label>
+  <input type="hidden" name="from" value="los-angeles-ca">
+  <button class="btn solid" type="submit">Check this ZIP</button>
+</form>
+<p class="small">The check opens a result page. The ZIP is put in the page address and looked up in your browser from a Census crosswalk. <a href="../near.html">How ZIP matching works</a>.</p>
+<div class="area-bands">
+<h3>Area examples StorageCafe published (Sep 2026)</h3>
+<p>These are street rates for what StorageCafe calls a standard unit, copied from that city statistics page. They show how wide the spread between named areas can be. They are not a price for your ZIP, not a facility quote, and not the six-month true cost on this page. Your ZIP is not matched to any of these areas.</p>
+<div class="band-grid">
+<div><h4>Lower-priced areas they named</h4><ul>
+<li><span class="band-name">Chesterfield Square</span><span class="band-rate">~$124</span></li>
+<li><span class="band-name">Eagle Rock</span><span class="band-rate">~$179</span></li>
+<li><span class="band-name">Historic South-Central</span><span class="band-rate">~$183</span></li>
+</ul></div>
+<div><h4>Higher-priced areas they named</h4><ul>
+<li><span class="band-name">Fairfax</span><span class="band-rate">~$494</span></li>
+<li><span class="band-name">Sunkist Park</span><span class="band-rate">~$397</span></li>
+</ul></div>
+</div>
+<p class="small">Source: <a href="https://www.storagecafe.com/self-storage-industry-statistics/us/ca/los-angeles/" rel="nofollow noopener" target="_blank">StorageCafe — Los Angeles, CA self storage prices &amp; stats (Sep 2026)</a></p>
+</div>
+</section>
 
 <p class="quotes-label" id="renters-say">Renters say</p>
 <div class="quotes" aria-labelledby="renters-say">
@@ -54,11 +83,11 @@
   <th scope="col">Notes</th>
 </tr></thead>
 <tbody>
-<tr><th scope="row">5x5</th><td class="true"><span class="big">~$133/mo</span><span class="small">range $127–$137<br>rent only $116</span></td><td><span class="big">$114</span><span class="small">avg of 2 sources<br>promos from $19</span></td><td><span class="big">~$148</span><span class="small">range $131–$160</span></td><td class="notes">Locker / closet size. Climate-controlled ~$107–$120.</td></tr>
-<tr><th scope="row">5x10</th><td class="true"><span class="big">~$182/mo</span><span class="small">range $174–$187<br>rent only $165</span></td><td><span class="big">$162</span><span class="small">avg of 2 sources<br>lowest promo: no public figure</span></td><td><span class="big">~$211</span><span class="small">range $187–$227</span></td><td class="notes">Walk-in closet; studio overflow. No reliable lowest-promo figure published for this size (gap). Climate-controlled ~$179–$190.</td></tr>
-<tr><th scope="row">10x10</th><td class="true"><span class="big">~$287/mo</span><span class="small">range $274–$296<br>rent only $270</span></td><td><span class="big">$266</span><span class="small">avg of 3 sources<br>promos from $49</span></td><td><span class="big">~$345</span><span class="small">range $306–$372</span></td><td class="notes">Most rented size. City average $271 (StorageCafe, Sep 2026), down 5.6% YoY; LA–Long Beach–Anaheim metro averages $249 (Storage Stats), so Orange County and the Valley edges are cheaper. Climate-controlled ~$291–$346.</td></tr>
-<tr><th scope="row">10x15</th><td class="true"><span class="big">~$394/mo</span><span class="small">range $375–$406<br>rent only $377</span></td><td><span class="big">$371</span><span class="small">single source — estimate<br>lowest promo: no public figure</span></td><td><span class="big">~$482</span><span class="small">range $427–$519</span></td><td class="notes">Two-bedroom contents. Estimate: single source (StorageCafe, Sep 2026). Climate-controlled ~$399.</td></tr>
-<tr><th scope="row">10x20</th><td class="true"><span class="big">~$495/mo</span><span class="small">range $472–$511<br>rent only $478</span></td><td><span class="big">$470</span><span class="small">avg of 2 sources<br>promos from $129</span></td><td><span class="big">~$612</span><span class="small">range $541–$659</span></td><td class="notes">Three-bedroom home or a car. Climate-controlled ~$501–$571.</td></tr>
+<tr><th scope="row" id="size-5x5">5x5</th><td class="true"><span class="big">~$133/mo</span><span class="small">range $127–$137<br>rent only $116</span></td><td><span class="big">$114</span><span class="small">avg of 2 sources<br>promos from $19</span></td><td><span class="big">~$148</span><span class="small">range $131–$160</span></td><td class="notes">Locker / closet size. Climate-controlled ~$107–$120.</td></tr>
+<tr><th scope="row" id="size-5x10">5x10</th><td class="true"><span class="big">~$182/mo</span><span class="small">range $174–$187<br>rent only $165</span></td><td><span class="big">$162</span><span class="small">avg of 2 sources<br>lowest promo: no public figure</span></td><td><span class="big">~$211</span><span class="small">range $187–$227</span></td><td class="notes">Walk-in closet; studio overflow. No reliable lowest-promo figure published for this size (gap). Climate-controlled ~$179–$190.</td></tr>
+<tr><th scope="row" id="size-10x10">10x10</th><td class="true"><span class="big">~$287/mo</span><span class="small">range $274–$296<br>rent only $270</span></td><td><span class="big">$266</span><span class="small">avg of 3 sources<br>promos from $49</span></td><td><span class="big">~$345</span><span class="small">range $306–$372</span></td><td class="notes">Most rented size. City average $271 (StorageCafe, Sep 2026), down 5.6% YoY; LA–Long Beach–Anaheim metro averages $249 (Storage Stats), so Orange County and the Valley edges are cheaper. Climate-controlled ~$291–$346.</td></tr>
+<tr><th scope="row" id="size-10x15">10x15</th><td class="true"><span class="big">~$394/mo</span><span class="small">range $375–$406<br>rent only $377</span></td><td><span class="big">$371</span><span class="small">single source — estimate<br>lowest promo: no public figure</span></td><td><span class="big">~$482</span><span class="small">range $427–$519</span></td><td class="notes">Two-bedroom contents. Estimate: single source (StorageCafe, Sep 2026). Climate-controlled ~$399.</td></tr>
+<tr><th scope="row" id="size-10x20">10x20</th><td class="true"><span class="big">~$495/mo</span><span class="small">range $472–$511<br>rent only $478</span></td><td><span class="big">$470</span><span class="small">avg of 2 sources<br>promos from $129</span></td><td><span class="big">~$612</span><span class="small">range $541–$659</span></td><td class="notes">Three-bedroom home or a car. Climate-controlled ~$501–$571.</td></tr>
 </tbody>
 </table>
 </div>
@@ -131,7 +160,7 @@
   </div>
   <div>
     <h4>Explore</h4>
-    <ul><li><a href="../index.html#cities">Cities</a></li><li><a href="../how-it-works.html">How it works &amp; methodology</a></li><li><a href="../size-guide.html">Size guide</a></li><li><a href="../about.html">About</a></li><li><a href="../privacy.html">Privacy Policy</a></li><li><a href="../terms.html">Terms of Use</a></li><li><a href="../sitemap.xml">Sitemap</a></li></ul>
+    <ul><li><a href="../index.html#cities">Cities</a></li><li><a href="../how-it-works.html">How it works &amp; methodology</a></li><li><a href="../size-guide.html">Size guide</a></li><li><a href="../near.html">Your ZIP</a></li><li><a href="../about.html">About</a></li><li><a href="../privacy.html">Privacy Policy</a></li><li><a href="../terms.html">Terms of Use</a></li><li><a href="../sitemap.xml">Sitemap</a></li></ul>
   </div>
   <div>
     <h4>Disclosure</h4>

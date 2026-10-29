@@ -18,7 +18,7 @@
 <header class="site"><div class="wrap">
   <div><a class="brand" href="../index.html">TrueTrueCost</a>
   <p class="tagline">Storage · the price after the promo</p></div>
-  <nav class="main" aria-label="Main"><a href="../index.html">Home</a><a href="../index.html#cities" aria-current="page">Cities</a><a href="../how-it-works.html">How it works</a><a href="../size-guide.html">Size guide</a><a href="../about.html">About</a></nav>
+  <nav class="main" aria-label="Main"><a href="../index.html">Home</a><a href="../index.html#cities" aria-current="page">Cities</a><a href="../how-it-works.html">How it works</a><a href="../size-guide.html">Size guide</a><a href="../near.html">Your ZIP</a><a href="../about.html">About</a></nav>
 </div></header>
 
 <main class="wrap">
@@ -34,6 +34,20 @@
 </div>
 
 <p class="note"><strong>Estimates, not live quotes.</strong> Built from public price pages (sources below; data as of Sep 2026 (UnitSight standard street rates). No StorageCafe industry-statistics page; climate-controlled rates not published; no StorageUnitCosts city page; no Storage Stats market page.). Your facility, unit and move-in date will differ — always ask for the full move-in total and the rate-change policy in writing.</p>
+
+<section class="zip-tool" id="near">
+<h2>Your ZIP</h2>
+<p>The rates on this page are the Fairbanks city average. A ZIP code is only used to choose a city page. Census land area decides the match: about half or more of the ZIP Code Tabulation Area has to sit inside the city. We do not publish a dollar figure for a ZIP code.</p>
+<form class="zip-form" action="../near.html" method="get">
+  <label>ZIP code
+    <input name="zip" inputmode="numeric" autocomplete="postal-code" pattern="[0-9]{5}" minlength="5" maxlength="5" required>
+  </label>
+  <input type="hidden" name="from" value="fairbanks-ak">
+  <button class="btn solid" type="submit">Check this ZIP</button>
+</form>
+<p class="small">The check opens a result page. The ZIP is put in the page address and looked up in your browser from a Census crosswalk. <a href="../near.html">How ZIP matching works</a>.</p>
+<p>Neighborhood street rates are not on file for Fairbanks. The table on this page is the city average.</p>
+</section>
 
 <p class="quotes-label" id="renters-say">Renters say</p>
 <div class="quotes" aria-labelledby="renters-say">
@@ -54,11 +68,11 @@
   <th scope="col">Notes</th>
 </tr></thead>
 <tbody>
-<tr><th scope="row">5x5</th><td class="true"><span class="big">~$120/mo</span><span class="small">range $114–$123<br>rent only $103</span></td><td><span class="big">$101</span><span class="small">single source — estimate<br>lowest promo: no public figure</span></td><td><span class="big">~$131</span><span class="small">range $116–$141</span></td><td class="notes">UnitSight standard street rate $101 (Sep 2026). Climate-controlled not published.</td></tr>
-<tr><th scope="row">5x10</th><td class="true"><span class="big">~$154/mo</span><span class="small">range $147–$159<br>rent only $137</span></td><td><span class="big">$135</span><span class="small">single source — estimate<br>lowest promo: no public figure</span></td><td><span class="big">~$176</span><span class="small">range $155–$189</span></td><td class="notes">UnitSight standard street rate $135 (Sep 2026). No reliable lowest-promo figure published for this size (gap).</td></tr>
-<tr><th scope="row">10x10</th><td class="true"><span class="big">~$188/mo</span><span class="small">range $179–$193<br>rent only $171</span></td><td><span class="big">$168</span><span class="small">single source — estimate<br>lowest promo: no public figure</span></td><td><span class="big">~$218</span><span class="small">range $193–$235</span></td><td class="notes">UnitSight standard street rate $168 (Sep 2026), 6 facilities and 78 listings. Climate-controlled not published.</td></tr>
-<tr><th scope="row">10x15</th><td class="true"><span class="big">~$205/mo</span><span class="small">range $196–$211<br>rent only $188</span></td><td><span class="big">$185</span><span class="small">single source — estimate<br>lowest promo: no public figure</span></td><td><span class="big">~$240</span><span class="small">range $213–$259</span></td><td class="notes">UnitSight standard street rate $185 (Sep 2026).</td></tr>
-<tr><th scope="row">10x20</th><td class="true"><span class="big">~$197/mo</span><span class="small">range $188–$203<br>rent only $180</span></td><td><span class="big">$177</span><span class="small">single source — estimate<br>lowest promo: no public figure</span></td><td><span class="big">~$230</span><span class="small">range $204–$248</span></td><td class="notes">UnitSight standard street rate $177 (Sep 2026).</td></tr>
+<tr><th scope="row" id="size-5x5">5x5</th><td class="true"><span class="big">~$120/mo</span><span class="small">range $114–$123<br>rent only $103</span></td><td><span class="big">$101</span><span class="small">single source — estimate<br>lowest promo: no public figure</span></td><td><span class="big">~$131</span><span class="small">range $116–$141</span></td><td class="notes">UnitSight standard street rate $101 (Sep 2026). Climate-controlled not published.</td></tr>
+<tr><th scope="row" id="size-5x10">5x10</th><td class="true"><span class="big">~$154/mo</span><span class="small">range $147–$159<br>rent only $137</span></td><td><span class="big">$135</span><span class="small">single source — estimate<br>lowest promo: no public figure</span></td><td><span class="big">~$176</span><span class="small">range $155–$189</span></td><td class="notes">UnitSight standard street rate $135 (Sep 2026). No reliable lowest-promo figure published for this size (gap).</td></tr>
+<tr><th scope="row" id="size-10x10">10x10</th><td class="true"><span class="big">~$188/mo</span><span class="small">range $179–$193<br>rent only $171</span></td><td><span class="big">$168</span><span class="small">single source — estimate<br>lowest promo: no public figure</span></td><td><span class="big">~$218</span><span class="small">range $193–$235</span></td><td class="notes">UnitSight standard street rate $168 (Sep 2026), 6 facilities and 78 listings. Climate-controlled not published.</td></tr>
+<tr><th scope="row" id="size-10x15">10x15</th><td class="true"><span class="big">~$205/mo</span><span class="small">range $196–$211<br>rent only $188</span></td><td><span class="big">$185</span><span class="small">single source — estimate<br>lowest promo: no public figure</span></td><td><span class="big">~$240</span><span class="small">range $213–$259</span></td><td class="notes">UnitSight standard street rate $185 (Sep 2026).</td></tr>
+<tr><th scope="row" id="size-10x20">10x20</th><td class="true"><span class="big">~$197/mo</span><span class="small">range $188–$203<br>rent only $180</span></td><td><span class="big">$177</span><span class="small">single source — estimate<br>lowest promo: no public figure</span></td><td><span class="big">~$230</span><span class="small">range $204–$248</span></td><td class="notes">UnitSight standard street rate $177 (Sep 2026).</td></tr>
 </tbody>
 </table>
 </div>
@@ -127,7 +141,7 @@
   </div>
   <div>
     <h4>Explore</h4>
-    <ul><li><a href="../index.html#cities">Cities</a></li><li><a href="../how-it-works.html">How it works &amp; methodology</a></li><li><a href="../size-guide.html">Size guide</a></li><li><a href="../about.html">About</a></li><li><a href="../privacy.html">Privacy Policy</a></li><li><a href="../terms.html">Terms of Use</a></li><li><a href="../sitemap.xml">Sitemap</a></li></ul>
+    <ul><li><a href="../index.html#cities">Cities</a></li><li><a href="../how-it-works.html">How it works &amp; methodology</a></li><li><a href="../size-guide.html">Size guide</a></li><li><a href="../near.html">Your ZIP</a></li><li><a href="../about.html">About</a></li><li><a href="../privacy.html">Privacy Policy</a></li><li><a href="../terms.html">Terms of Use</a></li><li><a href="../sitemap.xml">Sitemap</a></li></ul>
   </div>
   <div>
     <h4>Disclosure</h4>
