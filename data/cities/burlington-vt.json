@@ -1,0 +1,101 @@
+{
+  "intro": "Burlington proper has no published street-rate index. UnitSight tracks 1 facility and 8 listings there and prints no size rates (viewed October 29, 2026). The rates below are a Burlington/South Burlington metro proxy: UnitSight's September 2026 South Burlington index, from 4 facilities and 40 listings, puts the standard 10x10 at $142 and the climate-controlled 10x10 at $176. That is a small sample and an estimate, not a Burlington city average. StorageCafe has no industry-statistics page or citywide average, StorageUnitCosts and Storage Stats do not publish this market, and SpareFoot's South Burlington 10x10 average of $116.50 (last updated October 1, 2025) is not included. Once the move-in special ends and the first existing-customer increase lands, the six-month average sits above that street rate.",
+  "data_asof": "Sep 2026 (UnitSight South Burlington standard street rates, metro proxy for Burlington). Burlington proper UnitSight rates unpublished (viewed Oct 29, 2026). No StorageCafe industry-statistics page or citywide average. SpareFoot South Burlington 10x10 dated Oct 1, 2025 not averaged in. No StorageUnitCosts city page. No Storage Stats market page.",
+  "units": [
+    {
+      "size": "5x5",
+      "market": [
+        114
+      ],
+      "low": null,
+      "notes": "South Burlington UnitSight standard street rate $114 (Sep 2026), used as a Burlington/South Burlington metro proxy. Estimate, not a Burlington city average. Climate-controlled figure not published. Burlington Self Storage at 1825 Shelburne Rd, South Burlington, lists $68 (StorageCafe, viewed Oct 29, 2026); one facility, not a promo, not averaged in."
+    },
+    {
+      "size": "5x10",
+      "market": [
+        94
+      ],
+      "low": null,
+      "notes": "South Burlington UnitSight standard street rate $94 (Sep 2026), metro proxy. Estimate. In that index the 5x10 street rate is below the 5x5. No reliable lowest-promo figure (gap). Burlington Self Storage lists a standard 5x10 at $70 and a climate-controlled 5x10 at $110 (StorageCafe, viewed Oct 29, 2026); not averaged in."
+    },
+    {
+      "size": "10x10",
+      "market": [
+        142
+      ],
+      "low": null,
+      "notes": "South Burlington UnitSight standard street rate $142 (Sep 2026), 4 facilities and 40 listings, metro proxy for Burlington. Estimate. Climate-controlled ~$176. Burlington Self Storage's listing has no 10x10. SpareFoot South Burlington average $116.50, lowest $109, last updated October 1, 2025, not included. SpareFoot's Burlington page has no 10x10 price (viewed Oct 29, 2026)."
+    },
+    {
+      "size": "10x15",
+      "market": [
+        187
+      ],
+      "low": null,
+      "notes": "South Burlington UnitSight standard street rate $187 (Sep 2026), metro proxy. Estimate. Burlington Self Storage lists a standard 10x15 at $130 and a climate-controlled 10x15 at $180 (StorageCafe, viewed Oct 29, 2026); not averaged in. No reliable lowest-promo figure (gap)."
+    },
+    {
+      "size": "10x20",
+      "market": [
+        207
+      ],
+      "low": null,
+      "notes": "South Burlington UnitSight standard street rate $207 (Sep 2026), metro proxy. Estimate. Burlington Self Storage lists a standard 10x20 at $160 and a climate-controlled 10x20 at $220 (StorageCafe, viewed Oct 29, 2026); not averaged in."
+    }
+  ],
+  "zip_note": "These rates are a Burlington/South Burlington metro proxy from the September 2026 South Burlington street-rate index, not a Burlington city average.",
+  "zip_rates_sentence": "The rates on this page are a Burlington/South Burlington metro proxy, not a Burlington city average.",
+  "zip_area_sentence": "Neighborhood street rates are not on file for Burlington. The table is the September 2026 South Burlington street-rate index, used here as a small-sample estimate.",
+  "local_tips": [
+    "These figures are a metro proxy. UnitSight's Burlington page has no street rates (1 facility, 8 listings, viewed October 29, 2026). The table uses the South Burlington index from September 2026 (4 facilities, 40 listings). Small sample; treat every row as an estimate.",
+    "Flynn Avenue Self Storage at 199 Flynn Avenue is in Burlington. Its own site shows $91, $126, and $185 without naming 5x5 through 10x20 dimensions (viewed October 29, 2026). StorageCafe lists size-specific prices for that address and marks each one call for availability; those labels were not used as the market rate.",
+    "Burlington Self Storage at 1825 Shelburne Road is in South Burlington. Its StorageCafe listing (viewed October 29, 2026) is one facility and is cited in the notes only.",
+    "Extra Space's published admin fee is $50 on StorageUnitCosts' fee notes, higher than our $29 default; adjust the calculator if your facility charges more."
+  ],
+  "sources": [
+    {
+      "label": "UnitSight — South Burlington, VT self storage prices (September 2026 street rates; metro proxy used on this page)",
+      "url": "https://unitsight.com/storage-prices/vt/south-burlington"
+    },
+    {
+      "label": "UnitSight — Burlington, VT self storage prices (1 facility, 8 listings; no street rates published; viewed October 29, 2026)",
+      "url": "https://unitsight.com/storage-prices/vt/burlington"
+    },
+    {
+      "label": "StorageCafe — Burlington, VT listings (facility cards, no citywide average; viewed October 29, 2026)",
+      "url": "https://www.storagecafe.com/self-storage/us/vt/burlington/"
+    },
+    {
+      "label": "StorageCafe — Burlington Self Storage, 1825 Shelburne Road, South Burlington (viewed October 29, 2026)",
+      "url": "https://www.storagecafe.com/storage/vt/south-burlington/burlington-self-storage-1825-shelburne-road/"
+    },
+    {
+      "label": "StorageCafe — Flynn Avenue Self Storage, 199 Flynn Avenue, Burlington (viewed October 29, 2026; call for availability)",
+      "url": "https://www.storagecafe.com/storage/vt/burlington/flynn-avenue-self-storage-199-flynn-avenue/"
+    },
+    {
+      "label": "Flynn Avenue Self Storage — Burlington facility homepage ($91, $126, and $185 with no unit dimensions; viewed October 29, 2026)",
+      "url": "https://www.flynnaveselfstorage.com/"
+    },
+    {
+      "label": "SpareFoot — South Burlington, VT self-storage prices (10x10 average last updated October 1, 2025; not averaged in)",
+      "url": "https://www.sparefoot.com/South-Burlington-VT-self-storage.html"
+    },
+    {
+      "label": "SpareFoot — Burlington, VT self-storage (no 10x10 price filled in; viewed October 29, 2026)",
+      "url": "https://www.sparefoot.com/Burlington-VT-self-storage.html"
+    },
+    {
+      "label": "StorageUnitCosts — Prices by city (20-city set; this city is not included) and the Extra Space admin-fee example",
+      "url": "https://storageunitcosts.com/storage-unit-prices/"
+    },
+    {
+      "label": "Public Storage — Storage deals (promo terms; admin fee and other fees apply)",
+      "url": "https://www.publicstorage.com/storage-solutions/storage-deals"
+    },
+    {
+      "label": "LegalClarity — Existing customer rate increases (reported 30–40%, cases up to 56%)",
+      "url": "https://legalclarity.org/public-storage-price-gouging-lawsuits-settlements-fines/"
+    }
+  ]
+}

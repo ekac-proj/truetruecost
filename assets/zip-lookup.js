@@ -129,7 +129,10 @@
   function renderBands(parent, data, slug) {
     var band = data.bands && data.bands[slug];
     if (!band) {
-      parent.appendChild(el("p", null, "Neighborhood street rates are not on file for this city. The city page is the city average."));
+      var noted = city(data, slug) && city(data, slug).note;
+      parent.appendChild(el("p", null, noted
+        ? "Neighborhood street rates are not on file for this city."
+        : "Neighborhood street rates are not on file for this city. The city page is the city average."));
       return;
     }
     var unit = band.unit === "10x10"
@@ -228,7 +231,10 @@
         "About " + info.pct + "% of this Census area’s land is in " + where +
         (stateName ? ", " + stateName : "") + ". "
       ));
-      lead.appendChild(document.createTextNode("That is enough to open the " + matched.name + " page. The rates there are the city average."));
+      lead.appendChild(document.createTextNode(
+        "That is enough to open the " + matched.name + " page. " +
+        (matched.note || "The rates there are the city average.")
+      ));
       out.appendChild(lead);
       if (info.others.length) {
         var also = info.others.map(function (place) {
@@ -239,7 +245,7 @@
       var figs = el("div", "keyfigs");
       if (matched.rate != null) {
         var adv = el("div");
-        adv.appendChild(el("span", "k", "10x10 city average"));
+        adv.appendChild(el("span", "k", matched.note ? "10x10 advertised rate" : "10x10 city average"));
         adv.appendChild(el("span", "v", money(matched.rate)));
         figs.appendChild(adv);
       }
@@ -276,7 +282,7 @@
     if (from && city(data, from)) {
       var fromCity = city(data, from);
       if (info.slug === from) {
-        out.appendChild(el("p", null, "You were already on the " + fromCity.short + " page. Stay there for the city average."));
+        out.appendChild(el("p", null, "You were already on the " + fromCity.short + " page. Stay there for the " + (fromCity.note ? "rates on that page." : "city average.")));
       } else if (info.slug) {
         out.appendChild(el("p", null, "You came from the " + fromCity.name + " page. This ZIP’s land-area match is " + matched.name + "."));
       } else {

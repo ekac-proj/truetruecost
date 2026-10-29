@@ -29,6 +29,14 @@ def main():
     assert katy[0] == "" and katy[2] == "Katy", katy
     assert any(item[0] == "houston-tx" and item[1] < 50 for item in katy[5]), katy
 
+    burlington = zips["05401"]
+    assert burlington[0] == "burlington-vt" and burlington[1] == 100, burlington
+    assert zips["05403"][0] == "south-burlington-vt"
+    assert zips["05405"][0] == "burlington-vt"
+    assert zips["05408"][0] == "burlington-vt"
+    assert "metro proxy" in data["cities"]["burlington-vt"]["note"]
+    assert "$" not in json.dumps(burlington)
+
     assert zips["10001"][0] == "new-york-ny"
     assert zips["96825"][0] == "east-honolulu-hi"
     assert zips["99501"][0] == "anchorage-ak"

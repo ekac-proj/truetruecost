@@ -214,7 +214,7 @@ def build(census_dir):
     for city in published:
         place = places[city["slug"]]
         state = city["slug"].rsplit("-", 1)[-1].upper()
-        cities[city["slug"]] = {
+        record = {
             "name": city["name"],
             "short": city["name"].split(",")[0].strip(),
             "state": state,
@@ -224,6 +224,12 @@ def build(census_dir):
             "lat": place["lat"],
             "lng": place["lng"],
         }
+        cfg_path = ROOT / "data" / "cities" / f"{city['slug']}.json"
+        if cfg_path.exists():
+            note = json.loads(cfg_path.read_text()).get("zip_note") or ""
+            if note:
+                record["note"] = note
+        cities[city["slug"]] = record
 
     zips = {}
     for zcta, origin in points.items():
