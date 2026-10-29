@@ -1,0 +1,74 @@
+{
+  "intro": "St. Louis's non-climate 10x10 street rate is $108/month (StorageCafe, September 2026). Storage Stats puts the St. Louis metro non-climate 10x10 asking rent at $103, up 4.5% from a year earlier (October 28, 2026). The climate-controlled 10x10 figure on the same StorageCafe page is about $115. The advertised rate on this page averages the published figures above. Once the move-in special ends and the first existing-customer increase lands, the six-month average sits above that street rate.",
+  "data_asof": "Sep 2026 (StorageCafe street rates); no StorageUnitCosts city page; Oct 2026 (Storage Stats metro)",
+  "units": [
+    {
+      "size": "5x5",
+      "market": [
+        42
+      ],
+      "low": null,
+      "notes": "Locker / closet size. Fixed fees dominate the true cost at this size. StorageCafe street rate $42 (Sep 2026). Climate-controlled figure on the same page ~$45."
+    },
+    {
+      "size": "5x10",
+      "market": [
+        64
+      ],
+      "low": null,
+      "notes": "Walk-in closet; studio overflow. StorageCafe street rate $64 (Sep 2026). Climate-controlled figure on the same page ~$70. No reliable lowest-promo figure published for this size (gap)."
+    },
+    {
+      "size": "10x10",
+      "market": [
+        108,
+        103
+      ],
+      "low": null,
+      "notes": "Most rented size. City street rate $108 (StorageCafe industry statistics, Sep 2026). Storage Stats St. Louis metro non-climate asking rent $103, up 4.5% from a year earlier (updated Oct 28, 2026). That figure covers the metro, not St. Louis alone. StorageUnitCosts does not publish this city. Climate-controlled figure on the same page ~$115."
+    },
+    {
+      "size": "10x15",
+      "market": [
+        142
+      ],
+      "low": null,
+      "notes": "Two-bedroom contents. StorageCafe street rate $142 (Sep 2026). Climate-controlled figure on the same page ~$155."
+    },
+    {
+      "size": "10x20",
+      "market": [
+        179
+      ],
+      "low": null,
+      "notes": "Three-bedroom home or a car. StorageCafe street rate $179 (Sep 2026). Climate-controlled figure on the same page ~$212."
+    }
+  ],
+  "local_tips": [
+    "StorageCafe lists Downtown West Saint Louis (~$77), Dutchtown (~$91), Tower Grove South (~$94) among the cheaper areas for a standard unit. The Hill (~$136) is among the highest.",
+    "St. Louis has about 58 facilities and 4.8 sq ft of storage per person (StorageCafe).",
+    "Extra Space's published admin fee is $50 on StorageUnitCosts' fee notes, higher than our $29 default; adjust the calculator if your facility charges more."
+  ],
+  "sources": [
+    {
+      "label": "StorageCafe — St. Louis, MO self storage prices and stats (Sep 2026)",
+      "url": "https://www.storagecafe.com/self-storage-industry-statistics/us/mo/saint-louis/"
+    },
+    {
+      "label": "StorageUnitCosts — Prices by city (20-city set; this city is not included) and the Extra Space admin-fee example",
+      "url": "https://storageunitcosts.com/storage-unit-prices/"
+    },
+    {
+      "label": "Storage Stats — St. Louis metro self-storage market data (updated Oct 28, 2026)",
+      "url": "https://storagestats.com/markets/st-louis-mo/"
+    },
+    {
+      "label": "Public Storage — Storage deals (promo terms; admin fee and other fees apply)",
+      "url": "https://www.publicstorage.com/storage-solutions/storage-deals"
+    },
+    {
+      "label": "LegalClarity — Existing customer rate increases (reported 30–40%, cases up to 56%)",
+      "url": "https://legalclarity.org/public-storage-price-gouging-lawsuits-settlements-fines/"
+    }
+  ]
+}

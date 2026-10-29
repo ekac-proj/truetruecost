@@ -1,0 +1,75 @@
+{
+  "intro": "Tulsa's non-climate 10x10 street rate is $87/month, down 3.3% from a year earlier (StorageCafe, September 2026). Storage Stats puts the Tulsa metro non-climate 10x10 asking rent at $85, down 1% from a year earlier (October 28, 2026). The climate-controlled 10x10 figure on the same StorageCafe page is about $111. The advertised rate on this page averages the published figures above. Once the move-in special ends and the first existing-customer increase lands, the six-month average sits above that street rate.",
+  "data_asof": "Sep 2026 (StorageCafe street rates); no StorageUnitCosts city page; Oct 2026 (Storage Stats metro)",
+  "units": [
+    {
+      "size": "5x5",
+      "market": [
+        38
+      ],
+      "low": null,
+      "notes": "Locker / closet size. Fixed fees dominate the true cost at this size. StorageCafe street rate $38 (Sep 2026). Climate-controlled figure on the same page ~$47."
+    },
+    {
+      "size": "5x10",
+      "market": [
+        53
+      ],
+      "low": null,
+      "notes": "Walk-in closet; studio overflow. StorageCafe street rate $53 (Sep 2026). Climate-controlled figure on the same page ~$70. No reliable lowest-promo figure published for this size (gap)."
+    },
+    {
+      "size": "10x10",
+      "market": [
+        87,
+        85
+      ],
+      "low": null,
+      "notes": "Most rented size. City street rate $87, down 3.3% from a year earlier (StorageCafe industry statistics, Sep 2026). Storage Stats Tulsa metro non-climate asking rent $85, down 1% from a year earlier (updated Oct 28, 2026). That figure covers the metro, not Tulsa alone. StorageUnitCosts does not publish this city. Climate-controlled figure on the same page ~$111."
+    },
+    {
+      "size": "10x15",
+      "market": [
+        112
+      ],
+      "low": null,
+      "notes": "Two-bedroom contents. StorageCafe street rate $112 (Sep 2026). Climate-controlled figure on the same page ~$144."
+    },
+    {
+      "size": "10x20",
+      "market": [
+        136
+      ],
+      "low": null,
+      "notes": "Three-bedroom home or a car. StorageCafe street rate $136 (Sep 2026). Climate-controlled figure on the same page ~$192."
+    }
+  ],
+  "local_tips": [
+    "StorageCafe lists Burning Tree (~$71), Blue Dome District (~$80), Park Plaza East (~$81) among the cheaper areas for a standard unit. Bryn Mawr (~$314) is among the highest.",
+    "Tulsa has about 89 facilities and 9.0 sq ft of storage per person (StorageCafe).",
+    "About 38,250 sq ft of new storage is projected for 2026 (StorageCafe). Ask what month five costs before taking a move-in discount.",
+    "Extra Space's published admin fee is $50 on StorageUnitCosts' fee notes, higher than our $29 default; adjust the calculator if your facility charges more."
+  ],
+  "sources": [
+    {
+      "label": "StorageCafe — Tulsa, OK self storage prices and stats (Sep 2026)",
+      "url": "https://www.storagecafe.com/self-storage-industry-statistics/us/ok/tulsa/"
+    },
+    {
+      "label": "StorageUnitCosts — Prices by city (20-city set; this city is not included) and the Extra Space admin-fee example",
+      "url": "https://storageunitcosts.com/storage-unit-prices/"
+    },
+    {
+      "label": "Storage Stats — Tulsa metro self-storage market data (updated Oct 28, 2026)",
+      "url": "https://storagestats.com/markets/tulsa-ok/"
+    },
+    {
+      "label": "Public Storage — Storage deals (promo terms; admin fee and other fees apply)",
+      "url": "https://www.publicstorage.com/storage-solutions/storage-deals"
+    },
+    {
+      "label": "LegalClarity — Existing customer rate increases (reported 30–40%, cases up to 56%)",
+      "url": "https://legalclarity.org/public-storage-price-gouging-lawsuits-settlements-fines/"
+    }
+  ]
+}
